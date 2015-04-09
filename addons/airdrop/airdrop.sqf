@@ -31,7 +31,7 @@ SupportsMenu =
 	["Supports",true],
 		["Food Support Drop ($10,000)", [2],  "", -5, [["expression", format[_EXECscript5,"food.sqf"]]], "1", "1"],
 		["Water Support Drop ($10,000)", [3],  "", -5, [["expression", format[_EXECscript5,"water.sqf"]]], "1", "1"],
-		//["Random Weapon Crate ($25,000)", [4],  "", -5, [["expression", format[_EXECscript5,"crate.sqf"]]], "1", "1"],
+		["Random Weapon Crate ($25,000)", [4],  "", -5, [["expression", format[_EXECscript5,"crate.sqf"]]], "1", "1"],
 		["Cancel Airdrop", [5], "", -3, [["expression", ""]], "1", "1"]
 ];
 
