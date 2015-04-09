@@ -5,6 +5,8 @@
 # @@ScriptName: storeConfig.sqf
 # @@Author: His_Shadow, AgentRev
 # @@Create Date: 2013-09-16 20:40:58
+# @@Edited by: Mokey & Huskey622 
+# THIS FILE IS NOT THE ORIGINAL
 #*********************************************************/
 
 // This tracks which store owner the client is interacting with
