@@ -12,6 +12,7 @@ _weapon = _array select 0;
 _items = [];
 _mags = [];
 
+// attachments
 for "_i" from 1 to 3 do
 {
 	_item = _array select _i;
@@ -22,7 +23,8 @@ for "_i" from 1 to 3 do
 	};
 };
 
-for "_i" from 5 to (count _array - 1) do
+// mags
+for "_i" from 4 to (count _array - 2) do
 {
 	_item = _array select _i;
 
@@ -32,7 +34,8 @@ for "_i" from 5 to (count _array - 1) do
 	};
 };
 
-for "_i" from 4 to (count _array - 2) do
+//bipod
+for "_i" from 4 to (count _array - 1) do
 {
 	_mag = _array select _i;
 
