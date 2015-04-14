@@ -10,6 +10,7 @@ waitUntil {!isNull player};
 player createDiarySubject ["infos", "Infos and Help"];
 player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["credits", "Credits"];
+player createDiarySubject ["admins", "Admin List"];
 
 player createDiaryRecord ["changelog",
 [
@@ -97,166 +98,6 @@ player createDiaryRecord ["changelog",
 <br/>[Fixed] Other minor optimizations and fixes
 "
 ]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9h",
-"
-<br/>[Added] Custom revive system based on Farooq's Revive
-<br/>[Added] Territory payroll at regular intervals
-<br/>[Added] Emergency eject and free parachutes (jump key)
-<br/>[Added] Player names toggled with Windows key
-<br/>[Added] Increased missile damage against tanks and helis
-<br/>[Added] Ability to stash money in weapon crates
-<br/>[Added] Ability to sell vehicle inventory at stores
-<br/>[Added] More money shipment mission variants
-<br/>[Added] Reduced wheel damage from collisions
-<br/>[Added] Wreck salvaging
-<br/>[Added] Selling bin in stores
-<br/>[Added] Karts DLC content in stores
-<br/>[Added] Camo sniper rifles in gunstore
-<br/>[Added] Repair Offroad in vehicle store
-<br/>[Added] Team players on map as server option
-<br/>[Added] Unlimited stamina server option
-<br/>[Added] Static weapon saving server option
-<br/>[Added] More push vehicle actions
-<br/>[Added] Paradrop option for airlifted vehicles
-<br/>[Added] Preload checkbox on respawn menu
-<br/>[Added] Remote explosives store distance restriction
-<br/>[Added] Server time multipliers for day and night
-<br/>[Added] Addon-less profileNamespace server persistence
-<br/>[Added] Linux server compatibility
-<br/>[Added] Basic support for headless client
-<br/>[Changed] Independent territory capture is now group-based
-<br/>[Changed] Towns blocked if more enemies than friendlies
-<br/>[Changed] Increased ammo/fuel/repair cargo for resupply trucks
-<br/>[Changed] Increased territory capture rewards for Altis
-<br/>[Changed] Increased money mission rewards
-<br/>[Changed] Weapon loot in buildings now disabled by default
-<br/>[Changed] Mission crates loot was made more random
-<br/>[Changed] Thermal imaging is now available on UAVs
-<br/>[Changed] Increased vehicle store prices
-<br/>[Changed] Increased prices for thermal optics
-<br/>[Changed] Increased player icons up to 2000m
-<br/>[Changed] Improved antihack
-<br/>[Changed] Improved FPS
-<br/>[Fixed] Vehicle store purchase errors due to server lag
-<br/>[Fixed] Corpse created when leaving with player saving
-<br/>[Fixed] Custom vehicle damage handling not working
-<br/>[Fixed] Indie-indie spawn beacon stealing
-<br/>[Fixed] Repair kit and jerrycan distance limit
-<br/>[Fixed] Spawn beacon packing and stealing restrictions
-<br/>[Fixed] Not able to lock static weapons
-<br/>[Fixed] Unbreakable store windows
-<br/>[Fixed] Stratis airbase gunstore desk glitches
-<br/>[Fixed] Missions sometimes completing instantaneously
-<br/>[Fixed] Object ammo/fuel/repair cargo not saving
-<br/>[Fixed] Respawn menu aspect ratio on some resolutions
-<br/>[Fixed] Minor bugs with group system
-<br/>[Fixed] Minor bugs with player items
-<br/>[Fixed] Various other minor bugfixes and optimizations
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9g",
-"
-<br/>[Added] - Vehicle stores
-<br/>[Added] - New lootspawner by Na_Palm, stuff in ALL buildings
-<br/>[Added] - New jets and truck added in A3 v1.14
-<br/>[Added] - New AAF vehicles added in A3 v1.08
-<br/>[Added] - New camos for Mk20 and MX in gunstores
-<br/>[Added] - Ability to push plane backwards
-<br/>[Added] - Ability to sell quadbike contents like crates
-<br/>[Added] - Abort delay during combat when player saving on
-<br/>[Changed] - Improved respawn menu
-<br/>[Changed] - Respawn now longer to preload destination
-<br/>[Changed] - Optimized player icons
-<br/>[Changed] - Optimized FPS fix
-<br/>[Changed] - Improved server persistence (requires iniDBI v1.4+)
-<br/>[Changed] - Improved player saving (server-specific)
-<br/>[Changed] - Improved base saving (server-specific)
-<br/>[Changed] - Reduced starting gear
-<br/>[Changed] - Modified some store prices
-<br/>[Changed] - Reduced initial fuel in cars and helis
-<br/>[Changed] - Removed Buzzard jet from too short runways
-<br/>[Changed] - Removed Kavala castle territory for use as base
-<br/>[Changed] - Increased vehicle repair time to 20 sec.
-<br/>[Changed] - Increased owner unlocking time to 10 sec.
-<br/>[Changed] - Toggling spawn beacon perms is now instant
-<br/>[Changed] - Improved Take option for player items
-<br/>[Changed] - Added option to cancel towing selection
-<br/>[Changed] - Added machine gunner to main mission NPCs
-<br/>[Changed] - Added grenadier to side mission NPCs
-<br/>[Fixed] - Error messages in various menus
-<br/>[Fixed] - Crash when toggling spawn beacon perms
-<br/>[Fixed] - Error when hacking warchests
-<br/>[Fixed] - Vehicle towing and lifting positions
-<br/>[Fixed] - Repair Vehicle option showing for brand new vehicles
-<br/>[Fixed] - Vest purchase price
-<br/>[Fixed] - Vest and helmet armor value
-<br/>[Fixed] - NPC leader now has launcher ammo
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9f",
-"
-<br/>[Added] - Money missions
-<br/>[Added] - Sell Crate Items option at stores when moving crate
-<br/>[Changed] - Reorganized loots for crates and trucks
-<br/>[Fixed] - Broken Warchest menu
-<br/>[Fixed] - Spawn beacons not working for Independent groups
-<br/>[Fixed] - Player icons position inside buildings
-<br/>[Fixed] - MRAPs and quadbikes not spawning
-<br/>[Fixed] - Broken money rewards for territories
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9e",
-"
-<br/>[Added] - Territory system
-<br/>[Added] - Jumping option (step over while running)
-<br/>[Added] - New weapons from v1.04 update
-<br/>[Changed] - Water and food now use water bottles and baked beans
-<br/>[Fixed] - Store object purchases not operating as intended
-<br/>[Fixed] - Objects purchased from stores not saving properly
-<br/>[Fixed] - Minor server-side memory leak
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9d",
-"
-<br/>[Added] - Store object purchases
-<br/>[Changed] - New UI by KoS
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9c",
-"
-<br/>[Changed] - Instant money pickup and drop
-<br/>[Changed] - Increased plane and heli spawning odds
-<br/>[Fixed] - FPS fix improvements
-<br/>[Fixed] - Vehicles disappearing when untowed or airdropped
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"0.9b",
-"
-<br/> [Initial release] - Welcome to Stratis!
-"
-]];
-
 
 player createDiaryRecord ["credits",
 [
@@ -368,5 +209,36 @@ player createDiaryRecord ["infos",
 <br/>
 <br/>Q. I saw someone breaking a rule, what do I do?
 <br/>A. Simply go into global chat and get the attention of one of the admins or visit our forums, and make a report if the offense is serious.
+"
+]];
+
+player createDiaryRecord ["admins",
+[
+"Admin List",
+"
+<br/><font color='#00FFEF' size='18'>Super Admins</font>
+<br/> * Mokey
+<br/> * Archangel
+<br/> * Lenymo
+<br/> * Korimer
+<br/> * TexasOutlaw
+<br/> * Twizzy
+<br/> * KalebHawks
+<br/> * BadColonel
+<br/> * KroNiC
+<br/> * Huskey622
+<br/> * Ghostyy
+<br/> * Blinkky
+<br/> * RazeX
+<br/>
+<br/><font color='#0066FF' size='18'>High Admins</font>
+<br/> * Faded Kitty
+<br/> * Droid
+<br/> * M4GHOST45
+<br/>
+<br/><font color='002FFF' size='18'>Low Admins</font>
+<br/> * DODGEPHOENIX
+<br/>
+
 "
 ]];
