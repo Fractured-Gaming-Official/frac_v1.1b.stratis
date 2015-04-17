@@ -19,7 +19,23 @@ _confirmMsg = _confirmMsg + format ["<br/><t font='EtelkaMonospaceProBold'>1</t>
 		// Display confirm message
 		if ([parseText _confirmMsg, "Confirm", "DROP", true] call BIS_fnc_guiMessage) then
 		{	
+		
+			
+		if (!isNil "vehicleStore_lastPurchaseTime") then
+{	// Include vehicle store cooldown timer
+
+	_timeLeft = (["A3W_vehiclePurchaseCooldown", 60] call getPublicVar) - (diag_tickTime - vehicleStore_lastPurchaseTime);
+
+	if (_timeLeft > 0) then
+	{
+		hint format ["You need to wait %1s before requesting another airdrop!", ceil _timeLeft];
+		playSound "FD_CP_Not_Clear_F";
+		breakOut "buyVehicles";
+	};
+};
+
 			player setVariable["bmoney",(player getVariable "bmoney")-_price,true];
+			vehicleStore_lastPurchaseTime = diag_tickTime;
 			
 				//do flyby	
 _startpos = [((getPosATL player) select 0) - 1500 , ((getPosATL player) select 1) - 1500 , 1500]; 
