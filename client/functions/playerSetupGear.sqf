@@ -33,7 +33,7 @@ if (hmd _player != "") then { _player unlinkItem hmd _player };
 // Add NVG
 _player linkItem "NVGoggles";
 
-_player addBackpack "B_FieldPack_oucamo";
+_player addBackpack "B_FieldPack_oli";
 
 _player addMagazine "30Rnd_9x21_Mag";
 _player addWeapon "SMG_02_F";
