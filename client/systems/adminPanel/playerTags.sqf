@@ -8,7 +8,7 @@
 //	@file Args:
 
 _uid = getPlayerUID player;
-if (_uid call isAdmin) then
+/*if (_uid call isAdmin) then
 {
 	if (isNil "adminPlayerMarkers") then { adminPlayerMarkers = false };
 
