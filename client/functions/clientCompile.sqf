@@ -53,6 +53,8 @@ unitHandleDamage = "client\functions\unitHandleDamage.sqf" call mf_compile;
 updateTerritoryMarkers = "territory\client\updateTerritoryMarkers.sqf" call mf_compile;
 vehicleSideCfg = "client\functions\vehicleSideCfg.sqf" call mf_compile;
 weaponDisassembledEvent = "client\functions\weaponDisassembledEvent.sqf" call mf_compile;
+fn_dropbox = "client\functions\fn_dropbox.sqf" call mf_compile;
+fn_processBox = "client\functions\fn_processBox.sqf" call mf_compile;
 
 // Player details and actions
 loadPlayerMenu = "client\systems\playerMenu\init.sqf" call mf_compile;
