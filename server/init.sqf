@@ -109,7 +109,7 @@ forEach
 	"A3W_atmTransferAllTeams",
 	"A3W_atmEditorPlacedOnly",
 	"A3W_atmMapIcons",
-	"A3W_atmRemoveIfDisabled"
+	"A3W_atmRemoveIfDisabled",
 	"A3W_uavControl"
 ];
 
