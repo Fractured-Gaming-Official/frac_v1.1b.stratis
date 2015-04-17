@@ -669,4 +669,3 @@ if (isServer) then {
 		sleep 10;
 	};
 };
-
