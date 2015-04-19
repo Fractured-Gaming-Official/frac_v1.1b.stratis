@@ -45,18 +45,15 @@ switch (_boxType) do
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			//["itm", "NVGoggles", 5],
-			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,5)],
-			["itm", "Medikit", RANDOM_BETWEEN(1,3)],
-			["itm", "Toolkit", RANDOM_BETWEEN(0,1)],
 			["itm", ["optic_MRCO", "optic_Arco", "optic_Hamr", "optic_SOS"], RANDOM_BETWEEN(1,2)],
 			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg"], RANDOM_BETWEEN(0,2)],
 			["itm", ["muzzle_snds_M", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_B", "muzzle_snds_acp"], RANDOM_BETWEEN(0,3)],
 			["wep", ["arifle_MXM_F", "srifle_EBR_F", "srifle_DMR_01_DMS_F", "arifle_Katiba_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["LMG_Mk200_F", "LMG_Zafir_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
 			["wep", ["MMG_02_black_F", "MMG_01_hex_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
-			["mag", "30Rnd_556x45_Stanag", RANDOM_BETWEEN(4,8)],
-			["mag", "30Rnd_65x39_caseless_mag", RANDOM_BETWEEN(4,8)],
-			["mag", "30Rnd_65x39_caseless_green", RANDOM_BETWEEN(4,8)],
+			["mag", "30Rnd_556x45_Stanag", RANDOM_BETWEEN(2,4)],
+			["mag", "30Rnd_65x39_caseless_mag", RANDOM_BETWEEN(2,4)],
+			["mag", "30Rnd_65x39_caseless_green", RANDOM_BETWEEN(2,4)],
 			["mag", "9Rnd_45ACP_Mag", RANDOM_BETWEEN(1,5)]
 		];
 	};
