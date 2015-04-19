@@ -67,7 +67,7 @@ switch (_boxType) do
 			["wep", ["srifle_LRR_LRPS_F", "srifle_LRR_camo_LRPS_F", "srifle_GM6_LRPS_F", "srifle_GM6_camo_LRPS_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["srifle_EBR_F", "srifle_DMR_01_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,3)],
-			["itm", "optic_Nightstalker" , "optic_tws" , "optic_tws_mg"]  RANDOM_BETWEEN(0,3)]
+			["itm", "optic_Nightstalker", "optic_tws", "optic_tws_mg"], RANDOM_BETWEEN(0,3)]
 		];
 	};
 	case "mission_Side_Geocache":
