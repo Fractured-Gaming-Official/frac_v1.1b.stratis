@@ -69,6 +69,17 @@ switch (_boxType) do
 			["itm", "optic_DMS", RANDOM_BETWEEN(1,2)]
 		];
 	};
+	case "mission_Side_Geocache":
+	{
+		_boxItems =
+		[
+			// Item type, Item class(es), # of items, # of magazines per weapon
+			["wep", ["srifle_DMR_02_F", "srifle_DMR_02_camo_F", "srifle_DMR_02_sniper_F", "srifle_GM6_LRPS_F", "srifle_GM6_camo_LRPS_F"], RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(4,6)],
+			["wep", ["LMG_Zafir_F", "MMG_02_black_F", "MMG_02_sand_F", "MMG_02_camo_F"], RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(4,6)],
+			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,3)],
+			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg"]RANDOM_BETWEEN(1,2)]
+		];
+	};
 };
 
 [_box, _boxItems] call processItems;
