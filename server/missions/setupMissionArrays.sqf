@@ -28,9 +28,9 @@ SideMissions =
 	["mission_TownInvasion", 2],
 	["mission_AirWreck", 1.5],
 	["mission_WepCache", 1.5],
-	["mission_Outpost", 3],
+	["mission_Outpost", 2],
 	["mission_Truck", 1],
-	["mission_geoCache", 1]
+	["mission_geoCache", 1.5]
 ];
 
 MoneyMissions =
