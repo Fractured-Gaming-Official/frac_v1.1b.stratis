@@ -67,7 +67,7 @@ switch (_boxType) do
 			["wep", ["srifle_LRR_LRPS_F", "srifle_LRR_camo_LRPS_F", "srifle_GM6_LRPS_F", "srifle_GM6_camo_LRPS_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["srifle_EBR_F", "srifle_DMR_01_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,3)],
-			["itm", "optic_Nightstalker", "optic_tws", "optic_tws_mg"], RANDOM_BETWEEN(0,3)]
+			["itm", "optic_Nightstalker" , "optic_tws" , "optic_tws_mg"]  RANDOM_BETWEEN(0,3)]
 		];
 	};
 	case "mission_Side_Geocache":
@@ -76,10 +76,15 @@ switch (_boxType) do
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			["wep", ["srifle_DMR_02_F", "srifle_DMR_02_camo_F", "srifle_DMR_02_sniper_F", "srifle_GM6_LRPS_F", "srifle_GM6_camo_LRPS_F"], RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(4,6)],
-			["wep", ["LMG_Zafir_F", "MMG_02_black_F", "MMG_02_sand_F", "MMG_02_camo_F"], RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(4,6)],
+			["wep", ["LMG_Zafir_F", "MMG_02_black_F", "MMG_02_sand_F", "MMG_02_camo_F", "arifle_MX_GL_F", "arifle_Katiba_F"], RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,3)],
-			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg"]RANDOM_BETWEEN(1,2)],
-			["itm", ["V_PlateCarrierH_CTRG", "V_PlateCarrierL_CTRG", "B_Carryall_cbr", "B_Carryall_khk", "B_Carryall_oli", "V_PlateCarrierGL_blk", "V_PlateCarrierGL_rgr", "V_PlateCarrierIA2_dgtl", "V_PlateCarrierSpec_rgr", "V_PlateCarrierSpec_mtp", "V_PlateCarrierSpec_blk", "V_PlateCarrierSpec_rgr"], RANDOM_BETWEEN(0,3)]
+			["wep", ["launch_B_Titan_F", "launch_I_Titan_F", "launch_O_Titan_F", "launch_Titan_F", "launch_B_Titan_short_F", "launch_I_Titan_short_F", "launch_O_Titan_short_F", "launch_Titan_short_F"], RANDOM_BETWEEN(0,3)],
+			["itm", ["SmokeShell", "MiniGrenade", "HandGrenade", "ItemGPS"], RANDOM_BETWEEN(1,3)],
+			["itm", ["U_B_Protagonist_VR", "U_O_Protagonist_VR", "U_I_Protagonist_VR"], RANDOM_BETWEEN(0,3)],
+			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg", "optic_Arco", "optic_LRPS", "optic_Holosight", "optic_Hamr"], RANDOM_BETWEEN(1,2)],
+			["itm", ["V_PlateCarrierH_CTRG" , "V_PlateCarrierL_CTRG" , V_PlateCarrierIA2_dgtl" , "V_PlateCarrierSpec_rgr" ,"V_PlateCarrierSpec_mtp" , "V_PlateCarrierSpec_blk" , "V_PlateCarrierSpec_rgr" ,]RANDOM_BETWEEN(0,3)],"V_PlateCarrierGL_blk" , "V_PlateCarrierGL_rgr" ,]
+			["itm", ["B_Carryall_cbr" , "B_Carryall_khk" , "B_Carryall_oli" ], RANDOM_BETWEEN(0,3)],
+			
 		];
 	};
 };
