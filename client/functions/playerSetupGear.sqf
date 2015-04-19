@@ -36,8 +36,11 @@ _player linkItem "NVGoggles";
 _player addBackpack "B_FieldPack_oli";
 
 _player addMagazine "30Rnd_9x21_Mag";
+_player addMagazine "9Rnd_45ACP_Mag";
 _player addWeapon "SMG_02_F";
 _player addMagazine "30Rnd_9x21_Mag";
+_player addWeapon "hgun_ACPC2_F";
+_player addMagazine "9Rnd_45ACP_Mag";
 _player addItem "FirstAidKit";
 _player selectWeapon "SMG_02_F";
 
