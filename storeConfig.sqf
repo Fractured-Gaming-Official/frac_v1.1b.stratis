@@ -483,10 +483,10 @@ uniformArray = compileFinal str
 	["Full Ghillie (Lush) (AAF)", "U_I_FullGhillie_lsh", 2500, "uni"], //DLC Uniform
 	["Full Ghillie (Semi-Arid) (NATO)", "U_B_FullGhillie_sard", 2500, "uni"], //DLC Uniform
 	["Full Ghillie (Semi-Arid) (CSAT)", "U_O_FullGhillie_sard", 2500, "uni"], //DLC Uniform
-	["Full Ghillie (Semi-Arid) (AAF)", "U_I_FullGhillie_sard", 2500, "uni"], //DLC Uniform
-	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 5000, "uni"],
-	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 5000, "uni"],
-	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]
+	["Full Ghillie (Semi-Arid) (AAF)", "U_I_FullGhillie_sard", 2500, "uni"] //DLC Uniform
+	//["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 5000, "uni"],
+	//["Tron Light Suit (Red)", "U_O_Protagonist_VR", 5000, "uni"],
+	//["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]
 ];
 
 vestArray = compileFinal str
