@@ -27,7 +27,7 @@ _setupObjects =
 	_baseToDelete = nearestObjects [_missionPos, ["All"], 25];
 	{ deleteVehicle _x } forEach _baseToDelete; 
 
-_randomBox = ["mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
+_randomBox = ["mission_Side_Geocache"] call BIS_fnc_selectRandom;
 	_box1 = createVehicle ["Land_Pallet_MilBoxes_F", _boxPos, [], 5, "None"];
 	_box1 setDir random 360;
 	[_box1, _randomBox] call fn_refillbox;
