@@ -48,12 +48,12 @@ switch (_boxType) do
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,5)],
 			["itm", "Medikit", RANDOM_BETWEEN(1,3)],
 			["itm", "Toolkit", RANDOM_BETWEEN(0,1)],
-			["itm", ["optic_MRCO", "optic_Arco", "optic_Hamr", "optic_SOS"], RANDOM_BETWEEN(0,2)],
+			["itm", ["optic_MRCO", "optic_Arco", "optic_Hamr", "optic_SOS"], RANDOM_BETWEEN(1,2)],
 			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg"], RANDOM_BETWEEN(0,2)],
 			["itm", ["muzzle_snds_M", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_B", "muzzle_snds_acp"], RANDOM_BETWEEN(0,3)],
-			["wep", ["hgun_Pistol_heavy_01_F", "hgun_Pistol_heavy_01_MRD_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_heavy_02_Yorris_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(3,5)],
-			["wep", ["arifle_MXM_F", "srifle_EBR_F", "srifle_DMR_01_DMS_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
+			["wep", ["arifle_MXM_F", "srifle_EBR_F", "srifle_DMR_01_DMS_F", "arifle_Katiba_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["LMG_Mk200_F", "LMG_Zafir_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
+			["wep", ["MMG_02_black_F", "MMG_01_hex_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
 			["mag", "30Rnd_556x45_Stanag", RANDOM_BETWEEN(4,8)],
 			["mag", "30Rnd_65x39_caseless_mag", RANDOM_BETWEEN(4,8)],
 			["mag", "30Rnd_65x39_caseless_green", RANDOM_BETWEEN(4,8)],
@@ -66,9 +66,12 @@ switch (_boxType) do
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			["wep", ["srifle_LRR_LRPS_F", "srifle_LRR_camo_LRPS_F", "srifle_GM6_LRPS_F", "srifle_GM6_camo_LRPS_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
+			["wep", ["srifle_DMR_02_LPRS_F", "srifle_DMR_02_camo_LPRS_F", "srifle_DMR_02_sniper_LPRS_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["srifle_EBR_F", "srifle_DMR_01_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,3)],
-			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg"], RANDOM_BETWEEN(0,3)]
+			["itm", ["optic_DMS", "optic_SOS", "optic_LRPS"], RANDOM_BETWEEN(0,3)],
+			["itm", ["optic_AMS", "optic_KHS_blk"], RANDOM_BETWEEN(0,3)],
+			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg"], RANDOM_BETWEEN(0,2)]
 		];
 	};
 	case "mission_Side_Geocache":
@@ -82,7 +85,8 @@ switch (_boxType) do
 			["wep", ["launch_B_Titan_F", "launch_I_Titan_F", "launch_O_Titan_F", "launch_Titan_F", "launch_B_Titan_short_F", "launch_I_Titan_short_F", "launch_O_Titan_short_F", "launch_Titan_short_F"], RANDOM_BETWEEN(0,3), RANDOM_BETWEEN(1,2)],
 			["itm", ["SmokeShell", "MiniGrenade", "HandGrenade", "ItemGPS"], RANDOM_BETWEEN(1,3)],
 			["itm", ["U_B_Protagonist_VR", "U_O_Protagonist_VR", "U_I_Protagonist_VR"], RANDOM_BETWEEN(0,3)],
-			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg", "optic_Arco", "optic_LRPS", "optic_Holosight", "optic_Hamr"], RANDOM_BETWEEN(1,2)],
+			["itm", ["optic_Nightstalker", "optic_tws", "optic_tws_mg"], RANDOM_BETWEEN(1,2)],
+			["itm", ["optic_Arco", "optic_LRPS", "optic_Holosight", "optic_Hamr"], RANDOM_BETWEEN(1,2)]
 			["itm", ["V_PlateCarrierH_CTRG", "V_PlateCarrierL_CTRG", "V_PlateCarrierIA2_dgtl", "V_PlateCarrierSpec_rgr", "V_PlateCarrierSpec_mtp", "V_PlateCarrierSpec_blk", "V_PlateCarrierSpec_rgr", "V_PlateCarrierGL_blk", "V_PlateCarrierGL_rgr"], RANDOM_BETWEEN(0,3)],
 			["itm", ["B_Carryall_cbr", "B_Carryall_khk", "B_Carryall_oli"], RANDOM_BETWEEN(1,3)]		
 		];
