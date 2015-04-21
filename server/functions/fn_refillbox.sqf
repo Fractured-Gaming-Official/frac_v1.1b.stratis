@@ -20,7 +20,7 @@ _box allowDamage false; // No more fucking busted crates
 _box setVariable ["A3W_inventoryLockR3F", true, true];
 
 // Clear pre-existing cargo first
-//clearBackpackCargoGlobal _box;
+clearBackpackCargoGlobal _box;
 clearMagazineCargoGlobal _box;
 clearWeaponCargoGlobal _box;
 clearItemCargoGlobal _box;
