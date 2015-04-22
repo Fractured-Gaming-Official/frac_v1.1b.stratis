@@ -8,7 +8,7 @@ if (isDedicated) exitWith {};
 waitUntil {!isNull player};
 
 player addEventHandler ["AnimChanged", {
-	if (isNil "createBountyMarker" && player getvariable "cmoney" > 49999) then
+	if (isNil "createBountyMarker" && player getvariable "cmoney" > 54999) then
 	{		terminate createBountyMarker;
 	
 			_title  = "<t color='#ff0000' size='1.2' align='center'>High Value Target! </t><br />";
