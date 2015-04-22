@@ -79,3 +79,4 @@ if (isServer) then
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 [] execVM "addons\JumpMF\init.sqf";
 [] execVM "addons\vactions\functions.sqf";
+[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
