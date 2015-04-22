@@ -55,7 +55,10 @@ While{true} do
         addCamShake [10, 45, 10];    // sets shakevalues
         player setFatigue 0; // sets the fatigue to 100%
         5 fadeSound 0.1;     // fades the sound to 10% in 5 seconds
-		player setDamage 0.1; // Deal damage to player
+		      while {ppEffectEnable true} do 
+        {
+            player setDamage (setdamage 0.01);
+        };
     };
     
     sleep 5;
