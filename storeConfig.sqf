@@ -151,8 +151,9 @@ staticGunsArray = compileFinal str
 
 throwputArray = compileFinal str
 [
-	["Mini Grenade", "MiniGrenade", 100],
-	["Frag Grenade", "HandGrenade", 200],
+	["Tear Gas", "SmokeShellYellow", 100],
+	["Mini Grenade", "MiniGrenade", 200],
+	["Frag Grenade", "HandGrenade", 250],
 	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 300],
 	["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 350],
 	["APERS Mine", "APERSMine_Range_Mag", 500],
@@ -165,7 +166,6 @@ throwputArray = compileFinal str
 	["Smoke Grenade (Purple)", "SmokeShellPurple", 50],
 	["Smoke Grenade (Blue)", "SmokeShellBlue", 50],
 	["Smoke Grenade (Green)", "SmokeShellGreen", 50],
-	["Smoke Grenade (Yellow)", "SmokeShellYellow", 50],
 	["Smoke Grenade (Orange)", "SmokeShellOrange", 50],
 	["Smoke Grenade (Red)", "SmokeShellRed", 50]
 ];
