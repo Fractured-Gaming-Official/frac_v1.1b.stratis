@@ -297,6 +297,7 @@ accessoriesArray = compileFinal str
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
 headArray = compileFinal str
 [
+	["Gas Mask", "H_CrewHelmetHeli_B", 200, "hat"],
 	["ECH", "H_HelmetB", 50, "hat"],
 	["ECH (Ghillie)", "H_HelmetB_camo", 50, "hat"],
 	["ECH (Light)", "H_HelmetB_light", 50, "hat"],
@@ -315,7 +316,7 @@ headArray = compileFinal str
 	["MICH", "H_HelmetIA", 50, "hat"],
 	// ["MICH (Camo)", "H_HelmetIA_net", 50, "hat"],
 	// ["MICH 2 (Camo)", "H_HelmetIA_camo", 50, "hat"],
-	["Heli Crew Helmet (NATO)", "H_CrewHelmetHeli_B", 50, "hat"],
+	//["Heli Crew Helmet (NATO)", "H_CrewHelmetHeli_B", 50, "hat"],
 	["Heli Crew Helmet (CSAT)", "H_CrewHelmetHeli_O", 50, "hat"],
 	["Heli Crew Helmet (AAF)", "H_CrewHelmetHeli_I", 50, "hat"],
 	["Heli Pilot Helmet (NATO)", "H_PilotHelmetHeli_B", 50, "hat"],
