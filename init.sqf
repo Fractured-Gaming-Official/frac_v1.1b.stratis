@@ -84,3 +84,4 @@ if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 [] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
 [] execVM "addons\scripts\zlt_fastrope.sqf";
 [] execVM "addons\scripts\toxic_gas.sqf";
+[] execVM "addons\HvT\HvT.sqf";
