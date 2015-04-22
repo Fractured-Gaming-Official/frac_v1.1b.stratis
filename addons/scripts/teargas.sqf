@@ -58,5 +58,5 @@ While{true} do
 		player setDamage 0.1; // Deal damage to player
     };
     
-    sleep 2;
+    sleep 5;
 };
