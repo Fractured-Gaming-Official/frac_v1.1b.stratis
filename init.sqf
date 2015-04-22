@@ -78,6 +78,7 @@ if (isServer) then
 [] execVM "addons\proving_ground\init.sqf";
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 [] execVM "addons\JumpMF\init.sqf";
+if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 [] execVM "addons\vactions\functions.sqf";
 [] execVM "addons\scripts\servercredits.sqf";
 [] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";

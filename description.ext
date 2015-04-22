@@ -56,6 +56,7 @@ loadScreen = "mapConfig\Loading.jpg";
 #include "addons\proving_ground\PG_config.hpp"
 #include "addons\taw_vd\dialog.hpp"
 #include "addons\outlw_magRepack\MagRepack_Config.hpp"
+#include "addons\statusBar\statusBar.hpp"
 
 class RscTitles
 {
