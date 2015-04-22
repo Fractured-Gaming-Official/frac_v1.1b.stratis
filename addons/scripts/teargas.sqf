@@ -14,7 +14,7 @@ While{true} do
     waituntil{
     ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)
     &&
-    (getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)
+    (getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 10)
     };
 
     if (headgear player != "H_CrewHelmetHeli_B") then

@@ -6,14 +6,14 @@
 private ["_playermoney","_price","_confirmMsg"];
 
 _playerMoney = player getVariable ["bmoney", 0];
-_price = 10000;
+_price = 5000;
 if (_price > _playerMoney) exitWith
 			{
 				hint format["You don't have enough money in the bank to request this airdrop!"];
 				playSound "FD_CP_Not_Clear_F";
 			};
 			
-_confirmMsg = format ["This airdrop will deduct $10,000 from your bank account<br/>"];
+_confirmMsg = format ["This airdrop will deduct $5,000 from your bank account<br/>"];
 _confirmMsg = _confirmMsg + format ["<br/><t font='EtelkaMonospaceProBold'>1</t> x Water Support Drop"];
 
 		// Display confirm message
