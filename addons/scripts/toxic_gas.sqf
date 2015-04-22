@@ -15,8 +15,8 @@ While{true} do{
 	
 	if (_counter < _fuseDelay) then{
         sleep 1;	
-	    _counter = _counter +1;
-		hint "counter +1";		// counter augments by 1, for each 1 second sleep
+		hint str _counter;ad
+	    _counter = _counter +1;		                         // counter augments by 1, for each 1 second sleep
 	}
     else{
 	hint "enter gas phase";
