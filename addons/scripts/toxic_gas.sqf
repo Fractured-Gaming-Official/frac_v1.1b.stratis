@@ -1,6 +1,7 @@
 //	@file Name: teargas.sqf
-//	@file Author: Mokey
-//	@file Description: Teargas addon for A3W
+//	@file Author: Mokey & whoever made the teargas script!
+//	@file Description: Toxic Gas addon for A3W
+//  @web: http://www.fractured-gaming.com
 // ** Special Thanks to Pitoucc
 While{true} do 
 {
