@@ -30,8 +30,9 @@ class osefStatusBarAdmin {
 				color = "#ffffff";//#5fe60c
 			};
 		};
-};
 	};
+}; 
+
 class osefStatusBar {
 	idd = -1;
 	onLoad = "uiNamespace setVariable ['osefStatusBar', _this select 0]";
