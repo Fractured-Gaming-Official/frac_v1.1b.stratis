@@ -52,7 +52,7 @@ class osefStatusBar {
 			w = 1.3;
 			h = 0.07;
 			shadow = 2;
-			colorBackground[] = { 0, 0, 0, 0.5 };  // uncomment and increase 4th number to have a background
+			colorBackground[] = { 0, 0, 0, 0.1 };  // uncomment and increase 4th number to have a background
 			font = "PuristaSemibold";
 			size = 0.04;
 			type = 13;
