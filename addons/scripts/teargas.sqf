@@ -26,7 +26,7 @@ While{true} do
         addCamShake [10, 45, 10];    // sets shakevalues
         player setFatigue 0; // sets the fatigue to 100%
         5 fadeSound 0.1;     // fades the sound to 10% in 5 seconds
-		while {alive player && nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10} do
+		while {(alive player) and ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) and (headgear player != "H_CrewHelmetHeli_B")} do
         {
             player setDamage (damage player + 0.03); //damage per tick
 			sleep 5; // Timer damage is assigned "seconds"
