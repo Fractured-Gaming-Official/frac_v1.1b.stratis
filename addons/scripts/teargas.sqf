@@ -57,7 +57,8 @@ While{true} do
         5 fadeSound 0.1;     // fades the sound to 10% in 5 seconds
 		while {alive player} do 
         {
-            player setDamage (damage + 0.1);
+            player setDamage (damage player + 0.1);
+			sleep 2;
         };
     };
     
