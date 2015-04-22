@@ -53,7 +53,7 @@ While{true} do
         "dynamicBlur" ppEffectCommit 5; // time till vision is fully blurred
         enableCamShake true;     // enables camera shake
         addCamShake [10, 45, 10];    // sets shakevalues
-        player setFatigue 1; // sets the fatigue to 100%
+        player setFatigue 0; // sets the fatigue to 100%
         5 fadeSound 0.1;     // fades the sound to 10% in 5 seconds
 
     };
