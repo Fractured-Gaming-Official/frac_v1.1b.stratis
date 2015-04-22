@@ -10,7 +10,7 @@
  
 //	========== SCRIPT CONFIG ============
 	
-_onScreenTime = 10; 		//how long one role should stay on screen. Use value from 0 to 10 where 0 is almost instant transition to next role 
+_onScreenTime = 8; 		//how long one role should stay on screen. Use value from 0 to 10 where 0 is almost instant transition to next role 
 //NOTE: Above value is not in seconds!
  
 //	==== HOW TO CUSTOMIZE THE CREDITS ===
@@ -44,9 +44,17 @@ _role1names = ["Fractured Gaming - A3Wasteland Stratis"];
 _role2 = "Server restarts every 6 hours";
 _role2names = ["6am, 12pm, 6pm, 12am GMT"];
 _role3 = "Visit our website @";
-_role3names = ["Fractured-Gaming.com"];
-_role4 = "TS3 Server @";
+_role3names = ["www.Fractured-Gaming.com"];
+_role4 = "TS3 Server:";
 _role4names = ["TS.Fractured-Gaming.com"];
+_role5 = "Useful Commands";
+_role5names = ["CTRL+R-Mag Repacker, END-Earplugs"];
+_role6 = "Server Side Addons";
+_role6names = ["Toxic Gas, MagRepacker, Fastroping, Airdrops, LockPicking, Breaklock, Status Bar, HVT"];
+_role7 = "Cutom Missions";
+_role7names = ["Better Gear can be found in mission crates. HVTs are marked on map"];
+_role8 = "More Info";
+_role8names = ["Find Rules and more INFO on the map M (default)"];
  
 {
 	sleep 2;
@@ -69,6 +77,10 @@ _role4names = ["TS.Fractured-Gaming.com"];
 	//The list below should have exactly the same amount of roles as the list above
 	[_role1, _role1names],
 	[_role2, _role2names],
-	[_role3, _role3names],			
-	[_role4, _role4names]   //make SURE the last one here does NOT have a , at the end
+	[_role3, _role3names],
+	[_role4, _role4names],
+	[_role5, _role5names],
+	[_role6, _role6names],
+	[_role7, _role7names],
+	[_role8, _role8names]  //make SURE the last one here does NOT have a , at the end
 ];
