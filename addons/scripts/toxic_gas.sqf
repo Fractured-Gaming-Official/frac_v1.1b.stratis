@@ -4,6 +4,9 @@
 //	@web: http://www.fractured-gaming.com
 //	@Special Thanks to Pitoucc
 
+
+_gasMask = ["H_CrewHelmetHeli_B"]; // define the gasmasks here 
+
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0];                   // enables normal vision
@@ -23,28 +26,24 @@ setGasStatus = {
 };
 
 gasDamage = {
-    player setDamage (damage player + 0.12);     		//damage per tick
-	sleep 5;                                  		    // Timer damage is assigned "seconds"
+   player setDamage (damage player + 0.15);     		//damage per tick
+   sleep 3;                                 		    // Timer damage is assigned "seconds"
 };
 
+
 While{true} do{
-
-	call setNoGasStatus;
-	
+		call setNoGasStatus;
 	waituntil{
-		((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)       // detects if player is within grenade radius
+		((nearestObject [getPosATL player, "SmokeShell"]) distance player < 5)       // detects if player is within grenade radius
 		&&
-		(getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)
+		(getPosATL (nearestObject [getPosATL player, "SmokeShell"]) select 2 < 0.5)  // detects if grenade is on ground to avoid gassing yourself while throwing.
 	};
-
-	if (headgear player != "H_CrewHelmetHeli_B") then{
-		
-		call setGasStatus;
-			
-		while {(alive player) && ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) && (headgear player != "H_CrewHelmetHeli_B")} do{
-			
+	
+	if !(headgear player in _gasMask) then 
+		 {
+			call setGasStatus;
 			call gasDamage;
-		};
-	};
-	sleep 5;
+		 }
+		 else
+		 {};
 };
