@@ -13,7 +13,6 @@ setNoGasStatus={
 };
 
 setGasStatus = { 
-	hint ["<t color='#FF0000'>OH SHIT! TOXIC GAS! PUT A GAS MASK ON OR GET THE HELL OUT OF HERE!</t>"];
     "dynamicBlur" ppEffectEnable true;              	// enables ppeffect
     "dynamicBlur" ppEffectAdjust [15];             	  	// intensity of blur
 	"dynamicBlur" ppEffectCommit 5;                 	// time till vision is fully blurred
