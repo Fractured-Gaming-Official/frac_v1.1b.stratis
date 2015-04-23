@@ -21,7 +21,7 @@ While{true} do
     if (headgear player != "H_CrewHelmetHeli_B") then
     {
         "dynamicBlur" ppEffectEnable true;
-        "dynamicBlur" ppEffectAdjust [15]; // intensity of blur
+        "dynamicBlur" ppEffectAdjust [10]; // intensity of blur
         "dynamicBlur" ppEffectCommit 5; // time till vision is fully blurred
         enableCamShake true;     // enables camera shake
         addCamShake [10, 45, 10];
