@@ -39,7 +39,7 @@ While{true} do{
 			
 		while {(alive player) && ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) && (headgear player != "H_CrewHelmetHeli_B")} do{
 			
-			gasDamage;
+			call gasDamage;
 			sleep 5;                                     // Timer damage is assigned "seconds"
 		};
 	};
