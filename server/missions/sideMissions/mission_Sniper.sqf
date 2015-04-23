@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf";
 
-private ["_nbUnits", "_positions", "_boxes1", "_currBox1", "_box1", "_obj", "_tent"];
+private ["_positions", "_boxes1", "_currBox1", "_box1", "_obj", "_tent","_nbUnits"];
 
 _setupVars =
 {
@@ -15,7 +15,6 @@ _setupVars =
 	_locationsArray = MissionSpawnMarkers;
 	_nbUnits = AI_GROUP_MEDIUM;
 };
-
 
 	
 _setupObjects =
@@ -26,24 +25,27 @@ _setupObjects =
 	{ deleteVehicle _x } forEach _baseToDelete; 
 	
 	
-			_randomBox = ["mission_TOP_Gear1","mission_TOP_Sniper","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
+	_randomBox = ["mission_TOP_Gear1","mission_TOP_Sniper","mission_USSpecial","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
 	_box1 = createVehicle ["Box_NATO_AmmoOrd_F", _missionPos, [], 5, "None"];
 	_box1 setDir random 360;
 	[_box1, _randomBox] call fn_refillbox;
 	
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1];
 	
+	_obj = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"]; 
+	_obj setPosATL [_missionPos select 0, (_missionPos select 1) + 2, _missionPos select 2];
 	_tent = createVehicle ["CamoNet_INDP_big_F", _missionPos, [], 3, "None"];
 	_tent allowDamage false;
 	_tent setDir random 360;
 	_tent setVariable ["R3F_LOG_disabled", false];
+	//_missionPos = getPosASL _tent;
 	
-	_missionPos = getPosASL _tent;
-	_obj = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"]; 
-	_obj setPosASL [_missionPos select 0, (_missionPos select 1) + 2, _missionPos select 2];
 	
 	_aiGroup = createGroup CIVILIAN;
 	[_aiGroup, _missionPos, _nbUnits, 5] call createCustomGroup;
+
+	_aiGroup setCombatMode "RED";
+	_aiGroup setBehaviour "COMBAT";
 	
 	_missionHintText = format ["A small group of Snipers are setting up overwatch. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
 };

@@ -30,18 +30,16 @@ _setupObjects =
 	_bunker setDir random 360;
 	_bunker setVariable ["R3F_LOG_disabled", false];
 
-	_missionPos = getPosASL _bunker;
+	_missionPos = getPosATL _bunker;
 
 	_table = createVehicle ["Land_WoodenTable_small_F", _missionPos, [], 0, "CAN COLLIDE"];
-	_table setPosASL [_missionPos select 0, (_missionPos select 1) - 0.25, _missionPos select 2];
+	_table setPosATL [_missionPos select 0, (_missionPos select 1) - 0.25, _missionPos select 2];
 	
 	_laptop = createVehicle ["Land_Laptop_unfolded_F", _missionPos, [], 0, "CAN COLLIDE"];
 	_laptop attachTo [_table,[0,0,0.60]];
 	
-	
-
 	_obj = createVehicle ["I_GMG_01_high_F", _missionPos,[], 10,"None"]; 
-	_obj setPosASL [_missionPos select 0, (_missionPos select 1) + 2, _missionPos select 2];
+	_obj setPosATL [_missionPos select 0, (_missionPos select 1) + 2, _missionPos select 2];
 
 	AddLaptopHandler = _laptop;
 	publicVariable "AddLaptopHandler";
