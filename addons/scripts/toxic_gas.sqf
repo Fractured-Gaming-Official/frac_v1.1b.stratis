@@ -33,7 +33,7 @@ While{true} do{
 	waituntil{
 		((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)       // detects if player is within grenade radius
 		&&
-		(getpos (nearestObject [getPosATL player, "SmokeShellYellow"]) select 2 < 0.5)
+		(getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)
 	};
 
 	if (headgear player != "H_CrewHelmetHeli_B") then{
