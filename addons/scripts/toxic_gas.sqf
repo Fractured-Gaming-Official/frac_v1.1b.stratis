@@ -5,8 +5,7 @@
 //	@Special Thanks to Pitoucc
 
 
-_gasMask = ["H_CrewHelmetHeli_B"]; // define the gasmasks here 
-
+_gasMask = ["H_CrewHelmetHeli_B"]; // define the gasmasks here
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0];                   // enables normal vision
