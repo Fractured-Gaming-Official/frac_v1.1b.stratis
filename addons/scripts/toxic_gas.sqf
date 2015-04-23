@@ -2,7 +2,7 @@
 //	@file Author: Mokey
 //	@file Description: Toxic Gas addon for A3W
 //	@web: http://www.fractured-gaming.com
-//	@Special Thanks to Pitoucc
+//	@Special Thanks to Pitoucc & Creampie!
 
 
 _gasMask = ["H_CrewHelmetHeli_B"]; // define the gasmasks here
