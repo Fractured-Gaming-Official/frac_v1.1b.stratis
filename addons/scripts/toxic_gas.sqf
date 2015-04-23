@@ -22,7 +22,7 @@ gasDamage = {
 
 if((getpos player, "SmokeShellYellow"]) distance player < 10) then{
         sleep 2;
-    }
+    };
 
 While{true} do{
 
