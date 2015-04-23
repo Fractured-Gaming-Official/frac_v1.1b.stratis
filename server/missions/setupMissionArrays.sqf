@@ -30,6 +30,7 @@ SideMissions =
 	["mission_WepCache", 1.5],
 	["mission_Outpost", 2],
 	["mission_Truck", 1],
+	["mission_Sniper", 1],
 	["mission_geoCache", 1.5]
 ];
 
