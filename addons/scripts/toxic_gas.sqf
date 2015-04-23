@@ -33,3 +33,5 @@ While{true} do
 			sleep 5; // Timer damage is assigned "seconds"
         };
     };
+    sleep 5;
+};
