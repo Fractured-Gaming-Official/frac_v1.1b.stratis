@@ -876,26 +876,26 @@ colorsArray = compileFinal str
 			["Red", "#(rgb,1,1,1)color(0.45,0.005,0,1)"], // #(argb,8,8,3)color(1,0.1,0,0.3)
 			["Pink", "#(rgb,1,1,1)color(0.5,0.03,0.3,1)"], // #(argb,8,8,3)color(1,0.06,0.6,0.5)
 			["Purple", "#(rgb,1,1,1)color(0.1,0,0.3,1)"], // #(argb,8,8,3)color(0.8,0,1,0.1)
-			["NATO Tan", "client\images\vehicleTextures\nato.jpg"], // #(argb,8,8,3)color(0.584,0.565,0.515,0.3)
-			["CSAT Brown", "client\images\vehicleTextures\csat.jpg"], // #(argb,8,8,3)color(0.624,0.512,0.368,0.3)
-			["AAF Green", "client\images\vehicleTextures\aaf.jpg"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
-			["Trippy", "client\images\vehicleTextures\rainbow.jpg"],
-			["TMNT", "client\images\vehicleTextures\TMNT.jpg"],
-			["Carbon", "client\images\vehicleTextures\carbon.jpg"],
-			["Pokemon", "client\images\vehicleTextures\pokemon.jpg"],
-			["Rusty", "client\images\vehicleTextures\rusty.jpg"],
-			["Denim", "client\images\vehicleTextures\denim.jpg"],
-			["Psych", "client\images\vehicleTextures\psych.jpg"],
-			["Leopard", "client\images\vehicleTextures\leopard.jpg"],
-			["'Murica", "client\images\vehicleTextures\murica.jpg"],
-			["Matrix", "client\images\vehicleTextures\matrix.jpg"],
-			["Confederate", "client\images\vehicleTextures\confederate.jpg"],
-			["Union Jack", "client\images\vehicleTextures\unionjack.jpg"],			
-			["Yellow Camo", "client\images\vehicleTextures\camo_fuel.jpg"],
-			["Orange Camo", "client\images\vehicleTextures\camo_fack.jpg"],
-			["Red Camo", "client\images\vehicleTextures\camo_deser.jpg"],
-			["Flame", "client\images\vehicleTextures\flame.jpg"],
-			["Pink Camo", "client\images\vehicleTextures\camo_pank.jpg"]
+			["NATO Tan", "client\images\vehicleTextures\nato.paa"], // #(argb,8,8,3)color(0.584,0.565,0.515,0.3)
+			["CSAT Brown", "client\images\vehicleTextures\csat.paa"], // #(argb,8,8,3)color(0.624,0.512,0.368,0.3)
+			["AAF Green", "client\images\vehicleTextures\aaf.paa"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
+			["Trippy", "client\images\vehicleTextures\rainbow.paa"],
+			["TMNT", "client\images\vehicleTextures\TMNT.paa"],
+			["Carbon", "client\images\vehicleTextures\carbon.paa"],
+			["Pokemon", "client\images\vehicleTextures\pokemon.paa"],
+			["Rusty", "client\images\vehicleTextures\rusty.paa"],
+			["Denim", "client\images\vehicleTextures\denim.paa"],
+			["Psych", "client\images\vehicleTextures\psych.paa"],
+			["Leopard", "client\images\vehicleTextures\leopard.paa"],
+			["'Murica", "client\images\vehicleTextures\murica.paa"],
+			["Matrix", "client\images\vehicleTextures\matrix.paa"],
+			["Confederate", "client\images\vehicleTextures\confederate.paa"],
+			["Union Jack", "client\images\vehicleTextures\unionjack.paa"],			
+			["Yellow Camo", "client\images\vehicleTextures\camo_fuel.paa"],
+			["Orange Camo", "client\images\vehicleTextures\camo_fack.paa"],
+			["Red Camo", "client\images\vehicleTextures\camo_deser.paa"],
+			["Flame", "client\images\vehicleTextures\flame.paa"],
+			["Pink Camo", "client\images\vehicleTextures\camo_pank.paa"]
 		]
 	],
 	[ // Kart colors
