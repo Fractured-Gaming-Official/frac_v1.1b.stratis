@@ -7,7 +7,7 @@
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0];                   // enables normal vision
-    "dynamicBlur" ppEffectCommit 10;                    // time it takes to normal
+    "dynamicBlur" ppEffectCommit 10;                    // time it takes to go back to normal vision
     resetCamShake;                                      // resets the shake
     20 fadeSound 1;                                     // fades the sound back to normal	
 };
