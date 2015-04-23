@@ -26,7 +26,7 @@ gasDamage = {
     player setDamage (damage player + 0.12);         //damage per tick
 };
 
-_grenVelocity = 0;
+_grenSpeed = 0;
 
 While{true} do{
 
@@ -35,7 +35,7 @@ While{true} do{
 	};
 
 	sleep 0.1;
-	_grenVelocity = speed (nearestObject [getpos player, "SmokeShellYellow"])
+	_grenSpeed = speed (nearestObject [getpos player, "SmokeShellYellow"]);
 	
 	if ((headgear player != "H_CrewHelmetHeli_B") && (grenSpeed == 0) ) then{
 		
