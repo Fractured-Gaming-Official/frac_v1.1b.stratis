@@ -39,7 +39,6 @@ While{true} do{
 
 	if (headgear player != "H_CrewHelmetHeli_B") then{
 		
-		hint "<t color='#ff0000'>OH SHIT! TOXIC GAS! PUT A GAS MASK ON OR GET THE HELL OUT OF HERE!</t>";
 		call setGasStatus;
 			
 		while {(alive player) && ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) && (headgear player != "H_CrewHelmetHeli_B")} do{
