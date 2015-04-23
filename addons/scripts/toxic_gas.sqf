@@ -4,6 +4,7 @@
 //  @web: http://www.fractured-gaming.com
 // ** Special Thanks to Pitoucc
 <<<<<<< HEAD
+<<<<<<< HEAD
 _counter = 0;                                                 
 _fuseDelay = 2;                                               // fuse delay in "seconds" until grenade is active
 
@@ -35,6 +36,17 @@ While{true} do
 
 >>>>>>> parent of c31de2c... edit on Toxic Grenade
 
+=======
+While{true} do 
+{
+    "dynamicBlur" ppEffectEnable true; 
+    "dynamicBlur" ppEffectAdjust [0];
+    "dynamicBlur" ppEffectCommit 10; // time to revert to normal state
+    resetCamShake;
+    20 fadeSound 1;
+
+
+>>>>>>> parent of c31de2c... edit on Toxic Grenade
     waituntil{
     ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)
     &&
