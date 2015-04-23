@@ -32,7 +32,13 @@ _grenSpeed = [];
 While{true} do{
 
 	waituntil{
+<<<<<<< HEAD
 		(nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10       // detects if player is within grenade radius
+=======
+		((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)       // detects if player is within grenade radius
+		&&
+		(getpos (nearestObject [getPosATL player, "SmokeShellYellow"]) select 2 < 0.5)
+>>>>>>> parent of c9fb19e... slight fix
 	};
 
 	sleep 0.1;
