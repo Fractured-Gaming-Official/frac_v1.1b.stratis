@@ -7,13 +7,12 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf";
 
-private ["_positions", "_boxes1", "_currBox1", "_box1", "_obj", "_tent","_nbUnits"];
+private ["_positions", "_boxes1", "_currBox1", "_box1", "_obj", "_tent"];
 
 _setupVars =
 {
 	_missionType = "Sniper Overwatch";
 	_locationsArray = MissionSpawnMarkers;
-	_nbUnits = AI_GROUP_MEDIUM;
 };
 
 	
@@ -42,7 +41,7 @@ _setupObjects =
 	
 	
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos, _nbUnits, 5] call createCustomGroup;
+    [_aiGroup,_missionPos] spawn createcustomGroup3;
 
 	_aiGroup setCombatMode "RED";
 	_aiGroup setBehaviour "COMBAT";
