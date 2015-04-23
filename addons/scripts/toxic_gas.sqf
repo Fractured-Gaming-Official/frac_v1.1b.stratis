@@ -24,9 +24,10 @@ setGasStatus = {
 
 gasDamage = {
     player setDamage (damage player + 0.12);         //damage per tick
+	sleep 5;										 // Timer damage is assigned "seconds"
 };
 
-_grenVelocity = 0;
+_grenSpeed = [];
 
 While{true} do{
 
@@ -35,16 +36,15 @@ While{true} do{
 	};
 
 	sleep 0.1;
-	_grenVelocity = speed (nearestObject [getpos player, "SmokeShellYellow"])
+	_grenSpeed = []; = speed (nearestObject [getpos player, "SmokeShellYellow"]);
 	
-	if ((headgear player != "H_CrewHelmetHeli_B") && (grenSpeed == 0) ) then{
+	if ((headgear player != "H_CrewHelmetHeli_B") && (_grenSpeed select 2 == 0)) then{
 		
 		call setGasStatus;
 			
 		while {(alive player) && ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) && (headgear player != "H_CrewHelmetHeli_B")} do{
 			
 			call gasDamage;
-			sleep 5;                                     // Timer damage is assigned "seconds"
 		};
 	};
 	
