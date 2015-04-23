@@ -3,6 +3,10 @@
 //	@file Description: Toxic Gas addon for A3W
 //  @web: http://www.fractured-gaming.com
 // ** Special Thanks to Pitoucc
+sleepFucntion = {
+    sleep 2;
+	true; // returns true
+};
 While{true} do{
     "dynamicBlur" ppEffectEnable true;                   // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0];                    // enables normal vision
@@ -29,9 +33,4 @@ While{true} do{
 		};
 	};
 	sleep 5;
-};
-
-sleepFucntion = {
-    sleep 2;
-	true; // returns true
 };
