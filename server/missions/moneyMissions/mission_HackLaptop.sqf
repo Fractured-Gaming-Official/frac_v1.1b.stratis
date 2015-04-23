@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "moneyMissionDefines.sqf";
 
-private ["_positions", "_bunker", "_laptop", "_obj", "_randomGroup", "_vehicleName","_table"];
+private ["_nbUnits", "_positions", "_bunker", "_laptop", "_obj", "_randomGroup", "_vehicleName","_table"];
 
 _setupVars =
 {

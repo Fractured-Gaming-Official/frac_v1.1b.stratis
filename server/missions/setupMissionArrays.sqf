@@ -9,36 +9,36 @@ if (!isServer) exitWith {};
 MainMissions =
 [
 	// Mission filename, weight
-	["mission_ArmedDiversquad", 1],
-	["mission_Coastal_Convoy", 1],
-	["mission_Convoy", 1],
-	["mission_HostileHeliFormation", 0.5],
-	["mission_APC", 1],
-	["mission_MBT", 1],
-	["mission_LightArmVeh", 1],
-	["mission_ArmedHeli", 1],
+	//["mission_ArmedDiversquad", 1],
+	//["mission_Coastal_Convoy", 1],
+	//["mission_Convoy", 1],
+	//["mission_HostileHeliFormation", 1],
+	//["mission_APC", 1],
+	//["mission_MBT", 1],
+	//["mission_LightArmVeh", 1],
+	//["mission_ArmedHeli", 1],
 	["mission_CivHeli", 1]
 ];
 
 SideMissions =
 [
-	["mission_HostileHelicopter", 0.5],
-	["mission_MiniConvoy", 1],
-	["mission_SunkenSupplies", 1],
-	["mission_TownInvasion", 2],
-	["mission_AirWreck", 1.5],
-	["mission_WepCache", 1.5],
-	["mission_Outpost", 2],
-	["mission_Truck", 1],
+	//["mission_HostileHelicopter", 1],
+	//["mission_MiniConvoy", 1],
+	//["mission_SunkenSupplies", 1],
+	//["mission_TownInvasion", 1],
+	//["mission_AirWreck", 1],
+	//["mission_WepCache", 1.5],
+	//["mission_Outpost", 2],
+	//["mission_Truck", 1],
 	["mission_Sniper", 1],
 	["mission_Roadblock", 1],
-	["mission_geoCache", 1.5]
+	["mission_geoCache", 1]
 ];
 
 MoneyMissions =
 [
-	["mission_MoneyShipment", 1],
-	["mission_SunkenTreasure", 1],
+	//["mission_MoneyShipment", 1],
+	//["mission_SunkenTreasure", 1],
 	["mission_HackLaptop", 1]
 ];
 
