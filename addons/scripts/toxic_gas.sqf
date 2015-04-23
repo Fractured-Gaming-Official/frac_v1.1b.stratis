@@ -1,7 +1,7 @@
 //	@file Name: teargas.sqf
 //	@file Author: Mokey & whoever made the teargas script!
 //	@file Description: Toxic Gas addon for A3W
-//  @web: http://www.fractured-gaming.com
+//      @web: http://www.fractured-gaming.com
 // ** Special Thanks to Pitoucc
 While{true} do{
     "dynamicBlur" ppEffectEnable true;                   // enables ppeffect
@@ -14,6 +14,7 @@ While{true} do{
 		((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)       // detects if player is within grenade radius
 	};
 
+<<<<<<< HEAD
 	if  if ((headgear player != "H_CrewHelmetHeli_B") && sleepFucntion) then{
 		"dynamicBlur" ppEffectEnable true;               // enables ppeffect
 		"dynamicBlur" ppEffectAdjust [15];               // intensity of blur
@@ -34,4 +35,28 @@ While{true} do{
 sleepFucntion = {
     sleep 2;
 	true; // returns true
+=======
+    waituntil{
+    ((nearestObject [getPosATL player, "SmokeShellYellow"]) distance player < 10)
+    &&
+    (getPosATL (nearestObject [getPosATL player, "SmokeShellYellow"]) select 2 < 0.5)
+    };
+
+    if (headgear player != "H_CrewHelmetHeli_B") then
+    {
+        "dynamicBlur" ppEffectEnable true;
+        "dynamicBlur" ppEffectAdjust [15]; // intensity of blur
+        "dynamicBlur" ppEffectCommit 5; // time till vision is fully blurred
+        enableCamShake true;     // enables camera shake
+        addCamShake [10, 45, 10];
+        player setFatigue 0;
+        5 fadeSound 0.1;
+		while {(alive player) && ((nearestObject [getPosATL player, "SmokeShellYellow"]) distance player < 10) && (headgear player != "H_CrewHelmetHeli_B")} do
+        {
+            player setDamage (damage player + 0.12); //damage per tick 1=100
+			sleep 5; // Timer damage is assigned "seconds"
+        };
+    };
+    sleep 5;
+>>>>>>> parent of 71d1801... Toxic Gas work
 };
