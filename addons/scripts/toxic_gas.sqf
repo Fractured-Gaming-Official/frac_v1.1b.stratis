@@ -20,10 +20,6 @@ gasDamage = {
     player setDamage (damage player + 0.12);     //damage per tick
 };
 
-if((getpos player, "SmokeShellYellow"]) distance player < 10) then{
-        sleep 2;
-    };
-
 While{true} do{
 
 	call setNoGasStatus;
