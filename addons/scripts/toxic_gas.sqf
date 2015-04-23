@@ -1,7 +1,7 @@
 //	@file Name: teargas.sqf
 //	@file Author: Mokey & whoever made the teargas script!
 //	@file Description: Toxic Gas addon for A3W
-//      @web: http://www.fractured-gaming.com
+//  @web: http://www.fractured-gaming.com
 // ** Special Thanks to Pitoucc
 While{true} do 
 {
@@ -13,8 +13,8 @@ While{true} do
 
     waituntil{
     ((nearestObject [getPosATL player, "SmokeShellYellow"]) distance player < 10)
-    &&
-    (getPosATL (nearestObject [getPosATL player, "SmokeShellYellow"]) select 2 < 0.5)
+    /*&&
+    (getPosATL (nearestObject [getPosATL player, "SmokeShellYellow"]) select 2 < 0.5)*/
     };
 
     if (headgear player != "H_CrewHelmetHeli_B") then
@@ -26,7 +26,7 @@ While{true} do
         addCamShake [10, 45, 10];
         player setFatigue 0;
         5 fadeSound 0.1;
-		while {(alive player) && ((nearestObject [getPosATL player, "SmokeShellYellow"]) distance player < 10) && (headgear player != "H_CrewHelmetHeli_B")} do
+		While {(alive player) && ((nearestObject [getPosATL player, "SmokeShellYellow"]) distance player < 10) && (headgear player != "H_CrewHelmetHeli_B")} do
         {
             player setDamage (damage player + 0.12); //damage per tick 1=100
 			sleep 5; // Timer damage is assigned "seconds"
