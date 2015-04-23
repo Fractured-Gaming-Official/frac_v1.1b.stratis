@@ -11,7 +11,6 @@ While{true} do
     resetCamShake;
     20 fadeSound 1;
 
-
     waituntil{
     ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)
     &&
