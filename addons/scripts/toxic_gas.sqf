@@ -1,3 +1,9 @@
+//	@file Name: teargas.sqf
+//	@file Author: Mokey
+//	@file Description: Toxic Gas addon for A3W
+//	@web: http://www.fractured-gaming.com
+//	@Special Thanks to Pitoucc
+
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0];                   // enables normal vision
@@ -26,6 +32,8 @@ While{true} do{
 	
 	waituntil{
 		((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)       // detects if player is within grenade radius
+		&&
+		(getpos (nearestObject [getPosATL player, "SmokeShellYellow"]) select 2 < 0.5)
 	};
 
 	if (headgear player != "H_CrewHelmetHeli_B") then{
