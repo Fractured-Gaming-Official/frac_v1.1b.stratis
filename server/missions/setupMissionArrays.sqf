@@ -31,13 +31,15 @@ SideMissions =
 	["mission_Outpost", 2],
 	["mission_Truck", 1],
 	["mission_Sniper", 1],
+	["mission_Roadblock", 1],
 	["mission_geoCache", 1.5]
 ];
 
 MoneyMissions =
 [
 	["mission_MoneyShipment", 1],
-	["mission_SunkenTreasure", 1]
+	["mission_SunkenTreasure", 1],
+	["mission_HackLaptop", 1]
 ];
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;

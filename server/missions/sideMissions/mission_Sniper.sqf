@@ -13,6 +13,7 @@ _setupVars =
 {
 	_missionType = "Sniper Overwatch";
 	_locationsArray = MissionSpawnMarkers;
+	_nbUnits = AI_GROUP_MEDIUM;
 };
 
 
@@ -42,10 +43,7 @@ _setupObjects =
 	_obj setPosASL [_missionPos select 0, (_missionPos select 1) + 2, _missionPos select 2];
 	
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup,_missionPos] spawn createcustomGroup3;
-
-	_aiGroup setCombatMode "RED";
-	_aiGroup setBehaviour "COMBAT";
+	[_aiGroup, _missionPos, _nbUnits, 5] call createCustomGroup;
 	
 	_missionHintText = format ["A small group of Snipers are setting up overwatch. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
 };
