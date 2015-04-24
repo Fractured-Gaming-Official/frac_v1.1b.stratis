@@ -5,7 +5,8 @@
 //	@Special Thanks to Pitoucc & Creampie!
 
 
-_gasMask = ["H_CrewHelmetHeli_B"]; // define the gasmasks here
+_gasMask = ["H_CrewHelmetHeli_B"]; // define the gasmasks here 
+
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0];                   // enables normal vision
@@ -20,7 +21,7 @@ setGasStatus = {
 	"dynamicBlur" ppEffectCommit 5;                 	// time till vision is fully blurred
 	enableCamShake true;                             	// enables camera shake
 	addCamShake [10, 45, 10];                        	// sets shakevalues
-	player setFatigue 0;                            	// sets the fatigue to 100%
+//	player setFatigue 1;                            	// sets the fatigue to 100%
 	5 fadeSound 0.1;                                 	// fades the sound to 10% in 5 seconds
 };
 
@@ -33,10 +34,11 @@ gasDamage = {
 While{true} do{
 		call setNoGasStatus;
 	waituntil{
-		((nearestObject [getPosATL player, "SmokeShell"]) distance player < 5)       // detects if player is within grenade radius
-		&&
-		(getPosATL (nearestObject [getPosATL player, "SmokeShell"]) select 2 < 0.5)  // detects if grenade is on ground to avoid gassing yourself while throwing.
-	};
+        _smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
+        _smokeShell distance player < 10
+        &&
+        velocity _smokeShell isEqualTo [ 0, 0, 0 ]
+    };  
 	
 	if !(headgear player in _gasMask) then 
 		 {
