@@ -43,7 +43,7 @@ gasDamage = {
 };
 
 gasLessDamage = {
-   player setDamage (damage player + 0.15);     		//damage per tick
+   player setDamage (damage player + 0.10);     		//damage per tick
    sleep 4;                                 		    // Timer damage is assigned "seconds"
 };
 
