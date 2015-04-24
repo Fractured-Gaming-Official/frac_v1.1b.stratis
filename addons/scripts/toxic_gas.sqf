@@ -33,6 +33,7 @@ setLessGasStatus = {
 	"dynamicBlur" ppEffectCommit 10;                 	// time till vision is fully blurred
 	enableCamShake true;                             	// enables camera shake
 	addCamShake [5, 20, 5];                        		// sets shakevalues
+//	player setFatigue 0.5;                            	// sets the fatigue to 50%
 	5 fadeSound 0.1;                                 	// fades the sound to 10% in 5 seconds
 };
 
