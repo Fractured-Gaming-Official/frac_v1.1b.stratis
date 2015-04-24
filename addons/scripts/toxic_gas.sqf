@@ -6,7 +6,7 @@
 
 
 _gasMask = ["H_CrewHelmetHeli_B","H_CrewHelmetHeli_O","H_CrewHelmetHeli_I"]; // define the gasmasks here\
-_gasMask2 = ["H_ShemagOpen_tan", "H_ShemagOpen_khk", "H_Shemag_olive_hs", "H_Shemag_olive", "H_Shemag_tan", "H_Shemag_khk"]; //lesser effects
+_gasMask2 = ["H_ShemagOpen_tan", "H_ShemagOpen_khk", "H_Shemag_olive_hs", "H_Shemag_olive", "H_Shemag_tan", "H_Shemag_khk"]; 
 
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
@@ -22,18 +22,17 @@ setGasStatus = {
 	"dynamicBlur" ppEffectCommit 5;                 	// time till vision is fully blurred
 	enableCamShake true;                             	// enables camera shake
 	addCamShake [10, 45, 10];                        	// sets shakevalues
-	player setFatigue 0;                            	// sets the fatigue to 100%
+//	player setFatigue 1;                            	// sets the fatigue to 100%
 	5 fadeSound 0.1;                                 	// fades the sound to 10% in 5 seconds
 };
 
 // use less for gasMask2 headgear, since the masks are fabric still apply effects but not as intense
 setLessGasStatus = {
     "dynamicBlur" ppEffectEnable true;              	// enables ppeffect
-    "dynamicBlur" ppEffectAdjust [6];             	  	// intensity of blur
+    "dynamicBlur" ppEffectAdjust [8];             	  	// intensity of blur
 	"dynamicBlur" ppEffectCommit 10;                 	// time till vision is fully blurred
 	enableCamShake true;                             	// enables camera shake
 	addCamShake [5, 20, 5];                        		// sets shakevalues
-	player setFatigue 0.5;                            	// sets the fatigue to 100%
 	5 fadeSound 0.1;                                 	// fades the sound to 10% in 5 seconds
 };
 
