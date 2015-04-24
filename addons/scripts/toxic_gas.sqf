@@ -6,7 +6,7 @@
 
 
 _gasMask = ["H_CrewHelmetHeli_B","H_CrewHelmetHeli_O","H_CrewHelmetHeli_I"]; // define the gasmasks here\
-_gasMask2 = ["H_ShemagOpen_tan", "H_ShemagOpen_khk", "H_Shemag_olive_hs", "H_Shemag_olive", "H_Shemag_tan", "H_Shemag_khk"]; 
+_gasMask2 = ["H_ShemagOpen_khk", "H_ShemagOpen_tan", "H_Shemag_khk", "H_Shemag_olive"]; 
 
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect

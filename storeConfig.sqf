@@ -297,7 +297,11 @@ accessoriesArray = compileFinal str
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
 headArray = compileFinal str
 [
-	["Gas Mask", "H_CrewHelmetHeli_B", 200, "hat"],
+	["Wet Rags (white) [for gas]", "H_ShemagOpen_khk", 250, "hat"],
+	["Wet Rags (Brown) [for gas]", "H_ShemagOpen_tan", 250, "hat"],
+	["Wet Rags (Khaki) [for gas]", "H_Shemag_khk", 250, "hat"],
+	["Wet Rags (Olive) [for gas]", "H_Shemag_olive", 250, "hat"],
+	["Gas Mask", "H_CrewHelmetHeli_B", 1,000 "hat"],
 	["ECH", "H_HelmetB", 50, "hat"],
 	["ECH (Ghillie)", "H_HelmetB_camo", 50, "hat"],
 	["ECH (Light)", "H_HelmetB_light", 50, "hat"],
@@ -388,10 +392,6 @@ headArray = compileFinal str
 	["Cap (SAS)", "H_Cap_khaki_specops_UK", 10, "hat"],
 	["Cap (SF)", "H_Cap_tan_specops_US", 10, "hat"],
 	["Cap (SPECOPS)", "H_Cap_brn_SPECOPS", 10, "hat"],
-	["Shemag (White)", "H_ShemagOpen_khk", 25, "hat"],
-	["Shemag (Brown)", "H_ShemagOpen_tan", 25, "hat"],
-	["Shemag mask (Khaki)", "H_Shemag_khk", 25, "hat"],
-	["Shemag mask (Olive)", "H_Shemag_olive", 25, "hat"],
 	// ["Shemag mask (Tan)", "H_Shemag_tan", 25, "hat"],
 	["Racing Helmet (Black)", "H_RacingHelmet_1_black_F", 25, "hat"],
 	["Racing Helmet (Blue)", "H_RacingHelmet_1_blue_F", 25, "hat"],
