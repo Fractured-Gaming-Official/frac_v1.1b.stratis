@@ -18,7 +18,7 @@ setNoGasStatus={
 
 setGasStatus = { 
     "dynamicBlur" ppEffectEnable true;              	// enables ppeffect
-    "dynamicBlur" ppEffectAdjust [15];             	  	// intensity of blur
+    "dynamicBlur" ppEffectAdjust [12];             	  	// intensity of blur
 	"dynamicBlur" ppEffectCommit 5;                 	// time till vision is fully blurred
 	enableCamShake true;                             	// enables camera shake
 	addCamShake [10, 45, 10];                        	// sets shakevalues
@@ -29,7 +29,7 @@ setGasStatus = {
 // use less for gasMask2 headgear, since the masks are fabric still apply effects but not as intense
 setLessGasStatus = {
     "dynamicBlur" ppEffectEnable true;              	// enables ppeffect
-    "dynamicBlur" ppEffectAdjust [8];             	  	// intensity of blur
+    "dynamicBlur" ppEffectAdjust [6];             	  	// intensity of blur
 	"dynamicBlur" ppEffectCommit 10;                 	// time till vision is fully blurred
 	enableCamShake true;                             	// enables camera shake
 	addCamShake [5, 20, 5];                        		// sets shakevalues
@@ -52,7 +52,7 @@ While{true} do{
 		call setNoGasStatus;
 	waituntil{
         _smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
-        _smokeShell distance player < 10
+        _smokeShell distance player < 5
         &&
         velocity _smokeShell isEqualTo [ 0, 0, 0 ]
 	};

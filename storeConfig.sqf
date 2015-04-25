@@ -151,7 +151,7 @@ staticGunsArray = compileFinal str
 
 throwputArray = compileFinal str
 [
-	["Toxic Gas Grenade", "SmokeShellYellow", 500],
+	["Toxic Gas Grenade", "SmokeShellYellow", 750],
 	["Mini Grenade", "MiniGrenade", 250],
 	["Frag Grenade", "HandGrenade", 400],
 	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 300],
