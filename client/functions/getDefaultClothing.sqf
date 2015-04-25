@@ -76,7 +76,7 @@ switch (_side) do
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_Shemag_olive" };
+		if (_item == "headgear") then { _result = "H_MilCap_mcamo" };
 	};
 	default
 	{
