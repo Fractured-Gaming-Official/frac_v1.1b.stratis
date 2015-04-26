@@ -6,7 +6,7 @@
 
 
 _gasMask = ["H_CrewHelmetHeli_B", "H_CrewHelmetHeli_O", "H_CrewHelmetHeli_I"]; // define the gasmasks here\
-_gasMask2 = ["H_ShemagOpen_khk", "H_ShemagOpen_tan", "H_Shemag_khk", "H_Shemag_olive"]; 
+_gasMask2 = ["H_ShemagOpen_khk", "H_ShemagOpen_tan", "H_Shemag_khk", "H_Shemag_olive"]; // define lesser gasmask here
 
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
@@ -59,7 +59,7 @@ While{true} do{
 	&&
 	!_curPlayerInvulnState
 	};
-		if (headgear player in _gasMask) then 
+        if (headgear player in _gasMask) then 
 		 {
 			call setNoGasStatus;
 		 }
