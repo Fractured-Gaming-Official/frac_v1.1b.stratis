@@ -59,7 +59,7 @@ While{true} do{
 	&&
 	!_curPlayerInvulnState
 	};
-        if (headgear player in _gasMask) then 
+		if (headgear player in _gasMask) then 
 		 {
 			call setNoGasStatus;
 		 }
