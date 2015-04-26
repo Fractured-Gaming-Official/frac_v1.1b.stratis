@@ -1,11 +1,11 @@
 //	@file Name: teargas.sqf
-//	@file Author: Mokey
+//  @file Author: Mokey
 //	@file Description: Toxic Gas addon for A3W
 //	@web: http://www.fractured-gaming.com
 //	@Special Thanks to Pitoucc, CREAMPIE, and Izzer
 
 
-_gasMask = ["H_CrewHelmetHeli_B","H_CrewHelmetHeli_O","H_CrewHelmetHeli_I"]; // define the gasmasks here\
+_gasMask = ["H_CrewHelmetHeli_B", "H_CrewHelmetHeli_O", "H_CrewHelmetHeli_I"]; // define the gasmasks here\
 _gasMask2 = ["H_ShemagOpen_khk", "H_ShemagOpen_tan", "H_Shemag_khk", "H_Shemag_olive"]; 
 
 setNoGasStatus={
@@ -51,10 +51,13 @@ gasLessDamage = {
 While{true} do{
 		call setNoGasStatus;
 	waituntil{
-        _smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
-        _smokeShell distance player < 5
-        &&
-        velocity _smokeShell isEqualTo [ 0, 0, 0 ]
+	_smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
+	_curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
+	_smokeShell distance player < 5
+	&&
+	velocity _smokeShell isEqualTo [ 0, 0, 0 ]
+	&&
+	!_curPlayerInvulnState
 	};
 		if (headgear player in _gasMask) then 
 		 {
