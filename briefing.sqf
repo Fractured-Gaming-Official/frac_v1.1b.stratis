@@ -56,49 +56,6 @@ player createDiaryRecord ["changelog",
 "
 ]];
 
-player createDiaryRecord ["changelog",
-[
-"v1.0b",
-"
-<br/>[Added] Helicopters DLC content
-<br/>[Added] Revamped respawn menu
-<br/>[Added] 250m altitude limit for territory capture
-<br/>[Added] HALO insertion on spawn beacons
-<br/>[Added] New vehicle store textures
-<br/>[Changed] Increased damage done to planes by 50%
-<br/>[Changed] Plane engines shutdown when above 90% damage
-<br/>[Changed] Player names can also be toggled with Home key
-<br/>[Changed] Increased ATGM UAV price
-<br/>[Changed] Increased prices from thermal scopes again
-<br/>[Changed] Minor edits to spawn loadouts
-<br/>[Fixed] FPS drop that began in v0.9h
-<br/>[Fixed] Saved UAVs not being connectable
-<br/>[Fixed] Indies unable to get in UGVs
-<br/>[Fixed] Blinking fog
-<br/>[Fixed] Clipped numbers on scoreboard
-<br/>[Fixed] Minor other optimizations and fixes
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"v1.0",
-"
-<br/>[Added] Custom scoreboard
-<br/>[Added] Mission and store vehicle saving
-<br/>[Added] Player markers on GPS and UAV Terminal
-<br/>[Added] Holster actions
-<br/>[Changed] Full rewrite of side mission system
-<br/>[Changed] Windows key toggles player marker names too
-<br/>[Changed] New loading picture by Gameaholic.se
-<br/>[Fixed] Weapon sometimes disppearing when moving objects
-<br/>[Fixed] More money duping exploits
-<br/>[Fixed] Store menu sizes on smaller aspect ratios
-<br/>[Fixed] Hunger and thirst reset on rejoin
-<br/>[Fixed] Other minor optimizations and fixes
-"
-]];
-
 player createDiaryRecord ["credits",
 [
 "Credits",
@@ -229,7 +186,6 @@ player createDiaryRecord ["admins",
 <br/> * Huskey622
 <br/> * Ghostyy
 <br/> * Blinkky
-<br/> * RazeX
 <br/>
 <br/><font color='#0066FF' size='18'>High Admins</font>
 <br/> * Faded Kitty
