@@ -86,4 +86,5 @@ if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 [] execVM "addons\ToxicGas\ToxicGas.sqf";
 [] execVM "addons\HvT\HvT.sqf";
 [] execVM "addons\laptop\init.sqf";
+[] execVM "addons\laptop\init.sqf";
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";};
