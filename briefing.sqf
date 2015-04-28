@@ -16,6 +16,40 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Changed] Mission weight for diving missions
+<br/>[Fixed] Briefing
+<br/>[Changed] Admin List
+<br/>[Added] Masks for Toxic Gas. Shemag=Lesser effect / Pilot helmet=0 effect.
+<br/>[Added] Toxic Gas (yellow smoke now kills within radius)
+<br/>[Removed] Some Plane and helicopters from stores.
+<br/>[Added] Old disabled missions
+<br/>[Added] Road Block Mission
+<br/>[Added] Sniper Nest Mission
+<br/>[Added] HVT Mission (steals from bank accounts of online players)
+<br/>[Changed] HUD to Status bar
+<br/>[Added] Fast Roping
+<br/>[Added] More UAV_Control (group only)
+<br/>[Added] Mag Repacker
+<br/>[Changed] Texture sizes to lower PBO size
+<br/>[Removed] Original Welcome Screen
+<br/>[Added] Server Credits as welcome message
+<br/>[Added] Sting SMG as starting weapon
+<br/>[Removed] Tron Suits from store
+<br/>[Changed] Starting Backpack
+<br/>[Added] GeoCache Mission 
+<br/>[Added] Teleport Player to me for admins
+<br/>[Added] Teleport to player for admins
+<br/>[Removed] Player Markers from admins 
+<br/>[Added] Air Drops
+<br/>[Fixed] Player Gear Being removed after restart
+<br/>[Updated] Antihack
+<br/>[Changed] Only admins can use global voice
+<br/>[Added] More UAV_Control (group only)
+<br/>[Fixed] Warchest Duping glitch
+<br/>[Changed] Made Clean up More aggressive (10min)
+<br/>[Changed] Weapon Crate Loadouts. TWS, Nightstalker, OP items moved to them.
+<br/>[Added] Vehicles stay locked after restart
+<br/>[Added]1.42 patch update
 <br/>[Added] ATMs
 <br/>[Added] Union Jack vehicle color
 <br/>[Added] Skins hidden in gamefiles for MH-9, Mohawk, and Taru

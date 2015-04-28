@@ -24,7 +24,7 @@ SideMissions =
 [
 	["mission_HostileHelicopter", 1],
 	["mission_MiniConvoy", 1],
-	["mission_SunkenSupplies", 1],
+	["mission_SunkenSupplies", .25],
 	["mission_TownInvasion", 1],
 	["mission_AirWreck", 1],
 	["mission_WepCache", 1],
