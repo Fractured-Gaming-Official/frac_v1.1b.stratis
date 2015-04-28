@@ -179,8 +179,6 @@ player createDiaryRecord ["admins",
 <br/> * Lenymo
 <br/> * Korimer
 <br/> * TexasOutlaw
-<br/> * Twizzy
-<br/> * KalebHawks
 <br/> * BadColonel
 <br/> * KroNiC
 <br/> * Huskey622
@@ -192,7 +190,7 @@ player createDiaryRecord ["admins",
 <br/> * Droid
 <br/> * M4GHOST45
 <br/>
-<br/><font color='002FFF' size='18'>Low Admins</font>
+<br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/> * DODGEPHOENIX
 <br/>
 
