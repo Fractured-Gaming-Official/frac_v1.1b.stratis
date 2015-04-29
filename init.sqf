@@ -78,7 +78,6 @@ if (isServer) then
 [] execVM "addons\proving_ground\init.sqf";
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 [] execVM "addons\JumpMF\init.sqf";
-if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 [] execVM "addons\vactions\functions.sqf";
 [] execVM "addons\scripts\servercredits.sqf";
 [] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
@@ -86,4 +85,6 @@ if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 [] execVM "addons\ToxicGas\ToxicGas.sqf";
 [] execVM "addons\HvT\HvT.sqf";
 [] execVM "addons\laptop\init.sqf";
+[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
+if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";};
