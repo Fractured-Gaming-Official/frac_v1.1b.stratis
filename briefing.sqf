@@ -16,6 +16,15 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Fixed] TeamKiller Glitch
+<br/>[Updated] Mission Boxes
+<br/>[Added] New Airdrop System
+<br/>[Removed] Airdrop 
+<br/>[Added] 3D Markers
+<br/>[Fixed] Corpse ejection from non-destroyed vehicles
+<br/>[Added] Temp fix for negative wallet glitch
+<br/>[Removed] Unused Functions
+<br/>[Added] GID structured to map
 <br/>[Changed] Mission weight for diving missions
 <br/>[Fixed] Briefing
 <br/>[Changed] Admin List
