@@ -4,9 +4,9 @@
 //	@web: http://www.fractured-gaming.com
 //	@Special Thanks to Pitoucc, CREAMPIE, and Izzer
 
+
 _gasMask = ["H_CrewHelmetHeli_B", "H_CrewHelmetHeli_O", "H_CrewHelmetHeli_I"]; // define the gasmasks here\
 _gasMask2 = ["H_ShemagOpen_khk", "H_ShemagOpen_tan", "H_Shemag_khk", "H_Shemag_olive"]; // define lesser gasmask here
-_exemptVehicles = ["B_MRAP_01_hmg_F", "O_MRAP_02_hmg_F", "I_MRAP_03_hmg_F"];
 
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
@@ -44,41 +44,36 @@ gasDamage = {
 
 gasLessDamage = {
    player setDamage (damage player + 0.10);     		//damage per tick
-   sleep 3;                                 		    // Timer damage is assigned "seconds"
+   sleep 4;                                 		    // Timer damage is assigned "seconds"
 };
 
+
 While{true} do{
-
-	call setNoGasStatus;
-
-	waituntil{
-        _smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
-	    _curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
-	    _smokeShell distance player < 5
-	    &&
-	    velocity _smokeShell isEqualTo [ 0, 0, 0 ]
-	    &&
-	    !_curPlayerInvulnState
-	};
-
-    _vehiclename =  vehicleVarName player;
-    hint format ["%1",_vehiclename];
-
-	if ((headgear player in _gasMask) || (vehicleVarName player in _exemptVehicles)) then
-	 {
 		call setNoGasStatus;
-	 }
-	 else
-	 {
-		if (headgear player in _gasMask2) then
-		{
-			call setLessGasStatus;
-			call gasLessDamage;
-		}
-		else
-		{
-			call setGasStatus;
-			call gasDamage;
-		};
-	 };
+	waituntil{
+	_smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
+	_curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
+	_smokeShell distance player < 5
+	&&
+	velocity _smokeShell isEqualTo [ 0, 0, 0 ]
+	&&
+	!_curPlayerInvulnState
+	};
+		if (headgear player in _gasMask) then 
+		 {
+			call setNoGasStatus;
+		 }
+		 else
+		 {
+			if (headgear player in _gasMask2) then
+			{
+				call setLessGasStatus;
+				call gasLessDamage;
+			}
+			else
+			{
+				call setGasStatus;
+				call gasDamage;
+			};
+		 };
 };
