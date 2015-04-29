@@ -11,4 +11,4 @@
 #include "Ruins.sqf"
 #include "Random.sqf"
 #include "Airport.sqf"
-#include "ValleyGunStore"
+#include "ValleyGunStore.sqf"
