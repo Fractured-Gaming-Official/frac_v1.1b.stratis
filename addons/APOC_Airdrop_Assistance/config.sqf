@@ -2,7 +2,7 @@
 //Author: Apoc
 
 //APOC_AA_coolDownTime = 1; //Debug seconds
-APOC_AA_coolDownTime = 1800; //Expressed in sec. 1800 = 30 minutes
+APOC_AA_coolDownTime = 180; //Expressed in sec. 1800 = 30 minutes
 
 APOC_AA_VehOptions =
 [ // ["Menu Text",		ItemClassname,				Price,	"Drop Type"]
