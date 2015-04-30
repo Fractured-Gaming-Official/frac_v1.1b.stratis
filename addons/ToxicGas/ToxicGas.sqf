@@ -52,6 +52,6 @@ While{true} do{
     else
 	{
 		call setGasStatus;
-    	call gasDamage;
+		call gasDamage;
 	};
 };
