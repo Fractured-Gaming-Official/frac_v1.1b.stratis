@@ -78,13 +78,14 @@ if (isServer) then
 [] execVM "addons\proving_ground\init.sqf";
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 [] execVM "addons\JumpMF\init.sqf";
-[] execVM "addons\vactions\functions.sqf";
-[] execVM "addons\scripts\servercredits.sqf";
-[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
-[] execVM "addons\scripts\zlt_fastrope.sqf";
-[] execVM "addons\ToxicGas\ToxicGas.sqf";
-[] execVM "addons\HvT\HvT.sqf";
-[] execVM "addons\laptop\init.sqf";
-[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
-if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
-if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";};
+[] execVM "addons\vactions\functions.sqf"; //Vehicle Actions
+[] execVM "addons\scripts\servercredits.sqf"; //Intro Credits
+[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf"; //Mag Repacker
+[] execVM "addons\scripts\zlt_fastrope.sqf"; //Fast Rope Addon
+[] execVM "addons\ToxicGas\ToxicGas.sqf"; //Toxic Gas Addon
+[] execVM "addons\HvT\HvT.sqf"; //HVT Mission
+[] execVM "addons\laptop\init.sqf"; //Hacker Mission
+[] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
+if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; //Status Bar
+if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures
+[] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision
