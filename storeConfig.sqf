@@ -297,10 +297,6 @@ accessoriesArray = compileFinal str
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
 headArray = compileFinal str
 [
-	["Wet Rags (white) [for gas]", "H_ShemagOpen_khk", 250, "hat"],
-	["Wet Rags (Brown) [for gas]", "H_ShemagOpen_tan", 250, "hat"],
-	["Wet Rags (Khaki) [for gas]", "H_Shemag_khk", 250, "hat"],
-	["Wet Rags (Olive) [for gas]", "H_Shemag_olive", 250, "hat"],
 	["Gas Mask (NATO)", "H_CrewHelmetHeli_B", 1000, "hat"],
 	["Gas Mask (CSAT)", "H_CrewHelmetHeli_O", 1000, "hat"],
 	["Gas Mask (AAF)", "H_CrewHelmetHeli_I", 1000, "hat"],
@@ -373,6 +369,10 @@ headArray = compileFinal str
 	["Booniehat (Tan)", "H_Booniehat_tan", 20, "hat"],
 	["Booniehat (MTP)", "H_Booniehat_mcamo", 20, "hat"],
 	["Booniehat (Digi)", "H_Booniehat_dgtl", 20, "hat"],
+	["Shemag (white) [for gas]", "H_ShemagOpen_khk", 20, "hat"],
+	["Shemag (Brown) [for gas]", "H_ShemagOpen_tan", 20, "hat"],
+	["Shemag (Khaki) [for gas]", "H_Shemag_khk", 20, "hat"],
+	["Shemag (Olive) [for gas]", "H_Shemag_olive", 20, "hat"],
 	["Fedora (Blue)", "H_Hat_blue", 20, "hat"],
 	["Fedora (Brown)", "H_Hat_brown", 20, "hat"],
 	["Fedora (Camo)", "H_Hat_camo", 20, "hat"],
