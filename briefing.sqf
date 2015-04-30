@@ -16,6 +16,7 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/> [Added] Bank Money to Spectator for admins
 <br/> [Changed] Airdrop Prices
 <br/> [Changed] Store Prices
 <br/> [Added] Limited Thermals
