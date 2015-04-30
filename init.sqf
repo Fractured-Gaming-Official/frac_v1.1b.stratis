@@ -86,6 +86,6 @@ if (isServer) then
 [] execVM "addons\HvT\HvT.sqf"; //HVT Mission
 [] execVM "addons\laptop\init.sqf"; //Hacker Mission
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
+[] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision
 if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; //Status Bar
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures
-[] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision
