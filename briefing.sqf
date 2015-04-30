@@ -16,6 +16,9 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/> [Changed] Airdrop Prices
+<br/> [Changed] Store Prices
+<br/> [Added] Limited Thermals
 <br/>[Fixed] TeamKiller Glitch
 <br/>[Updated] Mission Boxes
 <br/>[Added] New Airdrop System
