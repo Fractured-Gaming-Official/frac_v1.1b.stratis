@@ -5151,7 +5151,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=189;
+		items=191;
 		class Item0
 		{
 			position[]={4339.3457,226.45149,3824.2236};
@@ -6605,6 +6605,22 @@ class Mission
 			text="ATM";
 			type="mil_dot";
 			colorName="ColorGreen";
+		};
+		class Item189
+		{
+			position[]={3261.1274,5.0979686,5803.2813};
+			name="VehStore5_landSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=131.644;
+		};
+		class Item190
+		{
+			position[]={3283.6008,5.2710977,5782.9927};
+			name="VehStore5_heliSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=133.828;
 		};
 	};
 };
