@@ -12,3 +12,7 @@
 #include "Random.sqf"
 #include "Airport.sqf"
 #include "ValleyGunStore.sqf"
+#include "CampRogain.sqf"
+#include "RellicHill.sqf"
+#include "Campmaxwell.sqf"
+#include "Jaycove.sqf"
