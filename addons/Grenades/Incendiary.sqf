@@ -53,4 +53,4 @@ While{true} do{
 		&& !_curPlayerInvulnState
     };  	
 		call gasDamage; 
-};
+};*/
