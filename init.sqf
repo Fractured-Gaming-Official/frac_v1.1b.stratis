@@ -77,8 +77,8 @@ if (isServer) then
 [] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "addons\proving_ground\init.sqf";
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";
-[] execVM "addons\JumpMF\init.sqf";
 [] execVM "addons\vactions\functions.sqf"; //Vehicle Actions
+[] execVM "addons\JumpMF\init.sqf";
 [] execVM "addons\scripts\servercredits.sqf"; //Intro Credits
 [] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf"; //Mag Repacker
 [] execVM "addons\scripts\zlt_fastrope.sqf"; //Fast Rope Addon
