@@ -16,6 +16,8 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/> [Added] More Structures
+<br/> [Changed] Stores across map 
 <br/> [Added] Bank Money to Spectator for admins
 <br/> [Changed] Airdrop Prices
 <br/> [Changed] Store Prices
