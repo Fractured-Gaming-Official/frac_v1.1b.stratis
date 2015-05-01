@@ -4,7 +4,7 @@
 //	@web: http://www.fractured-gaming.com
 //  @web: http://www.gamersinc.co.za
 //	@Special Thanks to Pitoucc, CREAMPIE
-
+/*
 
 private ["_damageRadius"];
 
