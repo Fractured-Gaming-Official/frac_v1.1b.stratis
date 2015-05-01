@@ -23,3 +23,34 @@ _object setVariable ["R3F_LOG_disabled", true, true];
 _object enableSimulation false;
 _object allowDamage false;
 
+_pos = [2642.717529,1612.494995,0.000946045];
+_object = createVehicle ["Land_HumanSkeleton_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+_object setVariable ["R3F_LOG_disabled", true, true];
+_object enableSimulation false;
+_object allowDamage false;
+
+_pos = [2619.497314,1605.127441,0.00205994];
+_object = createVehicle ["Land_HumanSkeleton_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+_object setVariable ["R3F_LOG_disabled", true, true];
+_object enableSimulation false;
+_object allowDamage false;
+
+_pos = [2630.0800781,1597.083252,0.000732422];
+_object = createVehicle ["Land_HumanSkull_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+_object setVariable ["R3F_LOG_disabled", true, true];
+_object enableSimulation false;
+_object allowDamage false;
+
+_pos = [2629.262939,1607.784424,0.00109863];
+_object = createVehicle ["Land_HumanSkull_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+_object setVariable ["R3F_LOG_disabled", true, true];
+_object enableSimulation false;
+_object allowDamage false;
