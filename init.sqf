@@ -82,7 +82,7 @@ if (isServer) then
 [] execVM "addons\scripts\servercredits.sqf"; //Intro Credits
 [] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf"; //Mag Repacker
 [] execVM "addons\scripts\zlt_fastrope.sqf"; //Fast Rope Addon
-[] execVM "addons\ToxicGas\ToxicGas.sqf"; //Toxic Gas Addon
+[] execVM "addons\Grenades\initGrenades.sqf"; //Toxic Gas Addon
 [] execVM "addons\HvT\HvT.sqf"; //HVT Mission
 [] execVM "addons\laptop\init.sqf"; //Hacker Mission
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
