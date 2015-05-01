@@ -10,7 +10,7 @@
 // Name, Building Position, Desk Direction (or [Desk Direction, Front Offset]), Excluded Buttons
 storeOwnerConfig = compileFinal str
 [
-	["GenStore1", 2, 195, []],
+	["GenStore1", 2, 260, []],
 	["GenStore2", 4, 310, []],
 	["GenStore4", 1, 80, []],
 	["GenStore5", 1, 115, []],
@@ -18,10 +18,10 @@ storeOwnerConfig = compileFinal str
 	["GenStore7", 2, 15, []],
 	["GenStore8", 0, 1, []],
 
-	["GunStore1", 0, 5, []],
+	["GunStore1", 0, 195, []],
 	["GunStore2", 1, 130, []],
 	["GunStore3", 5, 85, []],
-	["GunStore4", 2, 220, []],
+	["GunStore4", 2, 315, []],
 	["GunStore5", 3, 140, []],
 	["GunStore6", 1, 210, []],
 	["GunStore9", 5, 85, ["Armament"]],
