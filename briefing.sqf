@@ -16,6 +16,10 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Changed] Weather Effects
+<br/>[Changed] Teammate Icon Size
+<br/>[Added] Beacon Detector
+<br/>[Changed] Settings on Airdrop
 <br/>[Added] More Structures
 <br/>[Changed] Stores across map 
 <br/>[Added] Bank Money to Spectator for admins
