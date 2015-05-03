@@ -26,7 +26,7 @@ pvar_PlayerTeamKiller = objNull;
 doCancelAction = false;
 
 //AJ Beacondetector
-+BeaconScanInProgress = false;
+BeaconScanInProgress = false;
 
 //Initialization Variables
 playerCompiledScripts = false;
