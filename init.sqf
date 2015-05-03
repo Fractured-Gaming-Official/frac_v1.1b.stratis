@@ -74,6 +74,10 @@ if (isServer) then
 };
 
 //init 3rd Party Scripts
+// set takedown params and init
+zod_stakedown_showhint = true;
+zod_stakedown_showtext = true;
+[] execVM "addons\takedown\zod_stakedown_init.sqf"; //takedown
 [] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "addons\proving_ground\init.sqf";
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";

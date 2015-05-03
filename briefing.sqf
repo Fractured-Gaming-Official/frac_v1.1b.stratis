@@ -16,6 +16,7 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Added] Beacon Detector
 <br/>[Changed] Weather Effects
 <br/>[Changed] Teammate Icon Size
 <br/>[Added] Beacon Detector
