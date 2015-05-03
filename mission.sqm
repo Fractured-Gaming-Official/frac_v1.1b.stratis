@@ -6608,19 +6608,19 @@ class Mission
 		};
 		class Item189
 		{
-			position[]={3261.1274,5.0979686,5803.2813};
+			position[]={3210.3467,3.554209,5881.4775};
 			name="VehStore5_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
-			angle=131.644;
+			angle=165.46236;
 		};
 		class Item190
 		{
-			position[]={3283.6008,5.2710977,5782.9927};
+			position[]={3230.3279,3.2362788,5861.812};
 			name="VehStore5_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
-			angle=133.828;
+			angle=80.875107;
 		};
 	};
 };
