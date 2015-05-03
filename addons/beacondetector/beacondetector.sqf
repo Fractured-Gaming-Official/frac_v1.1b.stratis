@@ -6,7 +6,7 @@
 // Check if script is already active
 if (BeaconScanInProgress) exitWith
 {
-	["You are already performing another device scan.", 5] call mf_notify_client;
+	["You are already performing another beacon scan.", 5] call mf_notify_client;
 };
 
 _beaconsnear = nearestObjects [player, ["Land_Tentdome_F", "Land_HandyCam_F", "Land_Device_assembled_F"], 100];
@@ -14,7 +14,7 @@ _beaconsnear = nearestObjects [player, ["Land_Tentdome_F", "Land_HandyCam_F", "L
 if ((count _beaconsnear) > 0 ) then 
 	{
 	
-	playsound "beep9"; ["Device found - tracking started.", 5] call mf_notify_client;
+	playsound "beep9"; ["Beacon found - tracking started.", 5] call mf_notify_client;
 	BeaconScanInProgress = true;
 	Beaconscanstop = false;
 	
@@ -27,14 +27,14 @@ if ((count _beaconsnear) > 0 ) then
 		if (Beaconscanstop) exitwith 
 			{
 			playsound "beep9";
-			["Device scan interrupted.", 5] call mf_notify_client;
+			["Beacon scan interrupted.", 5] call mf_notify_client;
 			BeaconScanInProgress = false;
 			};
 		
 		if (count _beaconsnear == 0) exitwith 
 			{
 			playsound "beep9";
-			["No devices in detector range.", 5] call mf_notify_client;
+			["No spawn beacon in range.", 5] call mf_notify_client;
 			BeaconScanInProgress = false;
 			};
 		
@@ -62,7 +62,7 @@ if ((count _beaconsnear) > 0 ) then
 				default {
 						//default case should not happen
 						playsound "beep9";
-						["There was a malfunction of your device detector.", 5] call mf_notify_client;
+						["There was a malfunction of your beacon detector.", 5] call mf_notify_client;
 						};
 				};
 			sleep _beepfreq;
@@ -72,5 +72,5 @@ if ((count _beaconsnear) > 0 ) then
 else
 {
 playsound "beep9";
-["No device in detector range.", 5] call mf_notify_client;
+["No spawn beacon in range.", 5] call mf_notify_client;
 };
