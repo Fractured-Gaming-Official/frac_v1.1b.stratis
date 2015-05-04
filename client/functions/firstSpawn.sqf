@@ -8,14 +8,7 @@
 
 client_firstSpawn = true;
 
-[] execVM "client\functions\welcomeMessage.sqf";
-
-// GoT addition - if this is the first spawn start the loyalty-timer
-if(format["%1",firstspawn] == format["%1","1"]) then 
-{
-	[] spawn fn_rewardLoyalty;
-	firstspawn = 0;
-};
+//[] execVM "client\functions\welcomeMessage.sqf";
 
 player addEventHandler ["Take",
 {
