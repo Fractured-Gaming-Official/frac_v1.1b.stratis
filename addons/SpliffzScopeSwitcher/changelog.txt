@@ -1,0 +1,18 @@
+/*
+*	Spliffz Scope Switcher v0.9c
+*
+*	By Spliffz <theSpliffz@gmail.com>
+*
+*	SpliffzScopeSwitcher\changelog.txt © 2013
+*	
+*	Changelog
+*/
+
+
+[29112013 - 0.9c]
+  - [added] Mod support! Load your weaponpack and change scopes how you like, if they fit offcourse. Thanks for not correctly spelling the classnames of the BIS scopes in your Weapon Mods guys. Some funky comparison stuff going on now to ensure the proper spelled classname is now chosen. - code is all in there, I even left all my debug stuff in. (be advised.. RPT spam will happen if you uncomment)
+  Tested with: R3F Armes, Robert Hammer's M4 pack, FHQ Accessories. Also: try it with HotShotMikes scope fix ;)
+  
+
+
+// EOF
