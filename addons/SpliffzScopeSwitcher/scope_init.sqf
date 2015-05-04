@@ -28,7 +28,7 @@
 *
 */
 
-spliffz_scopeSwitcher_basepath = "SpliffzScopeSwitcher\";
+spliffz_scopeSwitcher_basepath = "addons\SpliffzScopeSwitcher\";
 
 
 if(isDedicated) exitWith {};
