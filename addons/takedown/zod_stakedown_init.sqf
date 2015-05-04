@@ -18,9 +18,9 @@ zod_stakedown_script = {
 
 
 if (zod_stakedown_showtext) then {  
-  _unit addAction [("<img image='client\icons\stab.paa'/> Slit Throat"), "addons\takedown\zod_stakedown.sqf","", 6, true, true, "Salute", "(_target == _this)&&((cursorTarget distance _this)<2)&&(alive cursorTarget)&&(side cursorTarget != side _this)&&(cursorTarget isKindOf 'Man')"];
+  _unit addAction [("<img image='client\icons\stab.paa'/> Slit Throat"), "addons\takedown\zod_stakedown.sqf","", 10, true, true, "Salute", "(_target == _this)&&((cursorTarget distance _this)<2)&&(alive cursorTarget)&&(side cursorTarget != side _this)&&(cursorTarget isKindOf 'Man')"];
 } else{
-  _unit addAction [("<img image='client\icons\stab.paa'/> Slit Throat"), "addons\takedown\zod_stakedown.sqf","", 6, false, true, "Salute", "(_target == _this)&&((cursorTarget distance _this)<2)&&(alive cursorTarget)&&(side cursorTarget != side _this)&&(cursorTarget isKindOf 'Man')"];
+  _unit addAction [("<img image='client\icons\stab.paa'/> Slit Throat"), "addons\takedown\zod_stakedown.sqf","", 10, false, true, "Salute", "(_target == _this)&&((cursorTarget distance _this)<2)&&(alive cursorTarget)&&(side cursorTarget != side _this)&&(cursorTarget isKindOf 'Man')"];
 }
 
 
