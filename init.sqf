@@ -91,6 +91,6 @@ zod_stakedown_showtext = true;
 [] execVM "addons\laptop\init.sqf"; //Hacker Mission
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
 [] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision
-[] execVM "addons\SpliffzScopeSwitcher\scope_init.sqf"; //Spliffs Scope Switcher
+null = [] execVM "addons\SpliffzScopeSwitcher\scope_init.sqf"; //Spliffs Scope Switcher
 if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; //Status Bar
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures
