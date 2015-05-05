@@ -10,7 +10,6 @@ _vehicles = _this;
 _values = "";
 
 {
-	_id = 0;
 	if (typeName _x == "OBJECT") then
 	{
 		_id = _x getVariable "A3W_vehicleID";
