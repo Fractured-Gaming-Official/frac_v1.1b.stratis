@@ -56,6 +56,7 @@ spawnActionHandle = (_this select 1) spawn
 	if (isNil "client_firstSpawn") then
 	{
 		execVM "client\functions\firstSpawn.sqf";
+		[] execVM "addons\gear\gearCheck.sqf"; //Cael817, Add extra gear at respawn.
 	};
 };
 
