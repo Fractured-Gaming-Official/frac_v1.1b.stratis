@@ -6,7 +6,7 @@ _player = _this;
 
 if (((getPlayerUID _player) in call gearLevel1)) then {
 
-_player setVariable ["cmoney", (_player getVariable "cmoney") + 1, true];
+_player setVariable ["cmoney", (_player getVariable "cmoney") + 100, true];
 
 {_player removeWeapon _x} forEach weapons _player;
 {_player removeMagazine _x} forEach magazines _player;
@@ -22,11 +22,11 @@ _player addBackpack "B_Carryall_oli"; //BackPack
 //_player addVest ""; //Vest
 _player linkItem "NVGoggles"; //Nightvision, "NVGoggles"
 _player linkItem "ItemGPS"; //GPS, "ItemGPS"
-//_player addWeapon "Binocular"; //Binoculars
+_player addWeapon "Binocular"; //Binoculars
 _player addMagazines ["HandGrenade", 2]; //Grenades
 _player addItem "FirstAidKit"; //Any other stuff that goes in inventory if there is space
-//_player addItem ""; //Any other stuff that goes in inventory if there is space
-//_player addItem ""; //Any other stuff that goes in inventory if there is space
+//_player addItem "Medikit"; //Any other stuff that goes in inventory if there is space
+//_player addItem "ToolKit"; //Any other stuff that goes in inventory if there is space
 //_player addItem ""; //Any other stuff that goes in inventory if there is space
 //_player addItem ""; //Any other stuff that goes in inventory if there is space
 //_player addGoggles ""; //Glasses or masks. Overwrites, add as item if you want it a an extra item
@@ -52,20 +52,30 @@ switch (true) do
 {
 	case (["_medic_", typeOf _player] call fn_findString != -1):
 	{
-		_player addItem "";
+		_player addItem "ToolKit";
+		_player addItem "MediKit";
+		_player removeItem "";
 	};
 	case (["_engineer_", typeOf _player] call fn_findString != -1):
 	{
-		_player addItem "";
+		_player addItem "ToolKit";
+		_player addItem "MediKit";
+		_player removeItem "";
 	};
 	case (["_sniper_", typeOf _player] call fn_findString != -1):
 	{
-		_player addItem "";
+		_player addItem "ToolKit";
+		_player addItem "MediKit";
+		_player removeItem "";
 	};
 		case (["_diver_", typeOf _player] call fn_findString != -1):
 	{
-		_player addItem "";
+		_player addItem "ToolKit";
+		_player addItem "MediKit";
+		_player removeItem "";
+		_player addVest "V_RebreatherIA";
 	};
 };
 
 };
+
