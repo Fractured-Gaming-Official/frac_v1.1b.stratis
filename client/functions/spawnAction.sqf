@@ -31,6 +31,8 @@ spawnActionHandle = (_this select 1) spawn
 		// Deal with money here
 		_baseMoney = ["A3W_startingMoney", 100] call getPublicVar;
 		player setVariable ["cmoney", _baseMoney, true];
+		
+		[] execVM "addons\gear\gearCheck.sqf"; //Cael817, Add extra gear at respawn.
 
 		[MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add;
 		[MF_ITEMS_WATER, 1] call mf_inventory_add;
