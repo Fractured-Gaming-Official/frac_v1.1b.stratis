@@ -6,7 +6,7 @@ _player = _this;
 
 if (((getPlayerUID _player) in call gearLevel1)) then {
 
-_player setVariable ["cmoney", (_player getVariable "cmoney") + 5000, true];
+_player setVariable ["cmoney", (_player getVariable "cmoney") + 1, true];
 
 {_player removeWeapon _x} forEach weapons _player;
 {_player removeMagazine _x} forEach magazines _player;
@@ -21,9 +21,9 @@ _player addBackpack "B_Carryall_oli"; //BackPack
 //_player addUniform ""; //Uniform (must be supported by side)
 //_player addVest ""; //Vest
 //_player linkItem "NVGoggles"; //Nightvision, "NVGoggles"
-//_player linkItem "ItemGPS"; //GPS, "ItemGPS"
+_player linkItem "ItemGPS"; //GPS, "ItemGPS"
 //_player addWeapon "Binocular"; //Binoculars
-//_player addMagazines ["HandGrenade", 2]; //Grenades
+_player addMagazines ["HandGrenade", 2]; //Grenades
 //_player addItem "FirstAidKit"; //Any other stuff that goes in inventory if there is space
 //_player addItem ""; //Any other stuff that goes in inventory if there is space
 //_player addItem ""; //Any other stuff that goes in inventory if there is space
