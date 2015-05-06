@@ -16,7 +16,7 @@
 // gearLevel1
 gearLevel1 = 
 [
-	// Put player UIDs here
+	"76561198008596823" //Mokey
 ];
 
 // gearLevel2
