@@ -90,7 +90,6 @@ zod_stakedown_showtext = true;
 [] execVM "addons\HvT\HvT.sqf"; //HVT Mission
 [] execVM "addons\laptop\init.sqf"; //Hacker Mission
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
-[] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision
 [] execVM "addons\gear\default_gear.sqf"; //Gear Loadouts
 if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; //Status Bar
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures
