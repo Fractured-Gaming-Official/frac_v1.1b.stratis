@@ -16,6 +16,10 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Changed] Money Mission Rewards
+<br/>[Fix] for exploding vehicles
+<br/>[Removed] Thermal limit on scoped and Laser Des
+<br/>[Fixed] UAV control Restricted to group
 <br/>[Added] Beacon Detector
 <br/>[Changed] Weather Effects
 <br/>[Changed] Teammate Icon Size
