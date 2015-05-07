@@ -203,8 +203,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 1",
 "
-<br/><font size='10'> Gear Level 1 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 1</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $100
 <br/> An Olive Carryall
 <br/> A GPS
@@ -219,8 +219,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 2",
 "
-<br/><font size='10'> Gear Level 2 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 2</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $200
 <br/> An Olive Carryall
 <br/> A GPS
@@ -237,8 +237,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 3",
 "
-<br/><font size='10'> Gear Level 3 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 3</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $300
 <br/> An Olive Carryall
 <br/> A GPS
@@ -256,8 +256,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 4",
 "
-<br/><font size='10'> Gear Level 4 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 4</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $400
 <br/> An Olive Carryall
 <br/> A GPS
@@ -276,8 +276,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 5",
 "
-<br/><font size='10'> Gear Level 5 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 5</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $500
 <br/> An Olive Carryall
 <br/> A GPS
@@ -296,8 +296,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 6",
 "
-<br/><font size='10'> Gear Level 6 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 6</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $600
 <br/> An Olive Carryall
 <br/> An Olive Tactical Vest
@@ -318,8 +318,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 7",
 "
-<br/><font size='10'> Gear Level 7 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 7</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $700
 <br/> An Olive Carryall
 <br/> An Olive Tactical Vest
@@ -340,8 +340,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 8",
 "
-<br/><font size='10'> Gear Level 8 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 8</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $800
 <br/> An Olive Carryall
 <br/> An Olive Tactical Vest
@@ -362,8 +362,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 9",
 "
-<br/><font size='10'> Gear Level 9 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 9</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $1000
 <br/> An Olive Carryall
 <br/> A Plate Carrier GL Rig
@@ -384,8 +384,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 10",
 "
-<br/><font size='10'> Gear Level 10 </font>
-<br/><font size='6'> List of Perks you get at this level ~: </font>
+<br/><font size='10'>Gear Level 10</font>
+<br/><font size='6'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $1000
 <br/> An Olive Carryall
 <br/> An Olive Tactical Vest
