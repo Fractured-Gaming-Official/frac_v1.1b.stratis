@@ -90,6 +90,31 @@ player createDiaryRecord ["changelog",
 "
 ]];
 
+player createDiaryRecord ["changelog",
+[
+"v1.0c",
+"
+<br/>[Added] MySQL support via extDB extension
+<br/>[Added] Town Invasion mission
+<br/>[Added] Chain-reaction player kill tracking
+<br/>[Added] Force Save action for purchased and captured vehicles
+<br/>[Added] Autokick players previously detected by antihack
+<br/>[Added] Entity caching script for headless client
+<br/>[Added] Tron suits to general store
+<br/>[Added] Red lines on map for AIs wandering away from missions
+<br/>[Changed] Mission timeout gets extended on AI kill
+<br/>[Changed] Transport Heli mission Taru variant to Bench
+<br/>[Changed] Spawn beacon item drop to sleeping bag
+<br/>[Fixed] More money exploits
+<br/>[Fixed] Scoreboard ordering
+<br/>[Fixed] Vehicle repair & refuel sometimes not working
+<br/>[Fixed] Injured players' corpses being deleted on disconnect
+<br/>[Fixed] Static weapon disassembly prevention
+<br/>[Fixed] Excess bought rockets ending up in uniform or vest
+<br/>[Fixed] Various other minor bugfixes and optimizations
+"
+]];
+
 player createDiaryRecord ["credits",
 [
 "Credits",
