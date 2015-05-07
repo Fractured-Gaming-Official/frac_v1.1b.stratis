@@ -38,7 +38,7 @@ _player addhandGunItem "optic_MRD"; //Handgun Attachments
 //_player addhandGunItem ""; //Handgun Attachments
 
 _player addMagazines ["30Rnd_556x45_Stanag", 2]; //Add primary weapon magazines first so one gets loaded
-_player addWeapon "TRG-20 Carbine"; //Primary Weapon
+_player addWeapon "arifle_TRG20_F"; //Primary Weapon
 _player addPrimaryWeaponItem "optic_Holosight_smg"; //Primary Weapon Attachments
 _player addPrimaryWeaponItem "muzzle_snds_M"; //Primary Weapon Attachments
 //_player addPrimaryWeaponItem ""; //Primary Weapon Attachments
