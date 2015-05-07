@@ -350,7 +350,7 @@ player createDiaryRecord ["gearlevel",
 <br/> An Extra Grenade
 <br/> A First Aid Kit
 <br/> A pair of Red Goggles
-<br/> An ECH Helmet
+<br/> An ECH Light Helmet
 <br/> An MX Carbine with 2 Mags and a Hologsight instead of a Sting
 <br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
 <br/> An RPG-42 Alamut with 1 Rocket
@@ -388,13 +388,13 @@ player createDiaryRecord ["gearlevel",
 <br/><font size='6'> List of Perks you get at this level ~: </font>
 <br/> Extra Starting Money: $1000
 <br/> An Olive Carryall
-<br/> A Plate Carrier GL Rig
+<br/> An Olive Tactical Vest
 <br/> A GPS
 <br/> A pair of Binoculars
 <br/> An Extra Grenade
 <br/> A First Aid Kit
 <br/> A pair of Red Goggles
-<br/> An ECH Helmet
+<br/> An ECH Light Helmet
 <br/> A GM6 Lynx with 4 Standard Mags and an LRPS instead of a Sting
 <br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
 <br/> An RPG-42 Alamut with 1 Rocket
