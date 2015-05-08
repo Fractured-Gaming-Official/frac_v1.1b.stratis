@@ -179,11 +179,11 @@ player createDiaryRecord ["infos",
 <br/><font size='10'>Teamspeak and Website</font>
 <br/>Teamspeak 3 IP: ts.fractured-gaming.com
 <br/>Website: http://www.fractured-gaming.com
-<br/> If you would like to join please Register and Sign up on our website. Use the "Join Fractured" Link.
-<br/> If you are on our website, use the "Join TS" Link to join Teamspeak straight from your browser!
+<br/> If you would like to join please Register and Sign up on our website, use the Join Fractured Link.
+<br/> If you are on our website, use the Join TS Link to join Teamspeak straight from your browser!
 <br/>
 <br/><font size='10'>Ban Appeal</font>
-<br/> If you would like to appeal a ban please go to our website and use the "Ban Appeal" Link at the top of our website.
+<br/> If you would like to appeal a ban please go to our website and use the Ban Appeal Link at the top of our website.
 "
 ]];
 
