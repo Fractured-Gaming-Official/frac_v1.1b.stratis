@@ -176,13 +176,15 @@ player createDiaryRecord ["infos",
 [
 "About Fractured",
 "
-<br/><font size='10'>Teamspeak and Website</font>
+<br/><font size='16'>Teamspeak and Website</font>
 <br/>Teamspeak 3 IP: ts.fractured-gaming.com
+<br/>
 <br/>Website: http://www.fractured-gaming.com
+<br/>
 <br/> If you would like to join please Register and Sign up on our website, use the Join Fractured Link.
 <br/> If you are on our website, use the Join TS Link to join Teamspeak straight from your browser!
 <br/>
-<br/><font size='10'>Ban Appeal</font>
+<br/><font size='16'>Ban Appeal</font>
 <br/> If you would like to appeal a ban please go to our website and use the Ban Appeal Link at the top of our website.
 "
 ]];
@@ -196,6 +198,30 @@ player createDiaryRecord ["gearlevel",
 <br/> Every time you reach $1million, you will advance up a Gear Level. Each Gear Level gives you perks.
 <br/> These perks will increase per level and you will also gain an extra $100 starting cash per level.
 <br/> There are 10 Levels in total.
+<br/> When you get to Level 8 you can either pick to upgrade to Level 9 or 10.
+<br/> These are the Max Levels.
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 10",
+"
+<br/><font size='16'>Gear Level 10</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> An Olive Carryall
+<br/> An Olive Tactical Vest
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> An ECH Light Helmet
+<br/> A GM6 Lynx with 4 Standard Mags and an LRPS instead of a Sting
+<br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
 "
 ]];
 
@@ -203,8 +229,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 1",
 "
-<br/><font size='10'>Gear Level 1</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 1</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $100
 <br/> An Olive Carryall
 <br/> A GPS
@@ -219,8 +245,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 2",
 "
-<br/><font size='10'>Gear Level 2</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 2</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $200
 <br/> An Olive Carryall
 <br/> A GPS
@@ -237,8 +263,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 3",
 "
-<br/><font size='10'>Gear Level 3</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 3</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $300
 <br/> An Olive Carryall
 <br/> A GPS
@@ -256,8 +282,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 4",
 "
-<br/><font size='10'>Gear Level 4</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 4</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $400
 <br/> An Olive Carryall
 <br/> A GPS
@@ -276,8 +302,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 5",
 "
-<br/><font size='10'>Gear Level 5</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 5</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $500
 <br/> An Olive Carryall
 <br/> A GPS
@@ -296,8 +322,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 6",
 "
-<br/><font size='10'>Gear Level 6</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 6</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $600
 <br/> An Olive Carryall
 <br/> An Olive Tactical Vest
@@ -318,8 +344,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 7",
 "
-<br/><font size='10'>Gear Level 7</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 7</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $700
 <br/> An Olive Carryall
 <br/> An Olive Tactical Vest
@@ -340,8 +366,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 8",
 "
-<br/><font size='10'>Gear Level 8</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 8</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $800
 <br/> An Olive Carryall
 <br/> An Olive Tactical Vest
@@ -362,8 +388,8 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Level 9",
 "
-<br/><font size='10'>Gear Level 9</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
+<br/><font size='16'>Gear Level 9</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
 <br/> Extra Starting Money: $1000
 <br/> An Olive Carryall
 <br/> A Plate Carrier GL Rig
@@ -380,27 +406,7 @@ player createDiaryRecord ["gearlevel",
 "
 ]];
 
-player createDiaryRecord ["gearlevel",
-[
-"Gear Level 10",
-"
-<br/><font size='10'>Gear Level 10</font>
-<br/><font size='6'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $1000
-<br/> An Olive Carryall
-<br/> An Olive Tactical Vest
-<br/> A GPS
-<br/> A pair of Binoculars
-<br/> An Extra Grenade
-<br/> A First Aid Kit
-<br/> A pair of Red Goggles
-<br/> An ECH Light Helmet
-<br/> A GM6 Lynx with 4 Standard Mags and an LRPS instead of a Sting
-<br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
-<br/> An RPG-42 Alamut with 1 Rocket
-<br/> You also get extra mags for the 4-five .45
-"
-]];
+
 
 
 player createDiaryRecord ["admins",
