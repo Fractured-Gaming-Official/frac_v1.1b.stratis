@@ -24,12 +24,7 @@ switch (_type) do {
 _selectionName 	= (_selectionArray select _selectionNumber) select 0;
 _selectionClass = (_selectionArray select _selectionNumber) select 1;
 _price 			= (_selectionArray select _selectionNumber) select 2;
-
-_playerMoney = _player getVariable ["bmoney", 0];
-if (_price > _playerMoney) exitWith{};
-
-_playermoney = _player setVariable ["bmoney", _playermoney - _price, true];
-[_player] spawn fn_savePlayerData;
+// Moved money removal until after the drop point.
 
 //OK, now the real fun
 
@@ -94,45 +89,60 @@ _object = switch (_type) do {
 		};
 		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
 		_object
-	};	
+	};
 	case "supply":
 	{
-	_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
-	_object = createVehicle ["B_supplyCrate_F", _objectSpawnPos, [], 0, "None"];
-	_object setVariable ["A3W_purchasedStoreObject", true];
-	[_object, _selectionClass] call fn_refillbox;
-	_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
-	_object 
+		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
+		_object = createVehicle ["B_supplyCrate_F", _objectSpawnPos, [], 0, "None"];
+		_object setVariable ["A3W_purchasedStoreObject", true];
+		[_object, _selectionClass] call fn_refillbox;
+		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
+		_object
 	};
 	case "picnic":  //Beware of Bears!
 	{
-	_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
-	_object = createVehicle ["B_supplyCrate_F", _objectSpawnPos, [], 0, "None"];
-	diag_log format ["Apoc's Airdrop Assistance - Object Spawned at %1", position _object];
-	_object setVariable ["A3W_purchasedStoreObject", true];
-	_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
-	_object
-	}
+		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
+		_object = createVehicle ["B_supplyCrate_F", _objectSpawnPos, [], 0, "None"];
+		diag_log format ["Apoc's Airdrop Assistance - Object Spawned at %1", position _object];
+		_object setVariable ["A3W_purchasedStoreObject", true];
+		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
+		_object
+	};
+	default {
+		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
+		_object = createVehicle ["B_supplyCrate_F", _objectSpawnPos, [], 0, "None"];
+		_object setVariable ["A3W_purchasedStoreObject", true];
+		[_object, "mission_USSpecial"] call fn_refillbox;
+		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
+		_object
+		};
 };
 _object allowDamage false; //Let's not let these things get destroyed on the way there, shall we?
 
 diag_log format ["Apoc's Airdrop Assistance - Object at %1", position _object];  //A little log love to confirm the location of this new creature
 
-//Wait until the heli is close to the drop spot, then move on to dropping the cargo and all of that jazz
+//Wait until the heli completes the drop waypoint, then move on to dropping the cargo and all of that jazz
 
-// fix the drop distance between vehicles and ammo boxes - Creampie
-if (_type == "vehicle") then {
-	WaitUntil{
-		if ((([_heli, _dropSpot] call BIS_fnc_distance2D)<125)||(currentWaypoint _grp == 2)) exitWith{true};
-		false
-	};
-} else {
-	WaitUntil{
-		if((([_heli, _dropSpot] call BIS_fnc_distance2D)<50)||(currentWaypoint _grp == 2)) exitWith {true};
-		false 
-	};
+While {true} do {
+	sleep 0.1;
+	if (currentWaypoint _grp >= 2) exitWith {};  //Completed Drop Waypoint
 };
+// Let's handle the money after this tricky spot - This way players won't be charged for non-delivered goods!
+_playerMoney = _player getVariable ["bmoney", 0];
+		if (_price > _playerMoney) exitWith{
+			{ _x setDamage 1; } forEach units _grp;
+			_heli setDamage 1;
+			_object setDamage 1;
+			diag_log format ["Apoc's Airdrop Assistance - Player Account Too Low, Drop Aborted. %1. Bank:$%2. Cost: $%3", _player, _playerMoney, _price];  //A little log love to mark the Scallywag who tried to cheat the valiant pilot
+			};  //Thought you'd be tricky and not pay, eh?
 
+//Server Style Money handling
+pvar_processTransaction = ["airdrop", _player, _price];
+publicVariableServer "pvar_processTransaction";
+
+
+//  Now on to the other fun stuff:
+diag_log format ["Apoc's Airdrop Assistance - Object at %1, Detach Up Next", position _object];  //A little log love to confirm the location of this new creature
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;
 _heli fire "CMFlareLauncher";
@@ -174,12 +184,12 @@ WaitUntil {(((position _object) select 2) < (_flyHeight-20))};
 		_objectPosDrop = position _object;
 		_para = createVehicle ["B_Parachute_02_F", _objectPosDrop, [], 0, ""];
 		_object attachTo [_para,[0,0,-1.5]];
-		
+
 		_smoke1= "SmokeShellGreen" createVehicle getPos _object;
 		_smoke1 attachto [_object,[0,0,-0.5]];
 		_flare1= "F_40mm_Green" createVehicle getPos _object;
 		_flare1 attachto [_object,[0,0,-0.5]];
-		
+
 		if (_type == "vehicle") then {_object allowDamage true;}; //Turn on damage for vehicles once they're in the 'chute.  Could move this until they hit the ground.  Admins choice.
 
 WaitUntil {((((position _object) select 2) < 1) || (isNil "_para"))};
@@ -191,7 +201,7 @@ WaitUntil {((((position _object) select 2) < 1) || (isNil "_para"))};
 		sleep 2;
 		if (_type == "picnic") then {  //So let's go ahead and delete that ugly ammo pallet and create a wonderful picnic basket/barrel
 			_objectLandPos = position _object;
-			deleteVehicle _object;	
+			deleteVehicle _object;
 			_object2 = switch (_selectionClass) do {
 				case "Land_Sacks_goods_F": {
 					_object2 = createVehicle [_selectionClass, _objectLandPos, [], 0, "None"];
@@ -202,6 +212,6 @@ WaitUntil {((((position _object) select 2) < 1) || (isNil "_para"))};
 					_object2 = createVehicle [_selectionClass, _objectLandPos, [], 0, "None"];
 					_object2 setVariable ["water",50, true];
 					_object2
-				};		
+				};
 			};
 		};
