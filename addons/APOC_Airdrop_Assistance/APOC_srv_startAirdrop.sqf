@@ -137,11 +137,13 @@ _playerMoney = _player getVariable ["bmoney", 0];
 			};  //Thought you'd be tricky and not pay, eh?
 
 //Server Style Money handling
-pvar_processTransaction = ["airdrop", _player, _price];
-publicVariableServer "pvar_processTransaction";
+_balance = _player getVariable ["bmoney", 0];
+_newBalance = _balance - _price;
+_player setVariable ["bmoney", _newBalance, true];
+[getPlayerUID _player, [["BankMoney", _newBalance]], []] call fn_saveAccount;
 
+//  Now on to the fun stuff:
 
-//  Now on to the other fun stuff:
 diag_log format ["Apoc's Airdrop Assistance - Object at %1, Detach Up Next", position _object];  //A little log love to confirm the location of this new creature
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;
