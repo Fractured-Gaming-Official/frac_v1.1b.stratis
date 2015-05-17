@@ -424,13 +424,16 @@ player createDiaryRecord ["admins",
 <br/> * Huskey622
 <br/> * Ghostyy
 <br/> * Blinkky
-<br/>
-<br/><font color='#0066FF' size='18'>High Admins</font>
 <br/> * Droid
 <br/> * M4GHOST45
 <br/>
+<br/><font color='#0066FF' size='18'>High Admins</font>
+<br/>
+<br/> Open For Applications
+<br/>
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
+<br/> Open For Applications
 
 "
 ]];
