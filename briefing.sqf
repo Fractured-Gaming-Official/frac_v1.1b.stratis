@@ -429,7 +429,7 @@ player createDiaryRecord ["admins",
 <br/>
 <br/><font color='#0066FF' size='18'>High Admins</font>
 <br/>
-<br/> Open For Applications
+<br/> * Gnomes
 <br/>
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
