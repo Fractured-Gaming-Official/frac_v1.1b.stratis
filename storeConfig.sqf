@@ -221,7 +221,7 @@ ammoArray = compileFinal str
 	["40mm Smoke Round (Purple)", "1Rnd_SmokePurple_Grenade_shell", 50],
 	["40mm Smoke Round (Blue)", "1Rnd_SmokeBlue_Grenade_shell", 50],
 	["40mm Smoke Round (Green)", "1Rnd_SmokeGreen_Grenade_shell", 50],
-	["40mm Smoke Round (Yellow)", "1Rnd_SmokeYellow_Grenade_shell", 50],
+	["40mm Toxic Gas Grenade", "1Rnd_SmokeYellow_Grenade_shell", 50],
 	["40mm Smoke Round (Orange)", "1Rnd_SmokeOrange_Grenade_shell", 50],
 	["40mm Smoke Round (Red)", "1Rnd_SmokeRed_Grenade_shell", 50],
 	["40mm 3Rnd Smokes (White)", "3Rnd_Smoke_Grenade_shell", 100],
