@@ -163,7 +163,7 @@ throwputArray = compileFinal str
 	["Explosive Charge", "DemoCharge_Remote_Mag", 600],
 	["Explosive Satchel", "SatchelCharge_Remote_Mag", 700],
 	["Smoke Grenade (White)", "SmokeShell", 50],
-	["Smoke Grenade (Green)", "SmokeShellGreen", 750],
+	["Smoke Grenade (Green)", "SmokeShellGreen", 50],
 	["Smoke Grenade (Purple)", "SmokeShellPurple", 50],
 	["Smoke Grenade (Blue)", "SmokeShellBlue", 50],
 	["Smoke Grenade (Orange)", "SmokeShellOrange", 50],
