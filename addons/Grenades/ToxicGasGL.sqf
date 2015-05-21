@@ -19,7 +19,7 @@ setNoGasStatus={
 setGasStatus = { 
     "dynamicBlur" ppEffectEnable true;              	// enables ppeffect
     "dynamicBlur" ppEffectAdjust [6];             	  	// intensity of blur
-	"dynamicBlur" ppEffectCommit 8;                 	// time till vision is fully blurred
+	"dynamicBlur" ppEffectCommit 12;                 	// time till vision is fully blurred
 	enableCamShake true;                             	// enables camera shake
 	addCamShake [10, 45, 10];                        	// sets shakevalues
 //	player setFatigue 1;                            	// sets the fatigue to 100%
