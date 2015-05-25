@@ -17,6 +17,9 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Changed] Decreased Time for Airdrops
+<br/>[Fixed] Wrong Ammo type in Gear Level
+<br/>[Added] GL Toxic Gas Grenades
 <br/>[Changed] Money Mission Rewards
 <br/>[Fix] for exploding vehicles
 <br/>[Removed] Thermal limit on scoped and Laser Des
