@@ -32,7 +32,7 @@ _player addItem "FirstAidKit"; //Any other stuff that goes in inventory if there
 _player addGoggles "G_Sport_Red"; //Glasses or masks. Overwrites, add as item if you want it a an extra item
 _player addHeadgear "H_HelmetB_light"; //Hat or helmet. Overwrites, add as item if you want it a an extra item
 
-_player addMagazines ["9Rnd_45ACP_Mag", 4]; //Add handgun magazines first so one gets loaded
+_player addMagazines ["11Rnd_45ACP_Mag", 4]; //Add handgun magazines first so one gets loaded
 _player addWeapon "hgun_Pistol_heavy_01_F"; //Handgun
 //_player addhandGunItem ""; //Handgun Attachments
 //_player addhandGunItem ""; //Handgun Attachments
