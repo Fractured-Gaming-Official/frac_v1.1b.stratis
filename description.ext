@@ -11,6 +11,7 @@ corpseLimit = 15;
 corpseRemovalMinTime = 4*60;
 corpseRemovalMaxTime = 8*60;
 wreckManagerMode = 1;
+wreckLimit = 15;
 wreckRemovalMinTime = 4*60;
 wreckRemovalMaxTime = 8*60;
 enableDebugConsole = 1;
