@@ -18,7 +18,7 @@ APOC_AA_SupOptions =
 ["Assault Rifles", 		"mission_USSpecial", 			4000, "supply"],
 ["DLC Rifles", 			"airdrop_DLC_Rifles", 			4500, "supply"],
 ["DLC LMGs", 			"airdrop_DLC_LMGs", 			5000, "supply"],
-["Sniper Rifles", 		"airdrop_Snipers", 				10000, "supply"],
+["Sniper Rifles", 		"airdrop_Snipers", 				15000, "supply"],
 ["Launchers", 			"mission_USLaunchers", 			6000, "supply"],
 
 //"Menu Text",			"Crate Type", 			"Cost", "drop type"
