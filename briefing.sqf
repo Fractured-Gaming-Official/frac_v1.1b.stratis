@@ -17,6 +17,12 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Added] Drugs to Town Invasion
+<br/>[Added] Drugs to RoadBlocks
+<br/>[Added] Drugs to Stores
+<br/>[Added] HvD(High Value Drugs)
+<br/>[Added] DrugRunner Mission
+<br/>[Added] Drugs
 <br/>[Changed] Decreased Time for Airdrops
 <br/>[Fixed] Wrong Ammo type in Gear Level
 <br/>[Added] GL Toxic Gas Grenades
