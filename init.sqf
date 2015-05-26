@@ -88,7 +88,8 @@ zod_stakedown_showtext = true;
 [] execVM "addons\scripts\zlt_fastrope.sqf"; //Fast Rope Addon
 [] execVM "addons\Grenades\ToxicGas.sqf"; //Toxic Gas Addon
 [] execVM "addons\Grenades\ToxicGasGL.sqf"; //Toxic Gas Addon
-[] execVM "addons\HvT\HvT.sqf"; //HVT Mission
+[] execVM "addons\HvT\HvT.sqf"; // High Value Target
+[] execVM "addons\HvT\HvD.sqf"; 		
 [] execVM "addons\laptop\init.sqf"; //Hacker Mission
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
 [] execVM "addons\gear\default_gear.sqf"; //Gear Loadouts
