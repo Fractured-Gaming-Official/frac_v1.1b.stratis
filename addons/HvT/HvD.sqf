@@ -14,7 +14,7 @@ for "_i" from 0 to 1 step 0 do
 	_cocInv = mf_inventory select 12; _coc = _cocInv select 1;
 	_herInv = mf_inventory select 13; _her = _herInv select 1;
 	
-	if (_lsd > 4 || _mar > 4 || _coc > 4 || _her > 4) then
+	if (_lsd > 4 || _mar > 4 || _coc > 3 || _her > 3) then
 		{
 			_title  = "<t color='#ff0000' size='1.2' align='center'>Drug runner! </t><br />";
 			_name = format ["%1<br /> ",name player];     
