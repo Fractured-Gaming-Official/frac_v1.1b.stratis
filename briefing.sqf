@@ -17,6 +17,9 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Added] Allow anyone to fly DLC choppers
+<br/>[Added] Gut
+<br/>[Removed] Slit Throat
 <br/>[Added] Explosives to Vehicles and Buildings
 <br/>[Added] Drugs to Town Invasion
 <br/>[Added] Drugs to RoadBlocks
