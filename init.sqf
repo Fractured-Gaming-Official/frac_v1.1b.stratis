@@ -87,7 +87,6 @@ if (isServer) then
 [] execVM "addons\HvT\HvT.sqf"; // High Value Target
 [] execVM "addons\HvT\HvD.sqf"; // High Value Drugs	
 [] execVM "addons\EtV\init.sqf"; // Explosives to Vehicles
-[] execVM "addons\EtB\init.sqf"; // Explosives to Buildings
 [] execVM "addons\laptop\init.sqf"; //Hacker Mission
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
 [] execVM "addons\gear\default_gear.sqf"; //Gear Loadouts
