@@ -17,6 +17,7 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Added] Explosives to Vehicles and Buildings
 <br/>[Added] Drugs to Town Invasion
 <br/>[Added] Drugs to RoadBlocks
 <br/>[Added] Drugs to Stores
