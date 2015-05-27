@@ -31,7 +31,6 @@ _getValue =
 
 ["Donator", "NUMBER", "PlayerInfo"] call _getValue;
 ["BankMoney", "NUMBER", "PlayerInfo"] call _getValue;
-["GearLevel", "NUMBER", "PlayerInfo"] call _getValue; //Cael817, Added gear level
 
 ["Damage", "NUMBER"] call _getValue;
 ["HitPoints", "ARRAY"] call _getValue;

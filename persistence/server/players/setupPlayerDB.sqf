@@ -66,11 +66,6 @@ fn_kickPlayerIfFlagged = "persistence\server\players\fn_kickPlayerIfFlagged.sqf"
 				{
 					_player setVariable ["bmoney", _x select 1, true];
 				};
-				if (_x select 0 == "GearLevel") then
-				{
-					_player setVariable ["glevel", _x select 1, true];
-				};
-				//Cael817, End
 			} forEach _data;
 
 			diag_log format ["pvar_requestPlayerData: %1", [owner _player, _player, objectFromNetId _pNetId]];

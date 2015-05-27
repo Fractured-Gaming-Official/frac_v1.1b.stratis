@@ -4,11 +4,8 @@
 //	@file Name: playerSetupGear.sqf
 //	@file Author: [GoT] JoSchaap, AgentRev
 
-private ["_player", "_uniform", "_vest", "_headgear", "_goggles", "_gearLevel"];
+private ["_player", "_uniform", "_vest", "_headgear", "_goggles"];
 _player = _this;
-
-_gearEnabled = ["A3W_gearEnabled"] call isConfigOn; //Cael817, from TOPArma donator system
-_gearLevel = player getVariable ["glevel", 0]; //Cael817, from TOPArma donator system
 
 // Clothing is now defined in "client\functions\getDefaultClothing.sqf"
 
@@ -17,7 +14,6 @@ _vest = [_player, "vest"] call getDefaultClothing;
 _headgear = [_player, "headgear"] call getDefaultClothing;
 _goggles = [_player, "goggles"] call getDefaultClothing;
 
-_gearLevel = player getVariable ["glevel", 0]; //Cael817, from TOPArma donator system
 if (_uniform != "") then { _player addUniform _uniform };
 if (_vest != "") then { _player addVest _vest };
 if (_headgear != "") then { _player addHeadgear _headgear };
@@ -28,8 +24,6 @@ sleep 0.1;
 // Remove GPS
 _player unlinkItem "ItemGPS";
 
-switch (_gearLevel) do
-
 // Remove radio
 //_player unlinkItem "ItemRadio";
 
@@ -38,7 +32,9 @@ if (hmd _player != "") then { _player unlinkItem hmd _player };
 
 // Add NVG
 _player linkItem "NVGoggles";
+
 _player addBackpack "B_Bergen_rgr";
+
 _player addMagazine "30Rnd_9x21_Mag";
 _player addMagazine "9Rnd_45ACP_Mag";
 _player addWeapon "SMG_02_F";
