@@ -17,6 +17,7 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Added] (Shift + H) Holster Weapon 
 <br/>[Added] Allow anyone to fly DLC choppers
 <br/>[Added] Gut
 <br/>[Removed] Slit Throat
