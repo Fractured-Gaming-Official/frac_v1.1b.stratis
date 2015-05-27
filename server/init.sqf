@@ -85,6 +85,7 @@ else
 }
 forEach
 [
+	"A3W_gearEnabled", //Cael817, gearLevel
 	"A3W_startingMoney",
 	"A3W_showGunStoreStatus",
 	"A3W_gunStoreIntruderWarning",

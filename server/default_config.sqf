@@ -32,6 +32,7 @@ A3W_unlimitedStamina = 1;          // Allow unlimited sprinting, jumping, etc. (
 A3W_bleedingTime = 60;             // Time in seconds for which to allow revive after a critical injury (minimum 10 seconds)
 
 // ATM settings
+A3W_gearEnabled = 1;				// Enable/Disable Donator Features	
 A3W_atmEnabled = 1;                // Enable ATM system (0 = no, 1 = yes)
 A3W_atmMaxBalance = 1000000;       // Maximum amount of money that can be stored in a bank account (recommended: 1 million)
 A3W_atmTransferFee = 5;            // Fee in percent charged to players for money transfers to other players (0 to 50)

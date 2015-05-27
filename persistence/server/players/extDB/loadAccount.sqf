@@ -6,11 +6,23 @@
 
 if (!isServer) exitWith {};
 
-private ["_UID", "_bank", "_moneySaving", "_result", "_data", "_columns"];
+private ["_UID", "_bank", "_moneySaving", "_result", "_data", "_columns", "_gearLevel", "_gearEnabled"];
 _UID = _this;
 
 _bank = 0;
+_gearLevel = 0; //Cael817, Added gear level
 _moneySaving = ["A3W_moneySaving"] call isConfigOn;
+_gearEnabled = ["A3W_gearEnabled"] call isConfigOn;
+
+if (_gearEnabled) then
+{
+	_result = ["getPlayerGearLevel:" + _UID, 2] call extDB_Database_async;
+
+	if (count _result > 0) then
+	{
+		_gearLevel = _result select 0;
+	};
+};
 
 if (_moneySaving) then
 {
@@ -30,6 +42,7 @@ if (!_result) then
 	[
 		["PlayerSaveValid", false],
 		["BankMoney", _bank]
+		["GearLevel", _gearLevel] //Cael817, Added gear level
 	];
 }
 else
@@ -100,7 +113,9 @@ else
 	} forEach _result;
 
 	_data pushBack ["BankMoney", _bank];
+	_data pushBack ["GearLevel", _gearLevel]; //Cael817, Added gear level
 	_data pushBack ["PlayerSaveValid", true];
 };
+
 
 _data

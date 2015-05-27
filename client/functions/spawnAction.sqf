@@ -22,15 +22,31 @@ spawnActionHandle = (_this select 1) spawn
 {
 	disableSerialization;
 
-	private ["_switch", "_data"];
+	private ["_switch", "_data", "_gearLevel"];
 	_switch = _this select 0;
 	_data = [_this select 1, false];
+	_gearLevel = player getVariable ["glevel", 0];
 
 	if (isNil "playerData_resetPos") then
 	{
 		// Deal with money here
 		_baseMoney = ["A3W_startingMoney", 100] call getPublicVar;
 		player setVariable ["cmoney", _baseMoney, true];
+		switch (_gearLevel) do
+		{
+			case 1: { player setVariable ["cmoney", _baseMoney + 100, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 2: { player setVariable ["cmoney", _baseMoney + 200, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 3: { player setVariable ["cmoney", _baseMoney + 300, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 4: { player setVariable ["cmoney", _baseMoney + 400, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 5: { player setVariable ["cmoney", _baseMoney + 500, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 6: { player setVariable ["cmoney", _baseMoney + 600, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 7: { player setVariable ["cmoney", _baseMoney + 700, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 8: { player setVariable ["cmoney", _baseMoney + 800, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 9: { player setVariable ["cmoney", _baseMoney + 900, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			case 10: { player setVariable ["cmoney", _baseMoney + 1000, true]; [MF_ITEMS_CANNED_FOOD, 1] call mf_inventory_add; [MF_ITEMS_WATER, 1] call mf_inventory_add; };
+			
+			default { player setVariable ["cmoney", _baseMoney, true]; };
+		};
 		
 		[] execVM "addons\gear\gearCheck.sqf"; //Cael817, Add extra gear at respawn.
 
