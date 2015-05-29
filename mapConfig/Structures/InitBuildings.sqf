@@ -6,13 +6,10 @@
 
 */
 
-#include "Nisi.sqf"
+// #include "Nisi.sqf"
 #include "GunstoreA.sqf"
 #include "Ruins.sqf"
 #include "Random.sqf"
+#include "Atm.sqf"
 #include "Airport.sqf"
-#include "ValleyGunStore.sqf"
-#include "CampRogain.sqf"
-#include "RellicHill.sqf"
-#include "Campmaxwell.sqf"
-#include "Jaycove.sqf"
+#include "olKeiros.sqf"

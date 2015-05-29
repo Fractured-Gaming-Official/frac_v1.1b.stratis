@@ -44,7 +44,7 @@ _object setDir 214.006;
 _object setPosATL _pos;
 _object setVariable ["R3F_LOG_disabled", true, true];
 _object enableSimulation false;
-_object allowDamage false;
+_object allowDamage true;
 
 
 
@@ -85,7 +85,7 @@ _object setDir 209;
 _object setPosATL _pos;
 _object setVariable ["R3F_LOG_disabled", true, true];
 _object enableSimulation false;
-_object allowDamage false;
+_object allowDamage true;
 
 
 

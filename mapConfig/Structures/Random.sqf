@@ -18,14 +18,23 @@ _object allowDamage false;
 
 
 
-_pos = [2524.339355,4921.418457,0.352859];
+_pos = [2524.339355,4931.418457,0.266617];
 _object = createVehicle ["Land_HighVoltageTower_large_F", _pos, [], 0, "CAN_COLLIDE"];
-_object setDir 156;
+_object setDir 95.9999;
 _object setPosATL _pos;
 _object setVariable ["R3F_LOG_disabled", true, true];
 _object enableSimulation false;
 _object allowDamage false;
 
+
+
+_pos = [3235.525635,4969.552246,2.94189];
+_object = createVehicle ["Land_HighVoltageTower_large_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 260;
+_object setPosATL _pos;
+_object setVariable ["R3F_LOG_disabled", true, true];
+_object enableSimulation false;
+_object allowDamage false;
 
 
 _pos = [2576.22876,5509.774902,0.142799];
@@ -58,6 +67,24 @@ _object allowDamage false;
 _pos = [3254.227783,5789.663086,-0.264647];
 _object = createVehicle ["Land_Offices_01_V1_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 216.9;
+_object setPosATL _pos;
+_object setVariable ["R3F_LOG_disabled", true, true];
+_object enableSimulation false;
+_object allowDamage false;
+
+
+_pos = [2995.0820313,5887.98877,0.654135];
+_object = createVehicle ["Land_Unfinished_Building_02_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 110;
+_object setPosATL _pos;
+_object setVariable ["R3F_LOG_disabled", true, true];
+_object enableSimulation false;
+_object allowDamage false;
+
+
+_pos = [3055.577881,5940.787109,0.525833];
+_object = createVehicle ["Land_Unfinished_Building_01_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 303;
 _object setPosATL _pos;
 _object setVariable ["R3F_LOG_disabled", true, true];
 _object enableSimulation false;
