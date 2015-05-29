@@ -28,7 +28,7 @@ for "_i" from 0 to 1 step 0 do
 			_drugMarker setMarkerText (format ["Drugrunner: %1", name player]);
 			_drugMarker setMarkerColor "ColorRed";
 			_drugMarker setMarkerType "mil_dot";
-			sleep 45;
+			sleep 60;
 			deleteMarker _markerName;
 		};
 }; //will run infinitely

@@ -24,7 +24,7 @@ for "_i" from 0 to 1 step 0 do
 			_bountyMarker setMarkerText (format ["High Value Target: %1 (%2$)", name player, _bounty]);
 			_bountyMarker setMarkerColor "ColorRed";
 			_bountyMarker setMarkerType "mil_dot";
-			sleep 45;
+			sleep 60;
 			deleteMarker _markerName;
 		};
 }; //will run infinitely
