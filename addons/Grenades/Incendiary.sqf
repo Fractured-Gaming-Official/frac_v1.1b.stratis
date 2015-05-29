@@ -4,8 +4,7 @@
 //	@web: http://www.fractured-gaming.com
 //  @web: http://www.gamersinc.co.za
 //	@Special Thanks to Pitoucc, CREAMPIE
-
-
+/*
 private ["_damageRadius", "_smokeShell", "_grenadeObj", "_flare1"];
 
 burnDamage = {
@@ -33,13 +32,13 @@ player addEventHandler ["Fired",
 	if ((_this select 4) isEqualTo "SmokeShellOrange") then
 	{
 		_grenadeObj = (_this select 6);
-		_flare1=  createVehicle ["F_40mm_White" ,_getPosGrenade select 0,_getPosGrenade select 1,_getPosGrenade select 2,[],0,"FLY"];
-        _flare1 attachTo _grenadeObj;
+		_flare1= "F_40mm_White" createVehicle getPos _grenadeObj;
+        _flare1 attachTo [_grenadeObj,[0,0,0]];
 	};
 
 }];	
 	
-While{true} do{									
+While{true} do{
 
 	waituntil{
 		_smokeShell = nearestObject [getPosATL player, "SmokeShellOrange"];
@@ -47,6 +46,6 @@ While{true} do{
 		_damageRadius = (_smokeShell distance player);
 	    _damageRadius < 8 && velocity _smokeShell isEqualTo [ 0, 0, 0 ]
 		&& !_curPlayerInvulnState
-    };  	
+    };
 		call burnDamage; 
-};
+};*/
