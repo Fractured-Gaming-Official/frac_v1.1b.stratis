@@ -33,7 +33,7 @@ player addEventHandler ["Fired",
 	if ((_this select 4) isEqualTo "SmokeShellOrange") then
 	{
 		_grenadeObj = (_this select 6);
-		flare1= "F_40mm_White" createVehicle getPos _grenadeObj;
+		_flare1= "F_40mm_White" createVehicle getPos _grenadeObj;
         _flare1 attachTo [_grenadeObj,[0,0,0]];
 	};
 
