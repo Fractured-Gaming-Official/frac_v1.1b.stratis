@@ -11,17 +11,17 @@ private ["_damageRadius"];
 gasDamage = {
 switch (true) do										// Check if condition is met
 	{
-	case(_damageRadius < 2.5):							// 2.5m
+	case(_damageRadius < 2):							// 2.5m
 		{player setDamage (damage player + 0.15);     	// 15 damage per tick
 		  sleep 0.5;									// 0.5s Timer damage is assigned "seconds"
 		};
   
-    case(_damageRadius < 5):		// 2.5 - 5m
+    case(_damageRadius < 4):		// 2.5 - 5m
 		{player setDamage (damage player + 0.10);     	// 10 damage per tick
 		 sleep 1;										// 1s Timer damage is assigned "seconds"
 		};
 		
-    case(_damageRadius < 10):		// 5- 10m
+    case(_damageRadius < 8):		// 5- 10m
 		 {player setDamage (damage player + 0.05);     	// 5 damage per tick
 		  sleep 2;									    // 2s Timer damage is assigned "seconds"
 		 };
@@ -49,7 +49,7 @@ While{true} do{
 		
 		_curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
 		_damageRadius = (_smokeShell distance player);
-	    _damageRadius < 10 && velocity _smokeShell isEqualTo [ 0, 0, 0 ]
+	    _damageRadius < 8 && velocity _smokeShell isEqualTo [ 0, 0, 0 ]
 		&& !_curPlayerInvulnState
     };  	
 		call gasDamage; 
