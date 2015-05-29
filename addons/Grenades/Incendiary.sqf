@@ -33,11 +33,6 @@ player addEventHandler ["Fired",
 	if ((_this select 4) isEqualTo "SmokeShellOrange") then
 	{
 		_grenadeObj = (_this select 6);
-		_PV_LightObj = "#lightpoint" createVehicle getPosATL _grenadeObj;
-        _PV_LightObj setLightDayLight true;
-        _PV_LightObj setLightBrightness 800;
-        _PV_LightObj setLightAmbient [0.2, 0.2, 4];
-        _PV_LightObj SetLightColor [1, 1, 3];
 	};
 
 }];	
@@ -52,4 +47,9 @@ While{true} do{
 		&& !_curPlayerInvulnState
     };  	
 		call burnDamage; 
+		_PV_LightObj = "#lightpoint" createVehicle getPosATL _grenadeObj;
+        _PV_LightObj setLightDayLight true;
+        _PV_LightObj setLightBrightness 800;
+        _PV_LightObj setLightAmbient [0.2, 0.2, 4];
+        _PV_LightObj SetLightColor [1, 1, 3];
 };
