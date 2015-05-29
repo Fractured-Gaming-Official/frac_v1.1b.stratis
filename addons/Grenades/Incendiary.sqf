@@ -8,7 +8,7 @@
 
 private ["_damageRadius"];
 
-gasDamage = {
+burnDamage = {
 switch (true) do										// Check if condition is met
 	{
 	case(_damageRadius < 2):							// 2.5m
@@ -52,5 +52,5 @@ While{true} do{
 	    _damageRadius < 8 && velocity _smokeShell isEqualTo [ 0, 0, 0 ]
 		&& !_curPlayerInvulnState
     };  	
-		call gasDamage; 
+		call burnDamage; 
 };
