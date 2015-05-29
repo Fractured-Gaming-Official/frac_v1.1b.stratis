@@ -1,4 +1,4 @@
-//	@file Name: teargas.sqf
+//	@file Name: ToxicGas.sqf
 //  @file Author: Mokey
 //	@file Description: Toxic Gas addon for A3W
 //	@web: http://www.fractured-gaming.com
@@ -38,7 +38,6 @@ While{true} do{
 	waituntil{
         _smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
 	    _curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
-	    _smokeShell distance player < 5
 	    &&
 	    velocity _smokeShell isEqualTo [ 0, 0, 0 ]
 	    &&
