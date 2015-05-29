@@ -1,3 +1,4 @@
 // Init for Toxic Gas!!!!
-[] execVM "addons\Grenades\ToxicGas.sqf"; //Yellow Smoke 
-[] execVM "addons\Grenades\ToxicGasGL.sqf"; //Grenade Launchers
+[] execVM "addons\Grenades\ToxicGas.sqf"; //Toxic Gas Grenades (Hand) 
+[] execVM "addons\Grenades\ToxicGasGL.sqf"; //Toxic Gas Grenades (Hand)
+[] execVM "addons\Grenades\Incendiary.sqf"; //Incendiary Grenades
