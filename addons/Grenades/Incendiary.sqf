@@ -16,12 +16,12 @@ switch (true) do										// Check if condition is met
 		  sleep 0.5;									// 0.5s Timer damage is assigned "seconds"
 		};
   
-    case(_damageRadius < 5 && _damageRadius > 2.5):		// 2.5 - 5m
+    case(_damageRadius < 5):		// 2.5 - 5m
 		{player setDamage (damage player + 0.10);     	// 10 damage per tick
 		 sleep 1;										// 1s Timer damage is assigned "seconds"
 		};
 		
-    case(_damageRadius < 10 && _damageRadius > 5):		// 5- 10m
+    case(_damageRadius < 10):		// 5- 10m
 		 {player setDamage (damage player + 0.05);     	// 5 damage per tick
 		  sleep 2;									    // 2s Timer damage is assigned "seconds"
 		 };
