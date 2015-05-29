@@ -6,7 +6,7 @@
 //	@Special Thanks to Pitoucc, CREAMPIE
 
 
-private ["_damageRadius"];
+private ["_damageRadius", "_Flare1"];
 
 burnDamage = {
 switch (true) do										// Check if condition is met
@@ -44,8 +44,8 @@ While{true} do{
 		_smokeShell = nearestObject [getPosATL player, "SmokeShellOrange"];
 //	 	hint format["%1", (_this select 6)];
 	
-//		_flare1= "F_40mm_White" createVehicle getPos _grenadeObj;
-//		_flare1 attachTo [_grenadeObj,[0,0,0]];
+		_flare1= "F_40mm_White" createVehicle getPos _grenadeObj;
+		_flare1 attachTo [_grenadeObj,[0,0,0]];
 		
 		_curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
 		_damageRadius = (_smokeShell distance player);
