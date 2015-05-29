@@ -38,6 +38,7 @@ While{true} do{
 	waituntil{
         _smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
 	    _curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
+		_smokeShell distance player < 8 				//Change Distance from grenade for effect to trigger
 	    &&
 	    velocity _smokeShell isEqualTo [ 0, 0, 0 ]
 	    &&
