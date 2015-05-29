@@ -6,7 +6,7 @@
 //	@Special Thanks to Pitoucc, CREAMPIE
 
 
-private ["_damageRadius", "_Flare1"];
+private ["_damageRadius", "_smokeShell", "_grenadeObj", "_flare1"];
 
 burnDamage = {
 switch (true) do										// Check if condition is met
@@ -16,12 +16,12 @@ switch (true) do										// Check if condition is met
 		  sleep 0.5;									// 0.5s Timer damage is assigned "seconds"
 		};
   
-    case(_damageRadius < 4):		// 2.5 - 5m
+    case(_damageRadius < 4):
 		{player setDamage (damage player + 0.10);     	// 10 damage per tick
 		 sleep 1;										// 1s Timer damage is assigned "seconds"
 		};
 		
-    case(_damageRadius < 8):		// 5- 10m
+    case(_damageRadius < 8):
 		 {player setDamage (damage player + 0.05);     	// 5 damage per tick
 		  sleep 2;									    // 2s Timer damage is assigned "seconds"
 		 };
@@ -33,7 +33,8 @@ player addEventHandler ["Fired",
 	if ((_this select 4) isEqualTo "SmokeShellOrange") then
 	{
 		_grenadeObj = (_this select 6);
-		
+		flare1= "F_40mm_White" createVehicle getPos _grenadeObj;
+        _flare1 attachTo [_grenadeObj,[0,0,0]];
 	};
 
 }];	
@@ -42,11 +43,6 @@ While{true} do{
 
 	waituntil{
 		_smokeShell = nearestObject [getPosATL player, "SmokeShellOrange"];
-//	 	hint format["%1", (_this select 6)];
-	
-		_flare1= "F_40mm_White" createVehicle getPos _grenadeObj;
-		_flare1 attachTo [_grenadeObj,[0,0,0]];
-		
 		_curPlayerInvulnState = player getVariable ["isAdminInvulnerable", false];
 		_damageRadius = (_smokeShell distance player);
 	    _damageRadius < 8 && velocity _smokeShell isEqualTo [ 0, 0, 0 ]
