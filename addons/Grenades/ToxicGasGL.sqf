@@ -27,7 +27,7 @@ setGasStatusGL = {
 };
 
 gasDamageGL = {
-	player setDamage (damage player + 0.5);     		//damage per tick
+	player setDamage (damage player + 0.05);     		//damage per tick
 	sleep 3;                                 		    // Timer damage is assigned "seconds"
 };
 
