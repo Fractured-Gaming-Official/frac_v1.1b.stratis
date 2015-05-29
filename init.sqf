@@ -82,8 +82,7 @@ if (isServer) then
 [] execVM "addons\scripts\servercredits.sqf"; //Intro Credits
 [] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf"; //Mag Repacker
 [] execVM "addons\scripts\zlt_fastrope.sqf"; //Fast Rope Addon
-[] execVM "addons\Grenades\ToxicGas.sqf"; //Toxic Gas Addon
-[] execVM "addons\Grenades\ToxicGasGL.sqf"; //Toxic Gas Addon
+[] execVM "addons\Grenades\initGrenades.sqf"; // Toxic Gas Grenades
 [] execVM "addons\HvT\HvT.sqf"; // High Value Target
 [] execVM "addons\HvT\HvD.sqf"; // High Value Drugs	
 [] execVM "addons\EtV\init.sqf"; // Explosives to Vehicles
