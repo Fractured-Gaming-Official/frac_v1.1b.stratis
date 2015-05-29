@@ -27,38 +27,37 @@ pistolArray = compileFinal str
 
 smgArray = compileFinal str
 [
-	["PDW2000 SMG", "hgun_PDW2000_F", 200],
-	["Sting SMG", "SMG_02_F", 250],
-	["Vermin SMG", "SMG_01_F", 300]
+	["PDW2000 SMG", "hgun_PDW2000_F", 350],
+	["Sting SMG", "SMG_02_F", 325],
+	["Vermin SMG", "SMG_01_F", 450]
 ];
 
 rifleArray = compileFinal str
 [
 	// Underwater Gun
-	["SDAR Underwater Rifle", "arifle_SDAR_F", 200],
+	["SDAR Underwater Rifle", "arifle_SDAR_F", 300],
 
 	// Assault Rifles
-	["Mk20 Carbine", "arifle_Mk20C_plain_F", 300],
-	["Mk20 Carbine (Camo)", "arifle_Mk20C_F", 300],
-	["Mk20 Rifle", "arifle_Mk20_plain_F", 400],
-	["Mk20 Rifle (Camo)", "arifle_Mk20_F", 400],
-	["Mk20 EGLM Rifle", "arifle_Mk20_GL_plain_F", 500],
-	["Mk20 EGLM Rifle (Camo)", "arifle_Mk20_GL_F", 500],
+	["Mk20 Carbine", "arifle_Mk20C_plain_F", 450],
+	["Mk20 Carbine (Camo)", "arifle_Mk20C_F", 450],
+	["Mk20 Rifle", "arifle_Mk20_plain_F", 600],
+	["Mk20 Rifle (Camo)", "arifle_Mk20_F", 600],
+	["Mk20 EGLM Rifle", "arifle_Mk20_GL_plain_F", 750],
+	["Mk20 EGLM Rifle (Camo)", "arifle_Mk20_GL_F", 750],
+	["TRG-20 Carbine", "arifle_TRG20_F", 450],
+	["TRG-21 Rifle ", "arifle_TRG21_F", 600],
+	["TRG-21 EGLM Rifle", "arifle_TRG21_GL_F", 750],
 
-	["TRG-20 Carbine", "arifle_TRG20_F", 300],
-	["TRG-21 Rifle ", "arifle_TRG21_F", 400],
-	["TRG-21 EGLM Rifle", "arifle_TRG21_GL_F", 500],
+	["Katiba Carbine", "arifle_Katiba_C_F", 450],
+	["Katiba Rifle", "arifle_Katiba_F", 600],
+	["Katiba GL Rifle", "arifle_Katiba_GL_F", 750],
 
-	["Katiba Carbine", "arifle_Katiba_C_F", 300],
-	["Katiba Rifle", "arifle_Katiba_F", 400],
-	["Katiba GL Rifle", "arifle_Katiba_GL_F", 500],
-
-	["MX Carbine", "arifle_MXC_F", 300],
-	["MX Carbine (Black)", "arifle_MXC_Black_F", 350],
-	["MX Rifle", "arifle_MX_F", 400],
-	["MX Rifle (Black)", "arifle_MX_Black_F", 450],
-	["MX 3GL Rifle", "arifle_MX_GL_F", 500],
-	["MX 3GL Rifle (Black)", "arifle_MX_GL_Black_F", 550],
+	["MX Carbine", "arifle_MXC_F", 450],
+	["MX Carbine (Black)", "arifle_MXC_Black_F", 525],
+	["MX Rifle", "arifle_MX_F", 600],
+	["MX Rifle (Black)", "arifle_MX_Black_F", 675],
+	["MX 3GL Rifle", "arifle_MX_GL_F", 750],
+	["MX 3GL Rifle (Black)", "arifle_MX_GL_Black_F", 825],
 
 	// Markman Rifles
 	["MXM Rifle", "arifle_MXM_F", 600],
