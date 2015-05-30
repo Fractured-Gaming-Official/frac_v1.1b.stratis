@@ -1931,7 +1931,7 @@ class Mission
 		};
 		class Item44
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
@@ -1940,7 +1940,7 @@ class Mission
 					position[]={4305.9307,177.24417,4346.002};
 					azimut=120.30799;
 					id=152;
-					side="CIV";
+					side="LOGIC";
 					vehicle="C_man_1_1_F";
 					leader=1;
 					skill=0.60000002;
@@ -2031,7 +2031,7 @@ class Mission
 		};
 		class Item49
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
@@ -2091,7 +2091,7 @@ class Mission
 		};
 		class Item52
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
@@ -2105,13 +2105,13 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="GenStore7";
-					init="[this, 'GunStore', 7] spawn A3W_fnc_setupStoreNPC";
+					init="[this, 'GenStore', 7] spawn A3W_fnc_setupStoreNPC";
 				};
 			};
 		};
 		class Item53
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
@@ -2132,7 +2132,7 @@ class Mission
 		};
 		class Item54
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
@@ -2152,7 +2152,7 @@ class Mission
 		};
 		class Item55
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
@@ -2172,7 +2172,7 @@ class Mission
 		};
 		class Item56
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;

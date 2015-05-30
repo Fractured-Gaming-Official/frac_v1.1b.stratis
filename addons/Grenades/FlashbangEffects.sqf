@@ -1,4 +1,4 @@
-private["_hndl","_hnd2","_hnd3"];
+/*private["_hndl","_hnd2","_hnd3"];
 
 _hndl = ppEffectCreate ["colorCorrections", 1501];
 _hndl ppEffectEnable true;
@@ -49,4 +49,4 @@ sleep 14;
 
 ppEffectDestroy _hndl;
 ppEffectDestroy _hnd2;
-ppEffectDestroy _hnd3;
+ppEffectDestroy _hnd3;*/

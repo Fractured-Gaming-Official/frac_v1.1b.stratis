@@ -10,36 +10,35 @@
 // Name, Building Position, Desk Direction (or [Desk Direction, Front Offset]), Excluded Buttons
 storeOwnerConfig = compileFinal str
 [
-	["GenStore1", 2, 260, []],
-	["GenStore2", 4, 310, []],
-	["GenStore4", 1, 80, []],
-	["GenStore5", 1, 115, []],
-	["GenStore6", 1, 330, []],
-	["GenStore7", 2, 15, []],
-	["GenStore8", 0, 1, []],
+	["GenStore1", 2, 260, []], // Agia Marina
+	["GenStore2", 4, 310, []], // Kamino Firing Range
+	["GenStore4", 1, 80, []], // Wal-Mart
+	["GenStore5", 1, 115, []], // Jay Cove
+	["GenStore6", 1, 330, []], // Rogain
+	["GenStore7", 2, 15, []], // Airfield
 
-	["GunStore1", 0, 195, []],
-	["GunStore2", 1, 130, []],
-	["GunStore3", 5, 85, []],
-	["GunStore4", 2, 315, []],
-	["GunStore5", 3, 140, []],
-	["GunStore6", 3, 210, []],
-	["GunStore9", 5, 85, ["Armament"]],
+	["GunStore1", 0, 195, []], // Airfield
+	["GunStore2", 1, 130, []], // KillFarm
+	["GunStore3", 5, 85, []], // Dixie
+	["GunStore4", 2, 315, []], // Kamino Firing Range
+	["GunStore5", 3, 140, []], // Maxwell
+	["GunStore6", 3, 210, []], // Agia Marina
+	["GunStore9", 5, 85, ["Armament"]], // Wal-Mart
 
 	// Buttons you can disable: "Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"
-	["VehStore1", 0, 195, ["Planes"]],
-	["VehStore2", 2, 285, ["Boats"]],
-	["VehStore3", 4, 340, ["Planes"]],
-	["VehStore4", 3, 240, ["Planes","Boats"]],
-	["VehStore5", 2, 130, ["Planes","Boats"]],
-	["VehStore6", 1, 42, ["Planes","Boats"]]
+	["VehStore1", 0, 195, ["Planes"]], // Kamino
+	["VehStore2", 2, 285, ["Boats"]], // Airfield
+	["VehStore3", 4, 340, ["Planes"]], // Girna
+	["VehStore4", 3, 240, ["Planes","Boats"]], // Wal-Mart
+	["VehStore5", 2, 130, ["Planes","Boats"]], // Agia Marina
+	["VehStore6", 1, 42, ["Planes","Boats"]] // Agios Loannis
 	
 ];
 
 // Outfits for store owners
 storeOwnerConfigAppearance = compileFinal str
 [
-	["GenStore1", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
+	["GenStore1", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]], //
 	["GenStore2", [["weapon", ""], ["uniform", "U_IG_Guerilla2_3"]]],
 	["GenStore4", [["weapon", ""], ["uniform", "U_IG_Guerilla3_1"]]],
 	["GenStore5", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
