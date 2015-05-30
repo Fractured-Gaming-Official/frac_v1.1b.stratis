@@ -60,12 +60,12 @@ rifleArray = compileFinal str
 	["MX 3GL Rifle (Black)", "arifle_MX_GL_Black_F", 825],
 
 	// Markman Rifles
-	["MXM Rifle", "arifle_MXM_F", 600],
-	["MXM Rifle (Black)", "arifle_MXM_Black_F", 650],
-	["DMR Rifle", "srifle_DMR_01_F", 725],
-	["Mk14 7.62 mm (Camo)", "srifle_DMR_06_camo_F", 900], // DLC Sniper Rifle
-	["Mk14 7.62 mm (Olive)", "srifle_DMR_06_olive_F", 900], // DLC Sniper Rifle
-	["Mk18 ABR Rifle", "srifle_EBR_F", 900],
+	["MXM Rifle", "arifle_MXM_F", 900],
+	["MXM Rifle (Black)", "arifle_MXM_Black_F", 950],
+	["DMR Rifle", "srifle_DMR_01_F", 1087],
+	["Mk14 7.62 mm (Camo)", "srifle_DMR_06_camo_F", 1350], // DLC Sniper Rifle
+	["Mk14 7.62 mm (Olive)", "srifle_DMR_06_olive_F", 1350], // DLC Sniper Rifle
+	["Mk18 ABR Rifle", "srifle_EBR_F", 1350],
 	["Mk-1 EMR 7.62 mm (Camo)", "srifle_DMR_03_multicam_F", 1000], // DLC Sniper Rifle
 	["Mk-1 EMR 7.62 mm (Khaki)", "srifle_DMR_03_khaki_F", 1000], // DLC Sniper Rifle
 	["Mk-1 EMR 7.62 mm (Sand)", "srifle_DMR_03_tan_F", 1000], // DLC Sniper Rifle
