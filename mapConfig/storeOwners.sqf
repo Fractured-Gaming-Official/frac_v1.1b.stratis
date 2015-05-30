@@ -22,7 +22,7 @@ storeOwnerConfig = compileFinal str
 	["GunStore3", 5, 85, []], // Dixie
 	["GunStore4", 2, 315, []], // Kamino Firing Range
 	["GunStore5", 3, 140, []], // Maxwell
-	["GunStore6", 2, 210, []], // Agia Marina
+	["GunStore6", 1, 210, []], // Agia Marina
 	["GunStore9", 5, 85, ["Armament"]], // Wal-Mart
 
 	// Buttons you can disable: "Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"
@@ -38,7 +38,7 @@ storeOwnerConfig = compileFinal str
 // Outfits for store owners
 storeOwnerConfigAppearance = compileFinal str
 [
-	["GenStore1", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]], //
+	["GenStore1", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
 	["GenStore2", [["weapon", ""], ["uniform", "U_IG_Guerilla2_3"]]],
 	["GenStore4", [["weapon", ""], ["uniform", "U_IG_Guerilla3_1"]]],
 	["GenStore5", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
