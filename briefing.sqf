@@ -17,6 +17,9 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Fixed] Server Optimization 
+<br/>[Fixed] Item Descriptions 
+<br/>[Fixed] GunStore Logic
 <br/>[Added] (Shift + H) Holster Weapon 
 <br/>[Added] Allow anyone to fly DLC choppers
 <br/>[Added] Gut
