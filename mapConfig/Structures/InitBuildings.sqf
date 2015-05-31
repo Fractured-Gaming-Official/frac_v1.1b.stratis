@@ -8,7 +8,6 @@
 #include "GunstoreA.sqf"
 #include "Ruins.sqf"
 #include "Airport.sqf"
-#include "olKeiros.sqf"
 #include "Campmaxwell.sqf"
 #include "CampRogain.sqf"
 #include "Jaycove.sqf"
