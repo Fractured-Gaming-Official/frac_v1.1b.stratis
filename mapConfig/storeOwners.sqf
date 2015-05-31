@@ -14,14 +14,15 @@ storeOwnerConfig = compileFinal str
 	["GenStore2", 4, 310, []], // Kamino Firing Range
 	["GenStore4", 1, 80, []], // Wal-Mart
 	["GenStore5", 1, 115, []], // Jay Cove
-	["GenStore6", 1, 330, []], // Rogain
+	["GenStore6", 1, 355, []], // Rogain
 	["GenStore7", 2, 15, []], // Airfield
+	["GenStore8", 0, 359, []], // Valley
 
 	["GunStore1", 0, 195, []], // Airfield
-	["GunStore2", 1, 130, []], // KillFarm
+	["GunStore2", 0, 130, []], // KillFarm
 	["GunStore3", 5, 85, []], // Dixie
 	["GunStore4", 2, 315, []], // Kamino Firing Range
-	["GunStore5", 3, 140, []], // Maxwell
+	["GunStore5", 1, 345, []], // Maxwell
 	["GunStore6", 1, 210, []], // Agia Marina
 	["GunStore9", 5, 85, ["Armament"]], // Wal-Mart
 
@@ -44,6 +45,7 @@ storeOwnerConfigAppearance = compileFinal str
 	["GenStore5", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
 	["GenStore6", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
 	["GenStore7", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
+	["GenStore8", [["weapon", ""], ["uniform", "U_IG_Guerilla2_2"]]],
 
 	["GunStore1", [["weapon", ""], ["uniform", "U_B_SpecopsUniform_sgg"]]],
 	["GunStore2", [["weapon", ""], ["uniform", "U_O_SpecopsUniform_blk"]]],

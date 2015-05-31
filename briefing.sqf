@@ -17,6 +17,7 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Fixed] Stores
 <br/>[Fixed] Server Optimization 
 <br/>[Fixed] Item Descriptions 
 <br/>[Fixed] GunStore Logic
