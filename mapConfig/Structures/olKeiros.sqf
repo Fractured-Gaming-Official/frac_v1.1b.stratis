@@ -232,15 +232,6 @@ _object enableSimulation false;
 _object allowDamage false;
 
 
-_pos = [5541.929199,4717.101074,-0.0301971];
-_object = createVehicle ["Land_Atm_01_F", _pos, [], 0, "CAN_COLLIDE"];
-_object setDir 138;
-_object setPosATL _pos;
-_object setVariable ["R3F_LOG_disabled", true, true];
-_object enableSimulation false;
-_object allowDamage false;
-
-
 _pos = [5292.682129,4907.424316,-3.04028];
 _object = createVehicle ["Land_Castle_01_wall_04_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 160;
