@@ -1,4 +1,4 @@
-_pos = [3276.0441895,2947.411377,0.439255];
+_pos = [3276.00683594,2947.0627441,0.401779];
 _object = createVehicle ["Land_Atm_01_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 140;
 _object setPosATL _pos;
