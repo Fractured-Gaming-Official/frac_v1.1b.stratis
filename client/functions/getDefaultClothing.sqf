@@ -71,7 +71,7 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_O_CombatUniform_ocamo" };
+				if (_item == "uniform") then { _result = "U_O_OfficerUniform_ocamo" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
@@ -100,7 +100,7 @@ switch (_side) do
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_Beret_blk" };
+		if (_item == "headgear") then { _result = "H_Watchcap_camo" };
 	};
 };
 
