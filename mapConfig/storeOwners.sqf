@@ -14,7 +14,7 @@ storeOwnerConfig = compileFinal str
 	["GenStore2", 4, 310, []], // Kamino Firing Range
 	["GenStore4", 1, 80, []], // Wal-Mart
 	["GenStore5", 1, 115, []], // Jay Cove
-	["GenStore6", 1, 355, []], // Rogain
+	["GenStore6", 1, 340, []], // Rogain
 	["GenStore7", 2, 15, []], // Airfield
 	["GenStore8", 0, 359, []], // Valley
 
@@ -22,7 +22,7 @@ storeOwnerConfig = compileFinal str
 	["GunStore2", 0, 130, []], // KillFarm
 	["GunStore3", 5, 85, []], // Dixie
 	["GunStore4", 2, 315, []], // Kamino Firing Range
-	["GunStore5", 1, 345, []], // Maxwell
+	["GunStore5", 1, 330, []], // Maxwell
 	["GunStore6", 1, 210, []], // Agia Marina
 	["GunStore9", 5, 85, ["Armament"]], // Wal-Mart
 
