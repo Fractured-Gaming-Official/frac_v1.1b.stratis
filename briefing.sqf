@@ -17,6 +17,9 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Added] Supported Mods to Credits
+<br/>[Removed] Last Resort
+<br/>[Changed] OpFor and Independant Uniforms
 <br/>[Fixed] Stores
 <br/>[Fixed] Server Optimization 
 <br/>[Fixed] Item Descriptions 
