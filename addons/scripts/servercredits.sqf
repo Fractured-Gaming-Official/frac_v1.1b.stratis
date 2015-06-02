@@ -41,16 +41,16 @@ sleep 60; //Wait in seconds before the credits start after player IS ingame
  
 _role1 = "Welcome to";
 _role1names = ["Fractured Gaming - A3Wasteland Stratis"];
-_role2 = "Server restarts every 6 hours";
-_role2names = ["6am, 12pm, 6pm, 12am GMT"];
-_role3 = "Visit our website @";
-_role3names = ["www.Fractured-Gaming.com"];
-_role4 = "TS3 Server:";
-_role4names = ["TS.Fractured-Gaming.com"];
-_role5 = "Useful Commands";
-_role5names = ["CTRL+R-Mag Repacker, END-Earplugs"];
-_role6 = "Server Side Addons";
-_role6names = ["Toxic Gas, MagRepacker, Fastroping, Airdrops, LockPicking, Breaklock, Status Bar, HVT, Hackers, and more."];
+_role2 = "Supported Mods:";
+_role2names = ["CBA, BlastCore:Phoenix, JSRS:Dragonfyre, & Full Screen Night Vision."];
+_role3 = "Server restarts every 6 hours";
+_role3names = ["6am, 12pm, 6pm, 12am GMT"];
+_role4 = "Visit our website @";
+_role4names = ["www.Fractured-Gaming.com"];
+_role5 = "TS3 Server:";
+_role5names = ["TS.Fractured-Gaming.com"];
+_role6 = "Useful Commands";
+_role6names = ["CTRL+R-Mag Repacker, END-Earplugs, Shift+H-Holster"];
 _role7 = "Custom Missions";
 _role7names = ["Better Gear can be found in mission crates. HVTs are marked on map"];
 _role8 = "More Info";
