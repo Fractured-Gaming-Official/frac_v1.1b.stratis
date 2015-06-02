@@ -1,4 +1,4 @@
-// ******************************************************************************************
+/*/ ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: FAR_lastResort.sqf
@@ -45,3 +45,4 @@ if !(player getVariable ["performingDuty", false]) then
 		titleText ["Get an explosive charge next time, my child.", "PLAIN", 0.5];
 	};
 };
+*/
