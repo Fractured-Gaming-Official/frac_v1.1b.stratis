@@ -17,7 +17,7 @@ class ReviveGUI : IGUIBack
 {
 	idd = ReviveGUI_IDD;
 	movingEnabled = false;
-	controls[] = {RevProgBar, RevBarText, RevSuicideBtn, RevTextBG, RevText, RevLastResortBtn};
+	controls[] = {RevProgBar, RevBarText, RevSuicideBtn, RevTextBG, RevText,};
 	controlsBackground[] = {RevBG};
 
 	class RevBG : IGUIBack
@@ -138,7 +138,6 @@ class ReviveGUI : IGUIBack
 		w = RevText_W;
 		h = RevText_H;
 	};
-
 /*	class RevLastResortBtn : w_RscButton
 	{
 		idc = RevLastResortBtn_IDC;

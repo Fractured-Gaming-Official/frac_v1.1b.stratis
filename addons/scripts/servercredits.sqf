@@ -42,7 +42,7 @@ sleep 60; //Wait in seconds before the credits start after player IS ingame
 _role1 = "Welcome to";
 _role1names = ["Fractured Gaming - A3Wasteland Stratis"];
 _role2 = "Supported Mods:";
-_role2names = ["CBA, BlastCore:Phoenix, JSRS:Dragonfyre, & Full Screen Night Vision."];
+_role2names = ["CBA, BlastCore:Phoenix, JSRS:Dragonfyre, and FS NV."];
 _role3 = "Server restarts every 6 hours";
 _role3names = ["6am, 12pm, 6pm, 12am GMT"];
 _role4 = "Visit our website @";
