@@ -14,3 +14,4 @@
 #include "RellicHill.sqf"
 #include "Ruins.sqf"
 #include "ValleyGunStore.sqf"
+#include "Killfarm.sqf"
