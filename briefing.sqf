@@ -451,6 +451,7 @@ player createDiaryRecord ["admins",
 <br/><font color='#0066FF' size='18'>High Admins</font>
 <br/>
 <br/> * Gnomes
+<br/> * RickGrimes
 <br/>
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
