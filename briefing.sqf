@@ -442,7 +442,6 @@ player createDiaryRecord ["admins",
 <br/> * TexasOutlaw
 <br/> * BadColonel
 <br/> * KroNiC
-<br/> * Huskey622
 <br/> * Ghostyy
 <br/> * Blinkky
 <br/> * Droid
@@ -456,7 +455,6 @@ player createDiaryRecord ["admins",
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
 <br/> * Ligh7ningBolt
-<br/> * Rick Grimes
 
 "
 ]];
