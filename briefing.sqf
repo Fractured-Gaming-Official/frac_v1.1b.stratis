@@ -455,6 +455,7 @@ player createDiaryRecord ["admins",
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
 <br/> * Ligh7ningBolt
+<br/> * Cheeky__T
 
 "
 ]];
