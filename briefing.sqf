@@ -446,10 +446,10 @@ player createDiaryRecord ["admins",
 <br/> * Blinkky
 <br/> * Droid
 <br/> * M4GHOST45
+<br/> * Gnomes
 <br/>
 <br/><font color='#0066FF' size='18'>High Admins</font>
 <br/>
-<br/> * Gnomes
 <br/> * RickGrimes
 <br/>
 <br/><font color='#002FFF' size='18'>Low Admins</font>
