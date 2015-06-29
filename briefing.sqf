@@ -454,6 +454,7 @@ player createDiaryRecord ["admins",
 <br/>
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
+<br/> * Rush Lionheart
 <br/> * Ligh7ningBolt
 <br/> * Cheeky__T
 
