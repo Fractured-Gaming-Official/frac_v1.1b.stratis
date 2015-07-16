@@ -22,8 +22,6 @@ addMissionEventHandler ["HandleDisconnect",
 	_uid = _this select 2;
 	_name = _this select 3;
 
-	diag_log format ["HandleDisconnect - %1 - alive: %2 - local: %3", [_name, _uid], alive _unit, local _unit];
-
 	if (alive _unit) then
 	{
 		if (!(_unit call A3W_fnc_isUnconscious) && {!isNil "isConfigOn" && {["A3W_playerSaving"] call isConfigOn}}) then
@@ -112,12 +110,10 @@ forEach
 	"A3W_atmEditorPlacedOnly",
 	"A3W_atmMapIcons",
 	"A3W_atmRemoveIfDisabled",
-	"A3W_uavControl",
-	"A3W_townSpawnCooldown"
+	"A3W_uavControl"
 ];
 
 ["A3W_join", "onPlayerConnected", { [_id, _uid, _name] spawn fn_onPlayerConnected }] call BIS_fnc_addStackedEventHandler;
-["A3W_quit", "onPlayerDisconnected", { diag_log format ["onPlayerDisconnected - %1", [_name, _uid]] }] call BIS_fnc_addStackedEventHandler;
 
 _playerSavingOn = ["A3W_playerSaving"] call isConfigOn;
 _baseSavingOn = ["A3W_baseSaving"] call isConfigOn;
@@ -135,46 +131,41 @@ _vehicleSavingOn = (_purchasedVehicleSavingOn || _purchasedVehicleSavingOn);
 
 _setupPlayerDB = scriptNull;
 
-#define MIN_EXTDB_VERSION 20
-
 // Do we need any persistence?
 if (_playerSavingOn || _objectSavingOn || _vehicleSavingOn) then
 {
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	_savingMethod = ["A3W_savingMethod", "profile"] call getPublicVar;
-	if (_savingMethod == "extDB2") then { _savingMethod = "extDB" };
+	if (_savingMethod == "iniDBI") then { _savingMethod = "iniDB" };
 
 	// extDB
 	if (_savingMethod == "extDB") then
 	{
-		_version = "extDB2" callExtension "9:VERSION";
+		_version = "extDB" callExtension "9:VERSION";
 
-		if (parseNumber _version >= MIN_EXTDB_VERSION) then
+		if (parseNumber _version >= 20) then
 		{
 			A3W_savingMethodName = compileFinal "'extDB'";
 			A3W_savingMethodDir = compileFinal "'extDB'";
 			A3W_extDB_ConfigName = compileFinal str (["A3W_extDB_ConfigName", "A3W"] call getPublicVar);
 			A3W_extDB_IniName = compileFinal str (["A3W_extDB_IniName", "a3wasteland"] call getPublicVar);
-			A3W_extDB_RconName = compileFinal str (["A3W_extDB_RconName", "A3W"] call getPublicVar);
 		}
 		else
 		{
 			if (_version != "") then
 			{
-				diag_log format "[INFO] ███ extDB2 startup cancelled!";
-				diag_log format ["[INFO] ███ A3W requires extDB2 v%1 or later: v%2 detected", MIN_EXTDB_VERSION, _result];
+				diag_log format "[INFO] ### extDB startup cancelled!";
+				diag_log format ["[INFO] ### A3W requires extDB v20 or later: v%1 detected", _result];
 			}
 			else
 			{
-				diag_log "[INFO] ███ A3W NOT running with extDB!";
+				diag_log "[INFO] ### A3W NOT running with extDB!";
 			};
 
 			_savingMethod = "profile"; // fallback
 		};
 	};
-
-	if (_savingMethod == "iniDBI") then { _savingMethod = "iniDB" };
 
 	// iniDB
 	if (_savingMethod == "iniDB") then
@@ -189,7 +180,7 @@ if (_playerSavingOn || _objectSavingOn || _vehicleSavingOn) then
 		}
 		else
 		{
-			diag_log "[INFO] ███ A3W NOT running with iniDB!";
+			diag_log "[INFO] ### A3W NOT running with iniDB!";
 			_savingMethod = "profile"; // fallback
 		};
 	};
