@@ -24,7 +24,6 @@ mf_compile = compileFinal
 	private ["_path", "_isDebug", "_code"];
 	_path = "";
 	_isDebug = ' + _DEBUG + ';
-
 	switch (toUpper typeName _this) do {
 		case "STRING": {
 			_path = _this;
@@ -38,7 +37,6 @@ mf_compile = compileFinal
 			_code set [count _code - 1, (toArray " ") select 0];
 		};
 	};
-
 	if (isNil "_code") then {
 		if (_isDebug) then {
 			compile format ["call compile preProcessFileLineNumbers ""%1""", _path]
@@ -76,8 +74,6 @@ A3W_fnc_pushVehicle = [_serverFunc, "pushVehicle.sqf"] call mf_compile;
 A3W_fnc_setName = [_clientFunc, "fn_setName.sqf"] call mf_compile;
 A3W_fnc_setupAntiExplode = [_clientFunc, "fn_setupAntiExplode.sqf"] call mf_compile;
 A3W_fnc_towingHelper = [_serverFunc, "towingHelper.sqf"] call mf_compile;
-A3W_fnc_setLockState = { (objectFromNetId (_this select 0)) lock (_this select 1) } call mf_compile;
-allPlayers = [_serverFunc, "allPlayers.sqf"] call mf_compile;
 applyVehicleTexture = "client\systems\vehicleStore\applyVehicleTexture.sqf" call mf_compile;
 cargoToPairs = [_serverFunc, "cargoToPairs.sqf"] call mf_compile;
 detachTowedObject = [_serverFunc, "detachTowedObject.sqf"] call mf_compile;
@@ -85,6 +81,7 @@ FAR_setKillerInfo = "addons\far_revive\FAR_setKillerInfo.sqf" call mf_compile;
 findSafePos = [_serverFunc, "findSafePos.sqf"] call mf_compile;
 fn_addScore = [_serverFunc, "fn_addScore.sqf"] call mf_compile;
 fn_addToPairs = [_serverFunc, "fn_addToPairs.sqf"] call mf_compile;
+fn_allPlayers = [_serverFunc, "allPlayers.sqf"] call mf_compile;
 fn_boundingBoxReal = [_serverFunc, "fn_boundingBoxReal.sqf"] call mf_compile;
 fn_enableSimulationGlobal = [_serverFunc, "fn_enableSimulationGlobal.sqf"] call mf_compile;
 fn_enableSimulationServer = [_serverFunc, "fn_enableSimulationServer.sqf"] call mf_compile;
