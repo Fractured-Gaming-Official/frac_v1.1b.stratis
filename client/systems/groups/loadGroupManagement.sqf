@@ -134,3 +134,4 @@ while{groupManagmentActive} do
 	_hasInvite = false;
 	lbClear _playerListBox;
 	lbClear _groupListBox;
+	}
