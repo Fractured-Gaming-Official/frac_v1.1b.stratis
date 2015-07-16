@@ -135,7 +135,7 @@ _vehicleSavingOn = (_purchasedVehicleSavingOn || _purchasedVehicleSavingOn);
 
 _setupPlayerDB = scriptNull;
 
-#define MIN_EXTDB_VERSION 49
+#define MIN_EXTDB_VERSION 20
 
 // Do we need any persistence?
 if (_playerSavingOn || _objectSavingOn || _vehicleSavingOn) then
