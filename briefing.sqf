@@ -17,6 +17,8 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Fixed] Bug with MagRepacker
+<br/>[Added] Script Injection Protection
 <br/>[Added] Supported Mods to Credits
 <br/>[Removed] Last Resort
 <br/>[Changed] OpFor and Independant Uniforms
