@@ -571,8 +571,8 @@ backpackArray = compileFinal str
 
 genItemArray = compileFinal str
 [
-	["Remote Designator Bag (NATO)", "B_Static_Designator_01_weapon_F", 2000, "backpack"],
-	["Remote Designator Bag (CSAT)", "O_Static_Designator_02_weapon_F", 2000, "backpack"],
+	["Remote Designator Bag (NATO) [DLC]", "B_Static_Designator_01_weapon_F", 250, "backpack"],
+	["Remote Designator Bag (CSAT) [DLC]", "O_Static_Designator_02_weapon_F", 250, "backpack"],
 	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 1500, "backpack"],
 	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 1500, "backpack"],
 	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 1500, "backpack"],
@@ -589,7 +589,12 @@ genItemArray = compileFinal str
 	["NV Goggles Green", "NVGoggles_INDEP", 500, "nvg"],
 	["Binoculars", "Binocular", 50, "binoc"],
 	["Rangefinder", "Rangefinder", 150, "binoc"],
-	["Laser Designator", "Laserdesignator", 1000, "binoc"],
+	["Laser Designator (NATO)", "Laserdesignator", 1000, "binoc", "WEST"],
+	["Laser Designator (CSAT)", "Laserdesignator_02", 1000, "binoc", "EAST"],
+	["Laser Designator (AAF)", "Laserdesignator_03", 1000, "binoc", "GUER"],
+	["IR Grenade (NATO)", "B_IR_Grenade", 50, "mag", "WEST"],
+	["IR Grenade (CSAT)", "O_IR_Grenade", 50, "mag", "EAST"],
+	["IR Grenade (AAF)", "I_IR_Grenade", 50, "mag", "GUER"],
 	["Chemlight (Blue)", "Chemlight_blue", 25, "mag"],
 	["Chemlight (Green)", "Chemlight_green", 25, "mag"],
 	["Chemlight (Yellow)", "Chemlight_yellow", 25, "mag"],
