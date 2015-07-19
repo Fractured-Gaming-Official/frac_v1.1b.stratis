@@ -17,6 +17,8 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Fixes] To server Optimization
+<br/>[Updated] Anti-hack
 <br/>[Added] Side-specific laser designators and IR grenades
 <br/>[Fixed] Bug with MagRepacker
 <br/>[Added] Script Injection Protection
