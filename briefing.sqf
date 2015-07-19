@@ -432,9 +432,6 @@ player createDiaryRecord ["gearlevel",
 "
 ]];
 
-
-
-
 player createDiaryRecord ["admins",
 [
 "Admin List",
@@ -456,12 +453,11 @@ player createDiaryRecord ["admins",
 <br/><font color='#0066FF' size='18'>High Admins</font>
 <br/>
 <br/> * RickGrimes
+<br/> * Rush Lionheart
 <br/>
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
-<br/> * Rush Lionheart
 <br/> * Ligh7ningBolt
 <br/> * Cheeky__T
-
 "
 ]];
