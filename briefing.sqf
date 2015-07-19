@@ -17,6 +17,7 @@ player createDiaryRecord ["changelog",
 [
 "v1.1",
 "
+<br/>[Added] Side-specific laser designators and IR grenades
 <br/>[Fixed] Bug with MagRepacker
 <br/>[Added] Script Injection Protection
 <br/>[Added] Supported Mods to Credits
