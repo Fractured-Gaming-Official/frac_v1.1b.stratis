@@ -219,7 +219,7 @@ player createDiaryRecord ["gearlevel",
 [
 "Gear Levels",
 "
-<br/> When you reach $1million in your bank, Go to our website http://www.fractured-gaming.com and PM Mokey.
+<br/> When you reach $1million in your bank, Go and apply here http://fractured-gaming.com/application-forms.php?appid=4
 <br/> When he recieves your PM telling him that you have $1million in your bank he will set you to Gear Level 1 at first.
 <br/> Every time you reach $1million, you will advance up a Gear Level. Each Gear Level gives you perks.
 <br/> These perks will increase per level and you will also gain an extra $100 starting cash per level.
@@ -253,135 +253,20 @@ player createDiaryRecord ["gearlevel",
 
 player createDiaryRecord ["gearlevel",
 [
-"Gear Level 1",
+"Gear Level 9",
 "
-<br/><font size='16'>Gear Level 1</font>
+<br/><font size='16'>Gear Level 9</font>
 <br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $100
+<br/> Extra Starting Money: $1000
 <br/> An Olive Carryall
-<br/> A GPS
-<br/> A pair of Binoculars
-<br/> An Extra Grenade
-<br/> A First Aid Kit
-<br/> You will also get extra mags for both your Sting and ACP .45
-"
-]];
-
-player createDiaryRecord ["gearlevel",
-[
-"Gear Level 2",
-"
-<br/><font size='16'>Gear Level 2</font>
-<br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $200
-<br/> An Olive Carryall
-<br/> A GPS
-<br/> A pair of Binoculars
-<br/> An Extra Grenade
-<br/> A First Aid Kit
-<br/> A pair of Red Goggles
-<br/> A holosight on your Sting
-<br/> You also get extra mags for both Sting and ACP .45
-"
-]];
-
-player createDiaryRecord ["gearlevel",
-[
-"Gear Level 3",
-"
-<br/><font size='16'>Gear Level 3</font>
-<br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $300
-<br/> An Olive Carryall
-<br/> A GPS
-<br/> A pair of Binoculars
-<br/> An Extra Grenade
-<br/> A First Aid Kit
-<br/> A pair of Red Goggles
-<br/> A holosight and Suppressor on your Sting
-<br/> A 4-five .45 Pistol instead of the ACP .45
-<br/> You also get extra mags for the Sting and 4-five .45
-"
-]];
-
-player createDiaryRecord ["gearlevel",
-[
-"Gear Level 4",
-"
-<br/><font size='16'>Gear Level 4</font>
-<br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $400
-<br/> An Olive Carryall
-<br/> A GPS
-<br/> A pair of Binoculars
-<br/> An Extra Grenade
-<br/> A First Aid Kit
-<br/> A pair of Red Goggles
-<br/> A holosight and Suppressor on your Sting
-<br/> A 4-five .45 Pistol instead of the ACP .45
-<br/> An RPG-42 Alamut with 1 Rocket
-<br/> You also get extra mags for the Sting and 4-five .45
-"
-]];
-
-player createDiaryRecord ["gearlevel",
-[
-"Gear Level 5",
-"
-<br/><font size='16'>Gear Level 5</font>
-<br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $500
-<br/> An Olive Carryall
-<br/> A GPS
-<br/> A pair of Binoculars
-<br/> An Extra Grenade
-<br/> A First Aid Kit
-<br/> A pair of Red Goggles
-<br/> A TRG-20 with 2 Mags and a Hologsight instead of a Sting
-<br/> A 4-five .45 Pistol instead of the ACP .45
-<br/> An RPG-42 Alamut with 1 Rocket
-<br/> You also get extra mags for the 4-five .45
-"
-]];
-
-player createDiaryRecord ["gearlevel",
-[
-"Gear Level 6",
-"
-<br/><font size='16'>Gear Level 6</font>
-<br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $600
-<br/> An Olive Carryall
-<br/> An Olive Tactical Vest
+<br/> A Plate Carrier GL Rig
 <br/> A GPS
 <br/> A pair of Binoculars
 <br/> An Extra Grenade
 <br/> A First Aid Kit
 <br/> A pair of Red Goggles
 <br/> An ECH Helmet
-<br/> A TRG-20 with 2 Mags and a Hologsight instead of a Sting
-<br/> A 4-five .45 Pistol instead of the ACP .45
-<br/> An RPG-42 Alamut with 1 Rocket
-<br/> You also get extra mags for the 4-five .45
-"
-]];
-
-player createDiaryRecord ["gearlevel",
-[
-"Gear Level 7",
-"
-<br/><font size='16'>Gear Level 7</font>
-<br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $700
-<br/> An Olive Carryall
-<br/> An Olive Tactical Vest
-<br/> A GPS
-<br/> A pair of Binoculars
-<br/> An Extra Grenade
-<br/> A First Aid Kit
-<br/> A pair of Red Goggles
-<br/> An ECH Helmet
-<br/> A TRG-20 with 2 Mags and a Hologsight and Suppressor instead of a Sting
+<br/> An MX Marksmen rifle with 4 Mags and an RCO instead of a Sting
 <br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
 <br/> An RPG-42 Alamut with 1 Rocket
 <br/> You also get extra mags for the 4-five .45
@@ -412,23 +297,138 @@ player createDiaryRecord ["gearlevel",
 
 player createDiaryRecord ["gearlevel",
 [
-"Gear Level 9",
+"Gear Level 7",
 "
-<br/><font size='16'>Gear Level 9</font>
+<br/><font size='16'>Gear Level 7</font>
 <br/><font size='15'>List of Perks you get at this level ~:</font>
-<br/> Extra Starting Money: $1000
+<br/> Extra Starting Money: $700
 <br/> An Olive Carryall
-<br/> A Plate Carrier GL Rig
+<br/> An Olive Tactical Vest
 <br/> A GPS
 <br/> A pair of Binoculars
 <br/> An Extra Grenade
 <br/> A First Aid Kit
 <br/> A pair of Red Goggles
 <br/> An ECH Helmet
-<br/> An MX Marksmen rifle with 4 Mags and an RCO instead of a Sting
+<br/> A TRG-20 with 2 Mags and a Hologsight and Suppressor instead of a Sting
 <br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
 <br/> An RPG-42 Alamut with 1 Rocket
 <br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 6",
+"
+<br/><font size='16'>Gear Level 6</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $600
+<br/> An Olive Carryall
+<br/> An Olive Tactical Vest
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> An ECH Helmet
+<br/> A TRG-20 with 2 Mags and a Hologsight instead of a Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 5",
+"
+<br/><font size='16'>Gear Level 5</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $500
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A TRG-20 with 2 Mags and a Hologsight instead of a Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 4",
+"
+<br/><font size='16'>Gear Level 4</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $400
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A holosight and Suppressor on your Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the Sting and 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 3",
+"
+<br/><font size='16'>Gear Level 3</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $300
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A holosight and Suppressor on your Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> You also get extra mags for the Sting and 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 2",
+"
+<br/><font size='16'>Gear Level 2</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $200
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A holosight on your Sting
+<br/> You also get extra mags for both Sting and ACP .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 1",
+"
+<br/><font size='16'>Gear Level 1</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $100
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> You will also get extra mags for both your Sting and ACP .45
 "
 ]];
 
@@ -445,7 +445,6 @@ player createDiaryRecord ["admins",
 <br/> * BadColonel
 <br/> * KroNiC
 <br/> * Ghostyy
-<br/> * Blinkky
 <br/> * Droid
 <br/> * M4GHOST45
 <br/> * Gnomes
@@ -454,10 +453,11 @@ player createDiaryRecord ["admins",
 <br/>
 <br/> * RickGrimes
 <br/> * Rush Lionheart
+<br/> * Cheeky__T
 <br/>
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/>
-<br/> * Ligh7ningBolt
-<br/> * Cheeky__T
+<br/> * Shabac
+<br/> * Bun6ie
 "
 ]];
