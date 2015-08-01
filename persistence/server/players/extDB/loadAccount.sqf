@@ -43,7 +43,7 @@ if (!_result) then
 	_data =
 	[
 		["PlayerSaveValid", false],
-		["BankMoney", _bank]
+		["BankMoney", _bank],
 		["GearLevel", _PlayerGearLevel]
 	];
 
