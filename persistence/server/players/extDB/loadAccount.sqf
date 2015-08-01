@@ -6,10 +6,11 @@
 
 if (!isServer) exitWith {};
 
-private ["_UID", "_bank", "_moneySaving", "_result", "_data", "_columns"];
+private ["_UID", "_bank", "_moneySaving", "_result", "_data", "_columns", "_PlayerGearEnabled", "_PlayerGearLevel"];
 _UID = _this;
 
 _bank = 0;
+_PlayerGearLevel = 0;
 _moneySaving = ["A3W_moneySaving"] call isConfigOn;
 _PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn;
 
