@@ -4,8 +4,6 @@
 private ["_player"];
 _player = _this;
 
-if (((getPlayerUID _player) in call gearLevel4)) then {
-
 _player setVariable ["cmoney", (_player getVariable "cmoney") + 400, true];
 
 {_player removeWeapon _x} forEach weapons _player;
@@ -75,7 +73,5 @@ switch (true) do
 		_player removeItem "";
 		_player addVest "V_RebreatherIA";
 	};
-};
-
 };
 
