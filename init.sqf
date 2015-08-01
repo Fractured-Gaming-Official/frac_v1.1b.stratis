@@ -95,6 +95,5 @@ if (isServer) then
 [] execVM "addons\EtV\init.sqf"; // Explosives to Vehicles
 [] execVM "addons\laptop\init.sqf"; //Hacker Mission
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf"; //Airdrop Assistance
-[] execVM "addons\gear\default_gear.sqf"; //Gear Loadouts
 if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; //Status Bar
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures

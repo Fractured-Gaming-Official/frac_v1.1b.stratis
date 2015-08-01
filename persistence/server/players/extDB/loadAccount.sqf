@@ -11,6 +11,19 @@ _UID = _this;
 
 _bank = 0;
 _moneySaving = ["A3W_moneySaving"] call isConfigOn;
+_PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn;
+
+if (_PlayerGearEnabled) then 
+ { 
+ 	_result = ["GetPlayerGearLevel:" + _UID, 2] call extDB_Database_async; 
+ 
+ 
+ 	if (count _result > 0) then 
+ 	{ 
+ 		_PlayerGearLevel = _result select 0; 
+ 	}; 
+ }; 
+
 
 if (_moneySaving) then
 {
@@ -30,7 +43,9 @@ if (!_result) then
 	[
 		["PlayerSaveValid", false],
 		["BankMoney", _bank]
+		["GearLevel", _PlayerGearLevel]
 	];
+
 }
 else
 {

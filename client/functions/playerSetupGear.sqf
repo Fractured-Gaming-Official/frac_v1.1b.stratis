@@ -4,8 +4,10 @@
 //	@file Name: playerSetupGear.sqf
 //	@file Author: [GoT] JoSchaap, AgentRev
 
-private ["_player", "_uniform", "_vest", "_headgear", "_goggles"];
+private ["_player", "_uniform", "_vest", "_headgear", "_goggles", "_PlayerGearLevel"];
 _player = _this;
+PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn;
+_PlayerGearLevel = player getVariable ["GearLevel", 0];
 
 // Clothing is now defined in "client\functions\getDefaultClothing.sqf"
 
@@ -62,6 +64,10 @@ switch (true) do
 		_player addWeapon "Rangefinder";
 	};
 };
+
+if (_PlayerGearEnabled && _PlayerGearLevel > 0) then
+	{ execVM "addons\gear\gearCheck.sqf" ;
+	};
 
 if (_player == player) then
 {

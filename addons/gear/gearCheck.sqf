@@ -2,77 +2,78 @@
 //@file Name: gearcheck.sqf
 //@file Author: Cael817, With help of AgentRev, based of something i found
 
-private ["_uid"];
+// Gear Loadout   
+_PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn; 
+_PlayerGearLevel = player getVariable ["GearLevel", 0]; 
 
-_uid = getPlayerUID player;
 
 sleep 1;
-switch (true) do 
+switch (_PlayerGearLevel) do 
 {
-    case (_uid in call gearLevel1) :
+    case 1:
     {
 		player execVM "addons\gear\gearLevel1.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 1 gear loaded.";
 		};
 		
-    case (_uid in call gearLevel2) :
+    case 2:
    {
 		player execVM "addons\gear\gearLevel2.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 2 gear loaded";
    };
    
-	case (_uid in call gearLevel3) :
+	case 3:
    {
 		player execVM "addons\gear\gearLevel3.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 3 gear loaded";
    };
    
-    case  (_uid in call gearLevel4) :
+    case 4:
    {
 		player execVM "addons\gear\gearLevel4.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 4 gear loaded";
    };
    
-    case  (_uid in call gearLevel5) :
+    case 5:
    {
 		player execVM "addons\gear\gearLevel5.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 5 gear loaded";
    };
    
-    case  (_uid in call gearLevel6) :
+    case 6:
    {
 		player execVM "addons\gear\gearLevel6.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 6 gear loaded";
    };
    
-    case  (_uid in call gearLevel7) :
+    case 7:
    {
 		player execVM "addons\gear\gearLevel7.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 7 gear loaded";
    };
    
-    case  (_uid in call gearLevel8) :
+    case 8:
    {
 		player execVM "addons\gear\gearLevel8.sqf"; 
 		sleep 5;
 		hint "Congrats! Your Level 8 gear loaded";
    };
    
-      case  (_uid in call gearLevel9) :
+      case 9:
    {
 		player execVM "addons\gear\gearLevel9.sqf"; 
 		sleep 5;
 		hint "Congrats! Final Gear Level Loaded!";
    };
 
-      case  (_uid in call gearLevel10) :
+      case 10:
    {
 		player execVM "addons\gear\gearLevel10.sqf"; 
 		sleep 5;
