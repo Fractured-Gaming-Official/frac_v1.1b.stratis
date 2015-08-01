@@ -12,7 +12,7 @@ _UID = _this;
 _bank = 0;
 _PlayerGearLevel = 0;
 _moneySaving = ["A3W_moneySaving"] call isConfigOn;
-_PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn;
+_PlayerGearEnabled = ["A3W_gearEnabled"] call isConfigOn;
 
 if (_PlayerGearEnabled) then 
  { 
