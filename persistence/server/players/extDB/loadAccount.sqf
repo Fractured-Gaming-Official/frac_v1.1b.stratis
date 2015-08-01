@@ -16,7 +16,7 @@ _PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn;
 
 if (_PlayerGearEnabled) then 
  { 
- 	_result = ["GetPlayerGearLevel:" + _UID, 2] call extDB_Database_async; 
+ 	_result = ["getPlayerGearLevel:" + _UID, 2] call extDB_Database_async; 
  
  
  	if (count _result > 0) then 
