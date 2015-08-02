@@ -60,8 +60,7 @@ removeHeadgear player;
 						player addUniform ([player, "uniform"] call getDefaultClothing);
 					}
 				};
-			};
-				
+			};		
 		};
 
 		case "Vest": { if (_value != "") then { player addVest _value } };
