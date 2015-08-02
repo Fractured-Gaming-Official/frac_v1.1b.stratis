@@ -41,27 +41,10 @@ removeHeadgear player;
 		case "Uniform":
 		{
 			// If uniform cannot be worn by player due to different team, try to convert it, else give default instead
-			if (_value != "") then
-			{
-				if (player isUniformAllowed _value) then
-				{
-					player addUniform _value;
-				}
-				else
-				{
-					_newUniform = [player, _value] call uniformConverter;
-
-					if (player isUniformAllowed _newUniform) then
-					{
-						player addUniform _newUniform;
-					}
-					else
-					{
-						player addUniform ([player, "uniform"] call getDefaultClothing);
-					}
-				};
-			};
+					player forceadduniform _value;
+				
 		};
+
 		case "Vest": { if (_value != "") then { player addVest _value } };
 		case "Backpack":
 		{
@@ -103,6 +86,7 @@ removeHeadgear player;
 				};
 			};
 		};
+		
 		case "LoadedMagazines":
 		{
 			player addBackpack "B_Carryall_Base"; // temporary backpack to hold mags
@@ -119,7 +103,8 @@ removeHeadgear player;
 			{
 				if ([player, _x] call isAssignableBinocular) then
 				{
-				if (_x select [0,15] == "Laserdesignator" && {{_x == "Laserbatteries"} count magazines player == 0}) then
+					// Temporary fix for http://feedback.arma3.com/view.php?id=21618
+					if (_x == "Laserdesignator" && {{_x == "Laserbatteries"} count magazines player == 0}) then
 					{
 						[player, "Laserbatteries"] call fn_forceAddItem;
 					};
@@ -156,4 +141,6 @@ removeHeadgear player;
 		case "PartialMagazines": { { player addMagazine _x } forEach _value };
 		case "WastelandItems": { { [_x select 0, _x select 1, true] call mf_inventory_add } forEach _value };
 	};
+	
+
 } forEach _data;

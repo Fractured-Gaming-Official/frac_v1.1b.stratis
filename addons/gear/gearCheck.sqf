@@ -2,13 +2,14 @@
 //@file Name: gearcheck.sqf
 //@file Author: Cael817, With help of AgentRev, based of something i found
 
-// Gear Loadout   
-_PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn; 
-_PlayerGearLevel = player getVariable ["GearLevel", 0]; 
+
+// Supporter Loadout  
+_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
+_gearLevel = player getVariable ["gear", 0];
 
 
 sleep 1;
-switch (_PlayerGearLevel) do 
+switch (_gearLevel) do 
 {
     case 1:
     {

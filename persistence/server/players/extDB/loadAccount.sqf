@@ -6,25 +6,25 @@
 
 if (!isServer) exitWith {};
 
-private ["_UID", "_bank", "_moneySaving", "_result", "_data", "_columns", "_PlayerGearEnabled", "_PlayerGearLevel"];
+private ["_UID", "_bank", "_moneySaving", "_gears", "_gearsEnabled", "_result", "_data", "_columns"];
 _UID = _this;
 
 _bank = 0;
-_PlayerGearLevel = 0;
+_gears = 0;
 _moneySaving = ["A3W_moneySaving"] call isConfigOn;
-_PlayerGearEnabled = ["A3W_gearEnabled"] call isConfigOn;
+_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
 
-if (_PlayerGearEnabled) then 
- { 
- 	_result = ["getPlayerGearLevel:" + _UID, 2] call extDB_Database_async; 
- 
- 
- 	if (count _result > 0) then 
- 	{ 
- 		_PlayerGearLevel = _result select 0; 
- 	}; 
- }; 
 
+
+if (_gearsEnabled) then
+{
+	_result = ["getPlayerGearLevel:" + _UID, 2] call extDB_Database_async;
+
+	if (count _result > 0) then
+	{
+		_gears = _result select 0;
+	};
+};
 
 if (_moneySaving) then
 {
@@ -44,9 +44,8 @@ if (!_result) then
 	[
 		["PlayerSaveValid", false],
 		["BankMoney", _bank],
-		["GearLevel", _PlayerGearLevel]
+		["GearLevel", _gears]
 	];
-
 }
 else
 {
@@ -116,6 +115,7 @@ else
 	} forEach _result;
 
 	_data pushBack ["BankMoney", _bank];
+	_data pushBack ["GearLevel", _gears];
 	_data pushBack ["PlayerSaveValid", true];
 };
 

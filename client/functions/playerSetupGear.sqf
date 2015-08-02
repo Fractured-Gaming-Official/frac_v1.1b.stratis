@@ -6,8 +6,10 @@
 
 private ["_player", "_uniform", "_vest", "_headgear", "_goggles", "_PlayerGearLevel"];
 _player = _this;
-_PlayerGearEnabled = ["A3W_PlayerGearLevel"] call isConfigOn;
-_PlayerGearLevel = player getVariable ["GearLevel", 0];
+
+// Gear Loadout  
+_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
+_gearLevel = player getVariable ["gear", 0];
 
 // Clothing is now defined in "client\functions\getDefaultClothing.sqf"
 
@@ -65,7 +67,7 @@ switch (true) do
 	};
 };
 
-if (_PlayerGearEnabled && _PlayerGearLevel > 0) then
+if (_gearsEnabled && _gearLevel > 0) then
 	{ execVM "addons\gear\gearCheck.sqf" ;
 	};
 
