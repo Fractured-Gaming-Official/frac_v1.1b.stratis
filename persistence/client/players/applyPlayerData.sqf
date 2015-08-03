@@ -41,7 +41,6 @@ removeHeadgear player;
 		case "Uniform":
 		{
 			// If uniform cannot be worn by player due to different team, try to convert it, else give default instead
-<<<<<<< HEAD
 				if (_value != "") then
 			{
 				if (player isUniformAllowed _value) then
@@ -62,11 +61,6 @@ removeHeadgear player;
 					}
 				};
 			};		
-=======
-					player forceadduniform _value;
-				
->>>>>>> parent of c631506... Reverted back to sections of old coding
-		};
 
 		case "Vest": { if (_value != "") then { player addVest _value } };
 		case "Backpack":
