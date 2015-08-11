@@ -16,7 +16,6 @@
 [_this, "warchest"] call mf_init;
 [_this, "drugs"] call mf_init;
 [_this, "cratemoney"] call mf_init;
-[_this, "drugs"] call mf_init;
 
 if (["A3W_atmEnabled"] call isConfigOn) then
 {
