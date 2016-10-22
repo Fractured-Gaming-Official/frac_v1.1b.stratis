@@ -71,6 +71,6 @@ if ((count _beaconsnear) > 0 ) then
 	}
 else
 {
-playsound "beep9";
-["No spawn beacon in range.", 5] call mf_notify_client;
+	playsound "beep9";
+	["No spawn beacon in range.", 5] call mf_notify_client;
 };
